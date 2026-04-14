@@ -1,0 +1,298 @@
+report:
+  repo_name: daily-ai-paper-digest
+  pipeline_version: v1.0.0
+  timezone: Asia/Shanghai
+  lookback_days: 1
+  highlight_limit: 5
+  selected_limit_per_topic: 12
+  other_relevant_limit: 8
+  arxiv_max_results_per_group: 80
+  arxiv_polite_delay_seconds: 3.2
+  huggingface_recent_papers_limit: 100
+  huggingface_daily_papers_limit: 60
+  user_agent: daily-ai-paper-digest/0.1.0 (https://github.com/your-org/daily-ai-paper-digest)
+  include_if:
+    - 与 VLA / 世界模型 / 多模态大模型 / 智能体直接相关
+    - 或对这些方向的方法、训练、评测、系统化落地有明显参考价值
+  exclude_if:
+    - 主题过远
+    - 纯行业新闻，无论文主体
+    - 重复条目
+    - 仅有转发，无原始论文页
+  ranking_formula: 0.35*topic_relevance + 0.20*novelty + 0.20*evidence_strength + 0.15*resource_readiness + 0.10*discussion_value
+  ranking_scale: 0-5
+
+llm:
+  enabled: false
+  provider: openai_responses
+  api_key_env: OPENAI_API_KEY
+  api_base: https://api.openai.com/v1
+  model: ""
+  model_env: IDEA_MODEL
+  reasoning_effort: low
+  timeout_seconds: 90
+  max_daily_highlights: 5
+  max_aggregate_papers: 12
+
+aggregation:
+  weekly_top_papers: 10
+  monthly_top_papers: 15
+  top_days_limit: 7
+  top_tags_limit: 8
+
+topics:
+  - id: vla
+    name: VLA
+    summary_name: VLA
+    query_terms:
+      - vision-language-action
+      - VLA
+      - embodied policy
+      - robot manipulation policy
+      - robot foundation model
+      - action tokenizer
+    high_keywords:
+      - vision-language-action
+      - vla
+      - robot policy
+      - embodied policy
+      - action tokenizer
+      - robotic control
+      - manipulation policy
+      - robot foundation model
+    medium_keywords:
+      - robot
+      - manipulation
+      - teleoperation
+      - proprioception
+      - embodied
+      - pick and place
+      - end-to-end control
+    method_tags:
+      planning:
+        - planning
+        - plan
+        - planner
+      memory:
+        - memory
+        - episodic
+        - history
+      action tokenizer:
+        - action tokenizer
+        - tokenized action
+        - action tokens
+      hierarchical control:
+        - hierarchical
+        - long-horizon
+        - high-level controller
+      world model:
+        - world model
+        - latent dynamics
+    application_tags:
+      robot manipulation:
+        - manipulation
+        - pick
+        - grasp
+        - tabletop
+      embodied planning:
+        - embodied
+        - long-horizon
+        - task planning
+      mobile manipulation:
+        - mobile robot
+        - navigation
+        - mobile manipulation
+
+  - id: world_models
+    name: World Models
+    summary_name: World Models
+    query_terms:
+      - world model
+      - latent dynamics
+      - predictive model
+      - video prediction for control
+      - model-based reinforcement learning
+      - action-conditioned video generation
+    high_keywords:
+      - world model
+      - latent dynamics
+      - predictive model
+      - model-based reinforcement learning
+      - action-conditioned
+      - dynamics model
+      - imagination
+    medium_keywords:
+      - video prediction
+      - rollout
+      - future frames
+      - latent state
+      - planning
+      - control
+    method_tags:
+      planning:
+        - planning
+        - mpc
+        - shooting
+        - tree search
+      video prediction:
+        - video prediction
+        - future frames
+        - next frame
+      latent dynamics:
+        - latent dynamics
+        - latent state
+        - transition model
+      reward modeling:
+        - reward
+        - value
+        - return
+      model-based control:
+        - model-based
+        - control
+        - policy improvement
+    application_tags:
+      robot control:
+        - robot
+        - manipulation
+        - embodied
+      autonomous driving:
+        - driving
+        - trajectory
+      simulation:
+        - simulator
+        - simulation
+
+  - id: multimodal_llm
+    name: Multimodal LLMs
+    summary_name: Multimodal LLMs
+    query_terms:
+      - multimodal large language model
+      - multimodal llm
+      - mllm
+      - vision-language model
+      - vlm
+      - multimodal reasoning
+      - video-language model
+    high_keywords:
+      - multimodal llm
+      - multimodal large language model
+      - mllm
+      - vision-language model
+      - vlm
+      - multimodal reasoning
+      - video-language
+      - visual instruction
+    medium_keywords:
+      - image understanding
+      - video understanding
+      - ocr
+      - document understanding
+      - long context
+      - grounding
+      - captioning
+    method_tags:
+      reasoning:
+        - reasoning
+        - chain of thought
+        - cot
+      tool use:
+        - tool
+        - function call
+      verifier:
+        - verifier
+        - critic
+        - self-refine
+      long context:
+        - long context
+        - million token
+        - long video
+      grounding:
+        - grounding
+        - detection
+        - segmentation
+        - ocr
+    application_tags:
+      document understanding:
+        - document
+        - chart
+        - table
+      video understanding:
+        - video
+        - temporal
+      embodied reasoning:
+        - robot
+        - state
+        - action
+
+  - id: agents
+    name: Agents
+    summary_name: Agents
+    query_terms:
+      - agent
+      - tool use
+      - computer use
+      - multi-agent
+      - planning with llm
+      - browser agent
+      - code agent
+    high_keywords:
+      - agent
+      - multi-agent
+      - tool use
+      - computer use
+      - browser agent
+      - code agent
+      - web agent
+      - agent workflow
+    medium_keywords:
+      - planning
+      - memory
+      - retrieval
+      - tool
+      - api calling
+      - environment interaction
+      - self-reflection
+    method_tags:
+      planning:
+        - planning
+        - deliberate
+        - workflow
+      memory:
+        - memory
+        - retrieval
+        - summary
+      tool use:
+        - tool use
+        - tool
+        - api
+        - browser
+        - computer use
+      verification:
+        - verifier
+        - critic
+        - judge
+      multi-agent:
+        - multi-agent
+        - society
+        - collaboration
+    application_tags:
+      web agent:
+        - web
+        - browser
+        - computer use
+      code agent:
+        - code
+        - repository
+        - software engineering
+      workflow automation:
+        - workflow
+        - business process
+        - task automation
+
+related_keywords:
+  other_relevant:
+    - embodied reasoning
+    - robot reasoning
+    - multimodal policy
+    - simulator-trained policy
+    - agentic planning

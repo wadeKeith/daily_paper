@@ -1,0 +1,388 @@
+{
+  "report_type": "weekly_paper_digest",
+  "period_type": "weekly",
+  "period_label": "2026-W16",
+  "date_range": {
+    "start": "2026-04-13",
+    "end": "2026-04-19"
+  },
+  "generated_at": "2026-04-14T22:23:11.228095+08:00",
+  "generator": {
+    "repo_name": "daily-ai-paper-digest",
+    "repo_commit": "02628071c389efc1058aa07f94d4de29e0409755",
+    "pipeline_version": "v1.0.0"
+  },
+  "llm": {
+    "enabled": true,
+    "provider": "openai_responses",
+    "model": "GPT_ejyoyz",
+    "enhanced": true
+  },
+  "statistics": {
+    "reports_included": 1,
+    "papers_mentioned_total": 35,
+    "unique_papers_total": 35,
+    "highlight_mentions_total": 5,
+    "unique_highlights_total": 5
+  },
+  "topic_counts": {
+    "VLA": 3,
+    "World Models": 8,
+    "Multimodal LLMs": 12,
+    "Agents": 12,
+    "Other Relevant": 0
+  },
+  "top_papers": [
+    {
+      "paper_id": "arxiv-2604.11201",
+      "title": "CocoaBench: Evaluating Unified Digital Agents in the Wild",
+      "primary_topic": "Agents",
+      "method_tags": [
+        "grounding",
+        "model-based control",
+        "planning",
+        "reasoning",
+        "tool use"
+      ],
+      "application_tags": [
+        "code agent"
+      ],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 1,
+      "reproduce_count": 0,
+      "best_score": 3.98,
+      "source_primary": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2604.11201v1",
+      "code_url": "https://github.com/cocoabench/cocoa-agent",
+      "first_seen_report_date": "2026-04-14",
+      "last_seen_report_date": "2026-04-14",
+      "avg_score": 3.98
+    },
+    {
+      "paper_id": "arxiv-2604.11641",
+      "title": "CodeTracer: Towards Traceable Agent States",
+      "primary_topic": "Agents",
+      "method_tags": [
+        "memory",
+        "planning",
+        "tool use"
+      ],
+      "application_tags": [
+        "code agent",
+        "workflow automation"
+      ],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 1,
+      "reproduce_count": 0,
+      "best_score": 3.9,
+      "source_primary": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2604.11641v1",
+      "code_url": "https://github.com/NJU-LINK/CodeTracer",
+      "first_seen_report_date": "2026-04-14",
+      "last_seen_report_date": "2026-04-14",
+      "avg_score": 3.9
+    },
+    {
+      "paper_id": "arxiv-2604.11689",
+      "title": "LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment",
+      "primary_topic": "VLA",
+      "method_tags": [
+        "model-based control"
+      ],
+      "application_tags": [
+        "embodied planning",
+        "robot control"
+      ],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 0,
+      "reproduce_count": 0,
+      "best_score": 3.75,
+      "source_primary": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2604.11689v1",
+      "code_url": null,
+      "first_seen_report_date": "2026-04-14",
+      "last_seen_report_date": "2026-04-14",
+      "avg_score": 3.75
+    },
+    {
+      "paper_id": "arxiv-2604.11197",
+      "title": "MedP-CLIP: Medical CLIP with Region-Aware Prompt Integration",
+      "primary_topic": "Multimodal LLMs",
+      "method_tags": [
+        "grounding"
+      ],
+      "application_tags": [],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 0,
+      "reproduce_count": 0,
+      "best_score": 3.72,
+      "source_primary": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2604.11197v1",
+      "code_url": null,
+      "first_seen_report_date": "2026-04-14",
+      "last_seen_report_date": "2026-04-14",
+      "avg_score": 3.72
+    },
+    {
+      "paper_id": "arxiv-2604.11025",
+      "title": "Test-time Scaling over Perception: Resolving the Grounding Paradox in Thinking with Images",
+      "primary_topic": "Multimodal LLMs",
+      "method_tags": [
+        "grounding",
+        "reasoning",
+        "tool use"
+      ],
+      "application_tags": [],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 0,
+      "reproduce_count": 0,
+      "best_score": 3.58,
+      "source_primary": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2604.11025v1",
+      "code_url": null,
+      "first_seen_report_date": "2026-04-14",
+      "last_seen_report_date": "2026-04-14",
+      "avg_score": 3.58
+    },
+    {
+      "paper_id": "arxiv-2604.11244",
+      "title": "Script-a-Video: Deep Structured Audio-visual Captions via Factorized Streams and Relational Grounding",
+      "primary_topic": "Multimodal LLMs",
+      "method_tags": [
+        "grounding",
+        "model-based control",
+        "reasoning"
+      ],
+      "application_tags": [
+        "video understanding"
+      ],
+      "mention_count": 1,
+      "highlight_count": 0,
+      "read_now_count": 0,
+      "reproduce_count": 0,
+      "best_score": 3.57,
+      "source_primary": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2604.11244v1",
+      "code_url": null,
+      "first_seen_report_date": "2026-04-14",
+      "last_seen_report_date": "2026-04-14",
+      "avg_score": 3.57
+    },
+    {
+      "paper_id": "arxiv-2604.07413",
+      "title": "FORGE:Fine-grained Multimodal Evaluation for Manufacturing Scenarios",
+      "primary_topic": "Multimodal LLMs",
+      "method_tags": [
+        "grounding"
+      ],
+      "application_tags": [
+        "embodied reasoning"
+      ],
+      "mention_count": 1,
+      "highlight_count": 0,
+      "read_now_count": 0,
+      "reproduce_count": 1,
+      "best_score": 3.53,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.07413",
+      "code_url": "https://github.com/AI4Manufacturing/FORGE",
+      "first_seen_report_date": "2026-04-14",
+      "last_seen_report_date": "2026-04-14",
+      "avg_score": 3.53
+    },
+    {
+      "paper_id": "arxiv-2604.11283",
+      "title": "Empowering Video Translation using Multimodal Large Language Models",
+      "primary_topic": "Multimodal LLMs",
+      "method_tags": [
+        "model-based control",
+        "reasoning"
+      ],
+      "application_tags": [
+        "video understanding"
+      ],
+      "mention_count": 1,
+      "highlight_count": 0,
+      "read_now_count": 0,
+      "reproduce_count": 0,
+      "best_score": 3.44,
+      "source_primary": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2604.11283v1",
+      "code_url": null,
+      "first_seen_report_date": "2026-04-14",
+      "last_seen_report_date": "2026-04-14",
+      "avg_score": 3.44
+    },
+    {
+      "paper_id": "arxiv-2604.11259",
+      "title": "Mobile GUI Agent Privacy Personalization with Trajectory Induced Preference Optimization",
+      "primary_topic": "Multimodal LLMs",
+      "method_tags": [],
+      "application_tags": [
+        "code agent",
+        "document understanding",
+        "embodied reasoning"
+      ],
+      "mention_count": 1,
+      "highlight_count": 0,
+      "read_now_count": 0,
+      "reproduce_count": 0,
+      "best_score": 3.36,
+      "source_primary": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2604.11259v1",
+      "code_url": null,
+      "first_seen_report_date": "2026-04-14",
+      "last_seen_report_date": "2026-04-14",
+      "avg_score": 3.36
+    },
+    {
+      "paper_id": "arxiv-2604.09459",
+      "title": "From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models",
+      "primary_topic": "Agents",
+      "method_tags": [
+        "model-based control",
+        "multi-agent",
+        "reward modeling",
+        "verification"
+      ],
+      "application_tags": [
+        "autonomous driving"
+      ],
+      "mention_count": 1,
+      "highlight_count": 0,
+      "read_now_count": 0,
+      "reproduce_count": 0,
+      "best_score": 3.32,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.09459",
+      "code_url": "https://github.com/xxzcc/Awesome-Credit-Assignment-in-LLM-RL",
+      "first_seen_report_date": "2026-04-14",
+      "last_seen_report_date": "2026-04-14",
+      "avg_score": 3.32
+    }
+  ],
+  "top_days": [
+    {
+      "report_date": "2026-04-14",
+      "selected_total": 35,
+      "highlights_total": 5,
+      "top_topic": "Multimodal LLMs"
+    }
+  ],
+  "method_tag_counts": [
+    [
+      "model-based control",
+      20
+    ],
+    [
+      "grounding",
+      10
+    ],
+    [
+      "planning",
+      10
+    ],
+    [
+      "reasoning",
+      10
+    ],
+    [
+      "tool use",
+      9
+    ],
+    [
+      "multi-agent",
+      9
+    ],
+    [
+      "memory",
+      7
+    ],
+    [
+      "reward modeling",
+      7
+    ]
+  ],
+  "application_tag_counts": [
+    [
+      "embodied reasoning",
+      8
+    ],
+    [
+      "code agent",
+      7
+    ],
+    [
+      "robot control",
+      6
+    ],
+    [
+      "autonomous driving",
+      5
+    ],
+    [
+      "video understanding",
+      5
+    ],
+    [
+      "embodied planning",
+      4
+    ],
+    [
+      "robot manipulation",
+      4
+    ],
+    [
+      "document understanding",
+      3
+    ]
+  ],
+  "daily_reports": [
+    {
+      "report_date": "2026-04-14",
+      "selected_total": 35,
+      "highlights_total": 5,
+      "top_topic": "Multimodal LLMs"
+    }
+  ],
+  "executive_summary": {
+    "headline": "2026-W16 最显著的变化是研究重心从单点能力提升转向“可落地代理系统”建设：Agent 与多模态方向合计占近七成，且 grounding、planning、tool use、memory 与 reward modeling 开始围绕可追踪、可评测、可泛化的闭环能力收敛。",
+    "summary_points": [
+      "本周期仅纳入 1 份周报，但覆盖 35 篇论文，主题分布高度集中在 Multimodal LLMs 与 Agents（各 12 篇），其次是 World Models（8 篇），说明研究关注点正在从纯感知/生成扩展到具备决策与执行能力的系统级智能体。",
+      "方法标签上，model-based control 以 20 次出现显著领先，远高于 grounding、planning、reasoning（各 10 次）与 tool use（9 次），表明“显式状态—规划—执行”范式正在成为连接世界模型、代理和 VLA 的共同技术骨架。",
+      "高亮论文显示两个鲜明方向：一类是面向真实环境评测与状态可解释性的 Agent 工作，如 CocoaBench、CodeTracer；另一类是面向感知—推理耦合的多模态 grounding 工作，如 Test-time Scaling over Perception、MedP-CLIP，反映社区开始同时补齐‘会做事’与‘看得准’两端短板。",
+      "VLA 论文数量虽仅 3 篇，但 LARY 进入高亮，说明视觉到动作对齐仍被视为高价值问题；与此同时，World Models 有 8 篇但缺少进入高亮的代表作，暗示该方向本周更多处于技术积累而非范式突破阶段。"
+    ]
+  },
+  "trend_analysis": {
+    "trends": [
+      "代理研究正在从“能否完成任务”转向“过程是否可观测、可诊断、可基准化”：CocoaBench 强调野外统一数字代理评测，CodeTracer 聚焦可追踪状态，这说明下一阶段竞争点将是可复现性与系统可靠性，而非单次 demo 成功率。",
+      "多模态 LLM 的核心矛盾正在从通用理解转向 grounded reasoning：Test-time Scaling over Perception 直接指向图像思考中的 grounding paradox，MedP-CLIP 与 FORGE 则分别在医学和制造场景强化区域级、细粒度对齐，体现出行业场景正在倒逼更强的局部感知与证据链推理。",
+      "工具使用、记忆与奖励建模开始向 agentic RL 汇合：从 CodeTracer 的状态表示，到 Credit Assignment in RL for LLMs 的归因问题，再到多篇含 tool use / reward modeling 标签的工作，可以看到社区正尝试把语言代理从提示工程驱动，推进到训练信号、长期轨迹和信用分配驱动。",
+      "视频与时序多模态任务持续升温，但方法不再满足于简单 caption/translation，而是强调结构化、关系化建模，如 Script-a-Video 的 factorized streams 与 relational grounding，意味着视频理解正在从描述层迈向可用于决策与检索的中间表示层。"
+    ],
+    "gaps": [
+      "尽管 Agent 和多模态论文数量多，但真正同时覆盖 grounding、planning、tool use、memory、reward feedback 的端到端闭环系统仍然稀缺；现有工作多在某一模块上突出，距离稳定的通用数字代理还有明显工程断层。",
+      "World Models 出现频次不低，但缺少进入高亮的标志性工作，说明该方向在本周期尚未展示足够有说服力的统一评测、跨任务泛化或与代理系统深度耦合的成果。",
+      "当前评测倾向于新 benchmark 与特定领域设置，但跨场景迁移、长时程任务稳定性、失败恢复与安全边界评估仍不足；尤其是 GUI、代码、制造、医疗等场景之间缺少统一可比指标。",
+      "方法标签显示 verification 仅在少数论文中出现，而代理系统一旦进入真实工作流，验证、审计与隐私控制会成为关键瓶颈；例如移动 GUI 隐私个性化已出现苗头，但系统级安全治理仍未形成主流研究主线。"
+    ],
+    "next_actions": [
+      "优先跟踪“可评测+可追踪”代理基建：深入阅读 CocoaBench 与 CodeTracer，并建立一个对照表，比较其任务设定、状态建模粒度、日志可解释性和 failure taxonomy，以判断哪些设计可迁移到内部 agent 评测栈。",
+      "围绕 grounded reasoning 做专题梳理：将 Test-time Scaling over Perception、MedP-CLIP、FORGE、Script-a-Video 放在同一框架下，提炼它们在区域对齐、关系建模、测试时扩展和领域适配上的共性，形成一份“多模态证据链能力地图”。",
+      "对 agentic RL 与信用分配开展重点观察：从 From Reasoning to Agentic 的归因机制出发，补充检索本月相关 reward modeling、trajectory optimization、multi-agent credit assignment 工作，评估其是否能真正改善长轨迹任务而非仅提升离线指标。",
+      "建立一个跨方向监测清单，把 VLA、World Models、Agents 三线用统一问题表述连接起来：是否有显式状态、是否支持规划、是否能进行工具调用、是否有在线反馈闭环、是否提供可靠评测；下周期据此判断哪些论文具备成为“系统级范式拐点”的潜力。"
+    ]
+  },
+  "appendix": {
+    "source_reports": [
+      "2026-04-14"
+    ],
+    "llm_warnings": []
+  }
+}

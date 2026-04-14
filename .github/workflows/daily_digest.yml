@@ -1,0 +1,53 @@
+name: daily-digest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "55 15 * * *"
+
+jobs:
+  build-digest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Install dependencies
+        run: uv pip install --system -e .
+
+      - name: Generate digest
+        env:
+          TZ: Asia/Shanghai
+        run: |
+          TODAY=$(TZ=Asia/Shanghai date +%F)
+          DOW=$(TZ=Asia/Shanghai date +%u)
+          DOM=$(TZ=Asia/Shanghai date +%d)
+          daily-paper generate --report-date "$TODAY"
+          if [ "$DOW" = "1" ]; then
+            PREV_WEEK_ANCHOR=$(TZ=Asia/Shanghai date -d "$TODAY -1 day" +%F)
+            daily-paper aggregate-weekly --anchor-date "$PREV_WEEK_ANCHOR"
+          fi
+          if [ "$DOM" = "01" ]; then
+            PREV_MONTH=$(TZ=Asia/Shanghai date -d "$TODAY -1 day" +%Y-%m)
+            daily-paper aggregate-monthly --month "$PREV_MONTH"
+          fi
+
+      - name: Commit reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p reports/daily reports/weekly reports/monthly
+          git add reports/daily reports/weekly reports/monthly
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: update daily paper digest"
+          git push
