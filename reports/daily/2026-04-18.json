@@ -1,0 +1,2183 @@
+{
+  "report_type": "daily_paper_digest",
+  "report_date": "2026-04-18",
+  "timezone": "Asia/Shanghai",
+  "generated_at": "2026-04-18T00:38:55.934059+08:00",
+  "generator": {
+    "repo_name": "daily-ai-paper-digest",
+    "repo_commit": "a4739e7f3397f4df5ef602b885a6c45c1f3b6f40",
+    "pipeline_version": "v1.0.0"
+  },
+  "llm": {
+    "enabled": false,
+    "provider": "openai_responses",
+    "model": "",
+    "enhanced": false
+  },
+  "sources": [
+    {
+      "name": "arXiv",
+      "enabled": true,
+      "query_groups": [
+        "VLA",
+        "World Models",
+        "Multimodal LLMs",
+        "Agents"
+      ]
+    },
+    {
+      "name": "HuggingFace Papers",
+      "enabled": true,
+      "query_groups": [
+        "VLA",
+        "World Models",
+        "Multimodal LLMs",
+        "Agents"
+      ]
+    }
+  ],
+  "crawl_window": {
+    "start": "2026-04-17T00:00:00+08:00",
+    "end": "2026-04-18T23:59:59+08:00",
+    "note": "日报统计窗口；不一定等同于平台原始发布时间"
+  },
+  "statistics": {
+    "raw_candidates_total": 128,
+    "deduplicated_total": 28,
+    "selected_total": 8,
+    "highlights_total": 5
+  },
+  "topic_counts": {
+    "vla": 1,
+    "world_models": 0,
+    "multimodal_llm": 4,
+    "agents": 3,
+    "other_relevant": 0
+  },
+  "selection_policy": {
+    "included_if": [
+      "与 VLA / 世界模型 / 多模态大模型 / 智能体直接相关",
+      "或对这些方向的方法、训练、评测、系统化落地有明显参考价值"
+    ],
+    "excluded_if": [
+      "主题过远",
+      "纯行业新闻，无论文主体",
+      "重复条目",
+      "仅有转发，无原始论文页"
+    ]
+  },
+  "ranking_policy": {
+    "highlight_score_formula": "0.35*topic_relevance + 0.20*novelty + 0.20*evidence_strength + 0.15*resource_readiness + 0.10*discussion_value",
+    "score_range": "0-5"
+  },
+  "tags": [
+    "daily-digest",
+    "ai-research",
+    "arxiv",
+    "huggingface",
+    "vla",
+    "world-model",
+    "mllm",
+    "agents"
+  ],
+  "executive_summary": {
+    "conclusion_lines": [
+      "今天最值得关注的方向是：`Multimodal LLMs`",
+      "主要趋势是：`reasoning / planning / memory`",
+      "真正建议精读的论文数量：`5` 篇"
+    ],
+    "top_highlights": [
+      {
+        "title": "HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System",
+        "reason": "它直接落在 VLA 方向。"
+      },
+      {
+        "title": "MM-WebAgent: A Hierarchical Multimodal Web Agent for Webpage Generation",
+        "reason": "它直接落在 Agents 方向，并且已经能追踪到开源资源。"
+      },
+      {
+        "title": "DR^{3}-Eval: Towards Realistic and Reproducible Deep Research Evaluation",
+        "reason": "它直接落在 Agents 方向，并且已经能追踪到开源资源。"
+      },
+      {
+        "title": "Boosting Visual Instruction Tuning with Self-Supervised Guidance",
+        "reason": "它直接落在 Multimodal LLMs 方向，并且已经能追踪到开源资源。"
+      },
+      {
+        "title": "Switch-KD: Visual-Switch Knowledge Distillation for Vision-Language Models",
+        "reason": "它直接落在 Multimodal LLMs 方向，并且已经能追踪到开源资源。"
+      }
+    ],
+    "research_observations": [
+      {
+        "label": "趋势 1",
+        "text": "今天出现频率最高的方法 motif 是：reasoning。"
+      },
+      {
+        "label": "趋势 2",
+        "text": "最集中爆发的主题是：Multimodal LLMs。"
+      },
+      {
+        "label": "趋势 3",
+        "text": "Read-now 信号论文共有 0 篇。"
+      },
+      {
+        "label": "空白点 / 机会点",
+        "text": "真实机器人验证仍然稀缺，尤其缺少能跨 embodiment 的证据。"
+      }
+    ]
+  },
+  "metadata_summary": {
+    "report_date": "2026-04-18",
+    "timezone": "Asia/Shanghai",
+    "generated_at": "2026-04-18T00:38:55.934059+08:00",
+    "raw_candidates_total": 128,
+    "deduplicated_total": 28,
+    "selected_total": 8
+  },
+  "query_groups": [
+    "VLA",
+    "World Models",
+    "Multimodal LLMs",
+    "Agents"
+  ],
+  "query_terms": {
+    "VLA": [
+      "vision-language-action",
+      "VLA",
+      "embodied policy",
+      "robot manipulation policy",
+      "robot foundation model",
+      "action tokenizer"
+    ],
+    "World Models": [
+      "world model",
+      "latent dynamics",
+      "predictive model",
+      "video prediction for control",
+      "model-based reinforcement learning",
+      "action-conditioned video generation"
+    ],
+    "Multimodal LLMs": [
+      "multimodal large language model",
+      "multimodal llm",
+      "mllm",
+      "vision-language model",
+      "vlm",
+      "multimodal reasoning",
+      "video-language model"
+    ],
+    "Agents": [
+      "agent",
+      "tool use",
+      "computer use",
+      "multi-agent",
+      "planning with llm",
+      "browser agent",
+      "code agent"
+    ]
+  },
+  "topic_overview": [
+    {
+      "name": "VLA",
+      "count": 1,
+      "judgement": "今天 VLA 方向更偏 grounding, hierarchical control，整体更适合做趋势跟踪而不是一次性下重注。",
+      "top_papers": [
+        "HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System"
+      ],
+      "commonalities": [
+        "grounding",
+        "hierarchical control"
+      ],
+      "pitfalls": [
+        "多数条目暂时没有明确代码入口，复现节奏会偏慢。",
+        "真实机器人验证依然偏少。"
+      ]
+    },
+    {
+      "name": "World Models",
+      "count": 0,
+      "judgement": "今天这个方向没有足够强的入选条目。",
+      "top_papers": [],
+      "commonalities": [
+        "暂无明显共性"
+      ],
+      "pitfalls": [
+        "暂无足够样本。"
+      ]
+    },
+    {
+      "name": "Multimodal LLMs",
+      "count": 4,
+      "judgement": "今天 Multimodal LLMs 方向更偏 reasoning, tool use，整体更适合做趋势跟踪而不是一次性下重注。",
+      "top_papers": [
+        "Boosting Visual Instruction Tuning with Self-Supervised Guidance",
+        "Switch-KD: Visual-Switch Knowledge Distillation for Vision-Language Models",
+        "RadAgent: A tool-using AI agent for stepwise interpretation of chest computed tomography"
+      ],
+      "commonalities": [
+        "reasoning",
+        "tool use"
+      ],
+      "pitfalls": [
+        "需要结合正文继续确认实验边界。"
+      ]
+    },
+    {
+      "name": "Agents",
+      "count": 3,
+      "judgement": "今天 Agents 方向更偏 planning, memory，整体更适合做趋势跟踪而不是一次性下重注。",
+      "top_papers": [
+        "MM-WebAgent: A Hierarchical Multimodal Web Agent for Webpage Generation",
+        "DR^{3}-Eval: Towards Realistic and Reproducible Deep Research Evaluation",
+        "Towards Autonomous Mechanistic Reasoning in Virtual Cells"
+      ],
+      "commonalities": [
+        "planning",
+        "memory"
+      ],
+      "pitfalls": [
+        "真实工具链和环境回放成本可能高于摘要给出的直觉。"
+      ]
+    },
+    {
+      "name": "Other Relevant",
+      "count": 0,
+      "judgement": "今天这个方向没有足够强的入选条目。",
+      "top_papers": [],
+      "commonalities": [
+        "暂无明显共性"
+      ],
+      "pitfalls": [
+        "暂无足够样本。"
+      ]
+    }
+  ],
+  "highlight_papers": [
+    {
+      "paper_id": "arxiv-2604.14125",
+      "title": "HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System",
+      "authors": [
+        "Tianshuo Yang",
+        "Guanyu Chen",
+        "Yutian Chen",
+        "Zhixuan Liang",
+        "Yitian Liu",
+        "Zanxin Chen",
+        "Chunpu Xu",
+        "Haotian Liang",
+        "Jiangmiao Pang",
+        "Yao Mu",
+        "Ping Luo"
+      ],
+      "first_author": "Tianshuo Yang",
+      "source_primary": "HuggingFace Papers",
+      "source_aliases": [
+        "HuggingFace Papers / Daily Papers"
+      ],
+      "arxiv_id": "2604.14125",
+      "version": null,
+      "hf_paper_url": "https://huggingface.co/papers/2604.14125",
+      "paper_url": "https://arxiv.org/abs/2604.14125",
+      "pdf_url": "https://arxiv.org/pdf/2604.14125.pdf",
+      "project_url": "https://tianshuoy.github.io/HiVLA-page/",
+      "code_url": null,
+      "model_url": null,
+      "dataset_url": null,
+      "demo_url": null,
+      "published_at": "2026-04-15T00:00:00+00:00",
+      "updated_at": "2026-04-15T00:00:00+00:00",
+      "primary_category": null,
+      "categories": [],
+      "institution_hint": null,
+      "license_hint": null,
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "summary": "While end-to-end Vision-Language-Action (VLA) models offer a promising paradigm for robotic manipulation, fine-tuning them on narrow control data often compromises the profound reasoning capabilities inherited from their base Vision-Language Models (VLMs). To resolve this fundamental trade-off, we propose HiVLA, a visual-grounded-centric hierarchical framework that explicitly decouples high-level semantic planning from low-level motor control. In high-level part, a VLM planner first performs task decomposition and visual grounding to generate structured plans, comprising a subtask instruction and a precise target bounding box. Then, to translate this plan into physical actions, we introduce a flow-matching Diffusion Transformer (DiT) action expert in low-level part equipped with a novel cascaded cross-attention mechanism. This design sequentially fuses global context, high-resolution object-centric crops and skill semantics, enabling the DiT to focus purely on robust execution. Our decoupled architecture preserves the VLM's zero-shot reasoning while allowing independent improvement of both components. Extensive experiments in simulation and the real world demonstrate that HiVLA significantly outperforms state-of-the-art end-to-end baselines, particularly excelling in long-horizon skill composition and the fine-grained manipulation of small objects in cluttered scenes.",
+      "topics": [
+        "VLA"
+      ],
+      "primary_topic": "VLA",
+      "query_groups": [],
+      "method_tags": [
+        "grounding",
+        "hierarchical control",
+        "model-based control",
+        "planning",
+        "reasoning"
+      ],
+      "application_tags": [
+        "embodied planning",
+        "embodied reasoning",
+        "robot control",
+        "robot manipulation",
+        "simulation"
+      ],
+      "one_line_summary": "HiVLA presents a hierarchical vision-language-action framework that decouples semantic planning from motor control using a diffusion transformer action expert with cascaded cross-attention for improved robotic manipulat…",
+      "why_read_today": "它直接落在 VLA 方向。",
+      "relevance_level": "high",
+      "highlight_score": 3.72,
+      "recommended_action": "track",
+      "topic_scores": {
+        "VLA": 3.69,
+        "World Models": 0.9,
+        "Multimodal LLMs": 2.79,
+        "Agents": 0.45
+      },
+      "structured_summary": {
+        "problem": "This design sequentially fuses global context, high-resolution object-centric crops and skill semantics, enabling the DiT to focus purely on robust execution.",
+        "motivation": "To resolve this fundamental trade-off, we propose HiVLA, a visual-grounded-centric hierarchical framework that explicitly decouples high-level semantic planning from low-level motor control.",
+        "core_idea": "To resolve this fundamental trade-off, we propose HiVLA, a visual-grounded-centric hierarchical framework that explicitly decouples high-level semantic planning from low-level motor control.",
+        "method": "To resolve this fundamental trade-off, we propose HiVLA, a visual-grounded-centric hierarchical framework that explicitly decouples high-level semantic planning from low-level motor control.",
+        "training": "摘要未明确说明训练细节。",
+        "inference": "摘要未明确描述推理阶段流程。",
+        "evaluation": "Extensive experiments in simulation and the real world demonstrate that HiVLA significantly outperforms state-of-the-art end-to-end baselines, particularly excelling in long-horizon skill composition and the fine-grained manipulation of small objects in cluttered scenes.",
+        "main_results": "Our decoupled architecture preserves the VLM's zero-shot reasoning while allowing independent improvement of both components.",
+        "claim": "Our decoupled architecture preserves the VLM's zero-shot reasoning while allowing independent improvement of both components."
+      },
+      "novelty_points": [
+        "主线聚焦在 VLA，并给出了相对明确的方法叙述。",
+        "方法标签里最显眼的是：grounding, hierarchical control, model-based control。"
+      ],
+      "strengths": [
+        "标题和摘要都能清楚定位到研究问题。",
+        "摘要里明确给出了评测或实验设置。"
+      ],
+      "weaknesses": [
+        "当前还看不到足够完整的开源 artifact。",
+        "摘要没有明显展示真实机器人验证。"
+      ],
+      "assumptions": [
+        "默认任务分布、机器人形态和观测设置与实验环境接近。"
+      ],
+      "risks": [
+        "目前更多依赖 abstract claim，短期复现价值有限。",
+        "跨环境或跨 embodiment 的泛化能力仍需正文和附录验证。"
+      ],
+      "open_questions": [
+        "跨 embodiment / 跨场景泛化是否仍然成立？",
+        "失败恢复机制是 planner-guided 还是纯 policy-level？"
+      ],
+      "relation_to_prior_work": "从摘要看，它更接近以 grounding 为核心的 VLA 路线。",
+      "domain_analysis": {
+        "vla": {
+          "embodiment": "robot manipulation",
+          "action_space": "unknown",
+          "control_level": "low-level",
+          "memory_usage": "unknown",
+          "planner_usage": "yes",
+          "reasoner_usage": "yes",
+          "world_model_usage": "no",
+          "real_robot": "no",
+          "simulator": "simulation",
+          "data_source": "simulator"
+        },
+        "world_models": {
+          "state_representation": "unknown",
+          "prediction_target": "actions",
+          "horizon": "long",
+          "planning_interface": "unknown",
+          "control_coupling": "coupled with policy / control"
+        },
+        "multimodal_llms": {
+          "modalities": [
+            "text"
+          ],
+          "reasoning_type": "none",
+          "long_context_usage": "no",
+          "grounding_method": "latent grounding"
+        },
+        "agents": {
+          "agent_type": "unknown",
+          "tooling": "unknown",
+          "memory_type": "none",
+          "planning_style": "hierarchical",
+          "verification_style": "no verifier"
+        }
+      },
+      "reproducibility": {
+        "code_available": false,
+        "weights_available": false,
+        "dataset_available": false,
+        "env_instructions_available": true,
+        "repro_effort_estimate": "high"
+      },
+      "my_take": {
+        "should_i_read_it": "视方向而定",
+        "should_i_reproduce_it": "条件满足时再看",
+        "what_can_i_borrow": "grounding, hierarchical control, model-based control",
+        "what_do_i_not_buy": "目前还需要正文确认 claim 的外推性。",
+        "best_use_case": "embodied planning"
+      },
+      "hf_upvotes": 16,
+      "hf_ai_summary": "HiVLA presents a hierarchical vision-language-action framework that decouples semantic planning from motor control using a diffusion transformer action expert with cascaded cross-attention for improved robotic manipulation.",
+      "hf_ai_keywords": [
+        "Diffusion Transformer",
+        "Vision-Language Models",
+        "Vision-Language-Action models",
+        "bounding box",
+        "cascaded cross-attention",
+        "cluttered scenes",
+        "cross-attention mechanism",
+        "diffusion models",
+        "fine-grained manipulation",
+        "motor control",
+        "semantic planning",
+        "skill composition",
+        "structured plans",
+        "task decomposition",
+        "visual grounding",
+        "zero-shot reasoning"
+      ],
+      "submitted_on_daily_at": "2026-04-17T01:51:03.529000+00:00"
+    },
+    {
+      "paper_id": "arxiv-2604.15309",
+      "title": "MM-WebAgent: A Hierarchical Multimodal Web Agent for Webpage Generation",
+      "authors": [
+        "Yan Li",
+        "Zezi Zeng",
+        "Yifan Yang",
+        "Yuqing Yang",
+        "Ning Liao",
+        "Weiwei Guo",
+        "Lili Qiu",
+        "Mingxi Cheng",
+        "Qi Dai",
+        "Zhendong Wang",
+        "Zhengyuan Yang",
+        "Xue Yang",
+        "Ji Li",
+        "Lijuan Wang",
+        "Chong Luo"
+      ],
+      "first_author": "Yan Li",
+      "source_primary": "HuggingFace Papers",
+      "source_aliases": [
+        "HuggingFace Papers / Daily Papers"
+      ],
+      "arxiv_id": "2604.15309",
+      "version": null,
+      "hf_paper_url": "https://huggingface.co/papers/2604.15309",
+      "paper_url": "https://arxiv.org/abs/2604.15309",
+      "pdf_url": "https://arxiv.org/pdf/2604.15309.pdf",
+      "project_url": "https://aka.ms/mm-webagent",
+      "code_url": "https://github.com/microsoft/MM-webagent",
+      "model_url": null,
+      "dataset_url": "https://huggingface.co/datasets/microsoft/MM-WebGen-Bench",
+      "demo_url": null,
+      "published_at": "2026-04-16T00:00:00+00:00",
+      "updated_at": "2026-04-16T00:00:00+00:00",
+      "primary_category": null,
+      "categories": [],
+      "institution_hint": null,
+      "license_hint": "mit",
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "summary": "The rapid progress of Artificial Intelligence Generated Content (AIGC) tools enables images, videos, and visualizations to be created on demand for webpage design, offering a flexible and increasingly adopted paradigm for modern UI/UX. However, directly integrating such tools into automated webpage generation often leads to style inconsistency and poor global coherence, as elements are generated in isolation. We propose MM-WebAgent, a hierarchical agentic framework for multimodal webpage generation that coordinates AIGC-based element generation through hierarchical planning and iterative self-reflection. MM-WebAgent jointly optimizes global layout, local multimodal content, and their integration, producing coherent and visually consistent webpages. We further introduce a benchmark for multimodal webpage generation and a multi-level evaluation protocol for systematic assessment. Experiments demonstrate that MM-WebAgent outperforms code-generation and agent-based baselines, especially on multimodal element generation and integration. Code & Data: https://aka.ms/mm-webagent.",
+      "topics": [
+        "Agents"
+      ],
+      "primary_topic": "Agents",
+      "query_groups": [],
+      "method_tags": [
+        "planning",
+        "tool use"
+      ],
+      "application_tags": [
+        "code agent",
+        "web agent"
+      ],
+      "one_line_summary": "MM-WebAgent is a hierarchical agentic framework that coordinates AIGC-based element generation for coherent and visually consistent webpage design through joint optimization of layout and multimodal content.",
+      "why_read_today": "它直接落在 Agents 方向，并且已经能追踪到开源资源。",
+      "relevance_level": "high",
+      "highlight_score": 3.68,
+      "recommended_action": "reproduce",
+      "topic_scores": {
+        "VLA": 0.0,
+        "World Models": 0.45,
+        "Multimodal LLMs": 0.0,
+        "Agents": 3.96
+      },
+      "structured_summary": {
+        "problem": "The rapid progress of Artificial Intelligence Generated Content (AIGC) tools enables images, videos, and visualizations to be created on demand for webpage design, offering a flexible and increasingly adopted paradigm for modern UI/UX.",
+        "motivation": "However, directly integrating such tools into automated webpage generation often leads to style inconsistency and poor global coherence, as elements are generated in isolation.",
+        "core_idea": "We propose MM-WebAgent, a hierarchical agentic framework for multimodal webpage generation that coordinates AIGC-based element generation through hierarchical planning and iterative self-reflection.",
+        "method": "We propose MM-WebAgent, a hierarchical agentic framework for multimodal webpage generation that coordinates AIGC-based element generation through hierarchical planning and iterative self-reflection.",
+        "training": "摘要未明确说明训练细节。",
+        "inference": "摘要未明确描述推理阶段流程。",
+        "evaluation": "We further introduce a benchmark for multimodal webpage generation and a multi-level evaluation protocol for systematic assessment.",
+        "main_results": "Experiments demonstrate that MM-WebAgent outperforms code-generation and agent-based baselines, especially on multimodal element generation and integration.",
+        "claim": "Experiments demonstrate that MM-WebAgent outperforms code-generation and agent-based baselines, especially on multimodal element generation and integration."
+      },
+      "novelty_points": [
+        "主线聚焦在 Agents，并给出了相对明确的方法叙述。",
+        "方法标签里最显眼的是：planning, tool use。"
+      ],
+      "strengths": [
+        "标题和摘要都能清楚定位到研究问题。",
+        "摘要里明确给出了评测或实验设置。"
+      ],
+      "weaknesses": [
+        "摘要无法支撑太细的结论，需要正文补充。"
+      ],
+      "assumptions": [
+        "默认工具链、环境接口和反馈信号都是稳定可用的。"
+      ],
+      "risks": [
+        "真实任务链路上的鲁棒性和成本可能比摘要看起来更敏感。"
+      ],
+      "open_questions": [
+        "长任务中的 memory / verifier 成本是否可控？",
+        "工具调用失败时的恢复策略是什么？"
+      ],
+      "relation_to_prior_work": "从摘要看，它更接近以 planning 为核心的 Agents 路线。",
+      "domain_analysis": {
+        "vla": {
+          "embodiment": "unknown",
+          "action_space": "unknown",
+          "control_level": "high-level",
+          "memory_usage": "unknown",
+          "planner_usage": "yes",
+          "reasoner_usage": "no",
+          "world_model_usage": "no",
+          "real_robot": "no",
+          "simulator": "null",
+          "data_source": "unknown"
+        },
+        "world_models": {
+          "state_representation": "unknown",
+          "prediction_target": "unknown",
+          "horizon": "unknown",
+          "planning_interface": "unknown",
+          "control_coupling": "unclear"
+        },
+        "multimodal_llms": {
+          "modalities": [
+            "image",
+            "video"
+          ],
+          "reasoning_type": "tool-use",
+          "long_context_usage": "no",
+          "grounding_method": "none"
+        },
+        "agents": {
+          "agent_type": "single-agent",
+          "tooling": "code, api",
+          "memory_type": "none",
+          "planning_style": "hierarchical",
+          "verification_style": "no verifier"
+        }
+      },
+      "reproducibility": {
+        "code_available": true,
+        "weights_available": false,
+        "dataset_available": true,
+        "env_instructions_available": true,
+        "repro_effort_estimate": "medium"
+      },
+      "my_take": {
+        "should_i_read_it": "视方向而定",
+        "should_i_reproduce_it": "是",
+        "what_can_i_borrow": "planning, tool use",
+        "what_do_i_not_buy": "重点核对实验设置和资源完整度。",
+        "best_use_case": "code agent"
+      },
+      "hf_upvotes": 1,
+      "hf_ai_summary": "MM-WebAgent is a hierarchical agentic framework that coordinates AIGC-based element generation for coherent and visually consistent webpage design through joint optimization of layout and multimodal content.",
+      "hf_ai_keywords": [
+        "AIGC-based element generation",
+        "agent-based baselines",
+        "global layout",
+        "hierarchical agentic framework",
+        "hierarchical planning",
+        "iterative self-reflection",
+        "local multimodal content",
+        "multimodal element generation",
+        "multimodal webpage generation"
+      ],
+      "submitted_on_daily_at": "2026-04-17T00:27:07.498000+00:00"
+    },
+    {
+      "paper_id": "arxiv-2604.14683",
+      "title": "DR^{3}-Eval: Towards Realistic and Reproducible Deep Research Evaluation",
+      "authors": [
+        "Qianqian Xie",
+        "Qingheng Xiong",
+        "He Zhu",
+        "Tiantian Xia",
+        "Xueming Han",
+        "Fanyu Meng",
+        "Jiakai Wang",
+        "Zhiqi Bai",
+        "Chengkang Jiang",
+        "Zhaohui Wang",
+        "Yubin Guo",
+        "Yuqing Wen",
+        "Jiayang Mao",
+        "Zijie Zhang",
+        "Shihao Li",
+        "Yanghai Wang",
+        "Yuxiang Ren",
+        "Junlan Feng",
+        "Jiaheng Liu"
+      ],
+      "first_author": "Qianqian Xie",
+      "source_primary": "HuggingFace Papers",
+      "source_aliases": [
+        "HuggingFace Papers / Daily Papers"
+      ],
+      "arxiv_id": "2604.14683",
+      "version": null,
+      "hf_paper_url": "https://huggingface.co/papers/2604.14683",
+      "paper_url": "https://arxiv.org/abs/2604.14683",
+      "pdf_url": "https://arxiv.org/pdf/2604.14683.pdf",
+      "project_url": null,
+      "code_url": "https://github.com/NJU-LINK/DR3-Eval",
+      "model_url": null,
+      "dataset_url": "https://huggingface.co/datasets/NJU-LINK/DR3-Eval",
+      "demo_url": null,
+      "published_at": "2026-04-16T00:00:00+00:00",
+      "updated_at": "2026-04-16T00:00:00+00:00",
+      "primary_category": null,
+      "categories": [],
+      "institution_hint": null,
+      "license_hint": "apache-2.0",
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "summary": "Deep Research Agents (DRAs) aim to solve complex, long-horizon research tasks involving planning, retrieval, multimodal understanding, and report generation, yet their evaluation remains challenging due to dynamic web environments and ambiguous task definitions. We propose DR^{3}-Eval, a realistic and reproducible benchmark for evaluating deep research agents on multimodal, multi-file report generation. DR^{3}-Eval is constructed from authentic user-provided materials and paired with a per-task static research sandbox corpus that simulates open-web complexity while remaining fully verifiable, containing supportive documents, distractors, and noise. Moreover, we introduce a multi-dimensional evaluation framework measuring Information Recall, Factual Accuracy, Citation Coverage, Instruction Following, and Depth Quality, and validate its alignment with human judgments. Experiments with our developed multi-agent system DR^{3}-Agent based on multiple state-of-the-art language models demonstrate that DR^{3}-Eval is highly challenging and reveals critical failure modes in retrieval robustness and hallucination control. Our code and data are publicly available.",
+      "topics": [
+        "Agents"
+      ],
+      "primary_topic": "Agents",
+      "query_groups": [],
+      "method_tags": [
+        "memory",
+        "model-based control",
+        "multi-agent",
+        "planning",
+        "verification"
+      ],
+      "application_tags": [
+        "code agent",
+        "web agent"
+      ],
+      "one_line_summary": "DR$^{3}$-Eval is a benchmark for evaluating deep research agents on multimodal, multi-file report generation, featuring a realistic simulation of web environments and a comprehensive evaluation framework.",
+      "why_read_today": "它直接落在 Agents 方向，并且已经能追踪到开源资源。",
+      "relevance_level": "high",
+      "highlight_score": 3.61,
+      "recommended_action": "reproduce",
+      "topic_scores": {
+        "VLA": 0.0,
+        "World Models": 0.9,
+        "Multimodal LLMs": 0.0,
+        "Agents": 3.24
+      },
+      "structured_summary": {
+        "problem": "Deep Research Agents (DRAs) aim to solve complex, long-horizon research tasks involving planning, retrieval, multimodal understanding, and report generation, yet their evaluation remains challenging due to dynamic web environments and ambiguous task definitions.",
+        "motivation": "We propose DR^{3}-Eval, a realistic and reproducible benchmark for evaluating deep research agents on multimodal, multi-file report generation.",
+        "core_idea": "We propose DR^{3}-Eval, a realistic and reproducible benchmark for evaluating deep research agents on multimodal, multi-file report generation.",
+        "method": "Moreover, we introduce a multi-dimensional evaluation framework measuring Information Recall, Factual Accuracy, Citation Coverage, Instruction Following, and Depth Quality, and validate its alignment with human judgments.",
+        "training": "摘要未明确说明训练细节。",
+        "inference": "摘要未明确描述推理阶段流程。",
+        "evaluation": "Deep Research Agents (DRAs) aim to solve complex, long-horizon research tasks involving planning, retrieval, multimodal understanding, and report generation, yet their evaluation remains challenging due to dynamic web environments and ambiguous task definitions.",
+        "main_results": "Experiments with our developed multi-agent system DR^{3}-Agent based on multiple state-of-the-art language models demonstrate that DR^{3}-Eval is highly challenging and reveals critical failure modes in retrieval robustness and hallucination control.",
+        "claim": "Experiments with our developed multi-agent system DR^{3}-Agent based on multiple state-of-the-art language models demonstrate that DR^{3}-Eval is highly challenging and reveals critical failure modes in retrieval robustness and hallucination control."
+      },
+      "novelty_points": [
+        "主线聚焦在 Agents，并给出了相对明确的方法叙述。",
+        "方法标签里最显眼的是：memory, model-based control, multi-agent。"
+      ],
+      "strengths": [
+        "标题和摘要都能清楚定位到研究问题。",
+        "摘要里明确给出了评测或实验设置。"
+      ],
+      "weaknesses": [
+        "摘要无法支撑太细的结论，需要正文补充。"
+      ],
+      "assumptions": [
+        "默认工具链、环境接口和反馈信号都是稳定可用的。"
+      ],
+      "risks": [
+        "真实任务链路上的鲁棒性和成本可能比摘要看起来更敏感。"
+      ],
+      "open_questions": [
+        "长任务中的 memory / verifier 成本是否可控？",
+        "工具调用失败时的恢复策略是什么？"
+      ],
+      "relation_to_prior_work": "从摘要看，它更接近以 memory 为核心的 Agents 路线。",
+      "domain_analysis": {
+        "vla": {
+          "embodiment": "unknown",
+          "action_space": "unknown",
+          "control_level": "unknown",
+          "memory_usage": "unknown",
+          "planner_usage": "yes",
+          "reasoner_usage": "no",
+          "world_model_usage": "no",
+          "real_robot": "no",
+          "simulator": "null",
+          "data_source": "unknown"
+        },
+        "world_models": {
+          "state_representation": "unknown",
+          "prediction_target": "unknown",
+          "horizon": "long",
+          "planning_interface": "search",
+          "control_coupling": "coupled with policy / control"
+        },
+        "multimodal_llms": {
+          "modalities": [
+            "document"
+          ],
+          "reasoning_type": "none",
+          "long_context_usage": "no",
+          "grounding_method": "none"
+        },
+        "agents": {
+          "agent_type": "multi-agent",
+          "tooling": "code, retrieval",
+          "memory_type": "none",
+          "planning_style": "unknown",
+          "verification_style": "critic"
+        }
+      },
+      "reproducibility": {
+        "code_available": true,
+        "weights_available": false,
+        "dataset_available": true,
+        "env_instructions_available": false,
+        "repro_effort_estimate": "medium"
+      },
+      "my_take": {
+        "should_i_read_it": "视方向而定",
+        "should_i_reproduce_it": "是",
+        "what_can_i_borrow": "memory, model-based control, multi-agent",
+        "what_do_i_not_buy": "重点核对实验设置和资源完整度。",
+        "best_use_case": "code agent"
+      },
+      "hf_upvotes": 20,
+      "hf_ai_summary": "DR$^{3}$-Eval is a benchmark for evaluating deep research agents on multimodal, multi-file report generation, featuring a realistic simulation of web environments and a comprehensive evaluation framework.",
+      "hf_ai_keywords": [
+        "citation coverage",
+        "deep research agents",
+        "depth quality",
+        "factual accuracy",
+        "hallucination control",
+        "information recall",
+        "instruction following",
+        "multi-agent system",
+        "multi-dimensional evaluation framework",
+        "multimodal understanding",
+        "report generation",
+        "research sandbox corpus",
+        "state-of-the-art language models"
+      ],
+      "submitted_on_daily_at": "2026-04-17T00:41:09.230000+00:00"
+    },
+    {
+      "paper_id": "arxiv-2604.12966",
+      "title": "Boosting Visual Instruction Tuning with Self-Supervised Guidance",
+      "authors": [
+        "Sophia Sirko-Galouchenko",
+        "Monika Wysoczanska",
+        "Andrei Bursuc",
+        "Nicolas Thome",
+        "Spyros Gidaris"
+      ],
+      "first_author": "Sophia Sirko-Galouchenko",
+      "source_primary": "HuggingFace Papers",
+      "source_aliases": [
+        "HuggingFace Papers / Daily Papers"
+      ],
+      "arxiv_id": "2604.12966",
+      "version": null,
+      "hf_paper_url": "https://huggingface.co/papers/2604.12966",
+      "paper_url": "https://arxiv.org/abs/2604.12966",
+      "pdf_url": "https://arxiv.org/pdf/2604.12966.pdf",
+      "project_url": null,
+      "code_url": "https://github.com/sirkosophia/V-GIFT",
+      "model_url": null,
+      "dataset_url": null,
+      "demo_url": null,
+      "published_at": "2026-04-14T00:00:00+00:00",
+      "updated_at": "2026-04-14T00:00:00+00:00",
+      "primary_category": null,
+      "categories": [],
+      "institution_hint": null,
+      "license_hint": null,
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "summary": "Multimodal large language models (MLLMs) perform well on many vision-language tasks but often struggle with vision-centric problems that require fine-grained visual reasoning. Recent evidence suggests that this limitation arises not from weak visual representations, but from under-utilization of visual information during instruction tuning, where many tasks can be partially solved using language priors alone. We propose a simple and lightweight approach that augments visual instruction tuning with a small number of visually grounded self-supervised tasks expressed as natural language instructions. By reformulating classical self-supervised pretext tasks, such as rotation prediction, color matching, and cross-view correspondence, as image-instruction-response triplets, we introduce supervision that cannot be solved without relying on visual evidence. Our approach requires no human annotations, no architectural modifications, and no additional training stages. Across multiple models, training regimes, and benchmarks, injecting only a small fraction (3-10%) of such visually grounded instructions consistently improves performance on vision-centric evaluations. Our findings highlight instruction tuning with visually grounded SSL tasks as a powerful lever for improving visual reasoning in MLLMs through simple adjustments to the training data distribution. Code available at: https://github.com/sirkosophia/V-GIFT",
+      "topics": [
+        "Multimodal LLMs"
+      ],
+      "primary_topic": "Multimodal LLMs",
+      "query_groups": [],
+      "method_tags": [
+        "reasoning"
+      ],
+      "application_tags": [
+        "embodied reasoning"
+      ],
+      "one_line_summary": "Visual instruction tuning enhanced with naturally phrased self-supervised tasks improves vision-centric reasoning in multimodal language models without additional architecture or annotations.",
+      "why_read_today": "它直接落在 Multimodal LLMs 方向，并且已经能追踪到开源资源。",
+      "relevance_level": "high",
+      "highlight_score": 3.36,
+      "recommended_action": "track",
+      "topic_scores": {
+        "VLA": 0.0,
+        "World Models": 0.0,
+        "Multimodal LLMs": 3.78,
+        "Agents": 0.0
+      },
+      "structured_summary": {
+        "problem": "Multimodal large language models (MLLMs) perform well on many vision-language tasks but often struggle with vision-centric problems that require fine-grained visual reasoning.",
+        "motivation": "Recent evidence suggests that this limitation arises not from weak visual representations, but from under-utilization of visual information during instruction tuning, where many tasks can be partially solved using language priors alone.",
+        "core_idea": "We propose a simple and lightweight approach that augments visual instruction tuning with a small number of visually grounded self-supervised tasks expressed as natural language instructions.",
+        "method": "We propose a simple and lightweight approach that augments visual instruction tuning with a small number of visually grounded self-supervised tasks expressed as natural language instructions.",
+        "training": "Our approach requires no human annotations, no architectural modifications, and no additional training stages.",
+        "inference": "摘要未明确描述推理阶段流程。",
+        "evaluation": "Across multiple models, training regimes, and benchmarks, injecting only a small fraction (3-10%) of such visually grounded instructions consistently improves performance on vision-centric evaluations.",
+        "main_results": "Across multiple models, training regimes, and benchmarks, injecting only a small fraction (3-10%) of such visually grounded instructions consistently improves performance on vision-centric evaluations.",
+        "claim": "Across multiple models, training regimes, and benchmarks, injecting only a small fraction (3-10%) of such visually grounded instructions consistently improves performance on vision-centric evaluations."
+      },
+      "novelty_points": [
+        "主线聚焦在 Multimodal LLMs，并给出了相对明确的方法叙述。",
+        "方法标签里最显眼的是：reasoning。"
+      ],
+      "strengths": [
+        "标题和摘要都能清楚定位到研究问题。",
+        "摘要里明确给出了评测或实验设置。"
+      ],
+      "weaknesses": [
+        "摘要无法支撑太细的结论，需要正文补充。"
+      ],
+      "assumptions": [
+        "默认多模态对齐质量足以支撑推理或工具调用。"
+      ],
+      "risks": [
+        "真实 deployment 条件和 benchmark 表现之间可能存在落差。"
+      ],
+      "open_questions": [
+        "真实多模态长上下文场景里的收益是否稳定？",
+        "grounding 误差会不会拖累推理质量？"
+      ],
+      "relation_to_prior_work": "从摘要看，它更接近以 reasoning 为核心的 Multimodal LLMs 路线。",
+      "domain_analysis": {
+        "vla": {
+          "embodiment": "unknown",
+          "action_space": "unknown",
+          "control_level": "unknown",
+          "memory_usage": "unknown",
+          "planner_usage": "no",
+          "reasoner_usage": "yes",
+          "world_model_usage": "no",
+          "real_robot": "no",
+          "simulator": "null",
+          "data_source": "unknown"
+        },
+        "world_models": {
+          "state_representation": "unknown",
+          "prediction_target": "actions",
+          "horizon": "unknown",
+          "planning_interface": "unknown",
+          "control_coupling": "unclear"
+        },
+        "multimodal_llms": {
+          "modalities": [
+            "image",
+            "text"
+          ],
+          "reasoning_type": "none",
+          "long_context_usage": "no",
+          "grounding_method": "none"
+        },
+        "agents": {
+          "agent_type": "unknown",
+          "tooling": "code",
+          "memory_type": "none",
+          "planning_style": "unknown",
+          "verification_style": "no verifier"
+        }
+      },
+      "reproducibility": {
+        "code_available": true,
+        "weights_available": false,
+        "dataset_available": false,
+        "env_instructions_available": false,
+        "repro_effort_estimate": "medium"
+      },
+      "my_take": {
+        "should_i_read_it": "视方向而定",
+        "should_i_reproduce_it": "条件满足时再看",
+        "what_can_i_borrow": "reasoning",
+        "what_do_i_not_buy": "重点核对实验设置和资源完整度。",
+        "best_use_case": "embodied reasoning"
+      },
+      "hf_upvotes": 4,
+      "hf_ai_summary": "Visual instruction tuning enhanced with naturally phrased self-supervised tasks improves vision-centric reasoning in multimodal language models without additional architecture or annotations.",
+      "hf_ai_keywords": [
+        "image-instruction-response triplets",
+        "instruction tuning",
+        "multimodal large language models",
+        "pretext tasks",
+        "self-supervised learning",
+        "vision-language tasks",
+        "visual grounding",
+        "visual reasoning"
+      ],
+      "submitted_on_daily_at": "2026-04-17T12:10:34.910000+00:00"
+    },
+    {
+      "paper_id": "arxiv-2604.14629",
+      "title": "Switch-KD: Visual-Switch Knowledge Distillation for Vision-Language Models",
+      "authors": [
+        "Haoyi Sun",
+        "Xiaoxiao Wang",
+        "Ning Mao",
+        "Qian Wang",
+        "Lifu Mu",
+        "Wen Zheng",
+        "Tao Wei",
+        "Wei Chen"
+      ],
+      "first_author": "Haoyi Sun",
+      "source_primary": "HuggingFace Papers",
+      "source_aliases": [
+        "HuggingFace Papers / Daily Papers"
+      ],
+      "arxiv_id": "2604.14629",
+      "version": null,
+      "hf_paper_url": "https://huggingface.co/papers/2604.14629",
+      "paper_url": "https://arxiv.org/abs/2604.14629",
+      "pdf_url": "https://arxiv.org/pdf/2604.14629.pdf",
+      "project_url": "https://haoyi199815.github.io/Switch-KD/",
+      "code_url": "https://github.com/haoyi199815/Switch-KD",
+      "model_url": null,
+      "dataset_url": null,
+      "demo_url": null,
+      "published_at": "2026-04-16T00:00:00+00:00",
+      "updated_at": "2026-04-16T00:00:00+00:00",
+      "primary_category": null,
+      "categories": [],
+      "institution_hint": null,
+      "license_hint": null,
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "summary": "Vision-Language Models (VLMs) have shown remarkable capabilities in joint vision-language understanding, but their large scale poses significant challenges for deployment in resource-constrained scenarios. Knowledge Distillation (KD) offers a viable way to improve model capabilities without increasing model size or data requirements, making deployment more efficient. However, applying KD to VLMs is challenged by modality-specific supervision: although multimodal knowledge in VLMs is fused within the language space, current methods supervise each modality separately without explicitly addressing multimodal alignment, leading to inconsistent multimodal knowledge transfer. To address this, we propose Switch-KD, a visual-switch distillation framework that unifies vision-language knowledge transfer within a shared text-probability space. Switch-KD comprises two key components: (1) Visual-Switch Distillation, which switches the student's visual outputs into the teacher's language pathway to construct cross-modal probabilistic references for implicit visual knowledge transfer; and (2) Dynamic Bi-directional Logits Difference (DBiLD) loss, which adaptively aligns informative probability regions while preserving the distributional structures of teacher and student through bidirectional supervision. Guided by Switch-KD, a 0.5B TinyLLaVA effectively distills rich multimodal knowledge from its 3B teacher, yielding an average improvement of 3.6 points across 10 multimodal benchmarks without any architectural modification.",
+      "topics": [
+        "Multimodal LLMs"
+      ],
+      "primary_topic": "Multimodal LLMs",
+      "query_groups": [],
+      "method_tags": [],
+      "application_tags": [],
+      "one_line_summary": "Vision-language models face deployment challenges due to their large size, but knowledge distillation can improve efficiency while maintaining performance through a novel visual-switch framework that enhances multimodal…",
+      "why_read_today": "它直接落在 Multimodal LLMs 方向，并且已经能追踪到开源资源。",
+      "relevance_level": "medium",
+      "highlight_score": 3.24,
+      "recommended_action": "track",
+      "topic_scores": {
+        "VLA": 0.0,
+        "World Models": 0.0,
+        "Multimodal LLMs": 2.34,
+        "Agents": 0.0
+      },
+      "structured_summary": {
+        "problem": "However, applying KD to VLMs is challenged by modality-specific supervision: although multimodal knowledge in VLMs is fused within the language space, current methods supervise each modality separately without explicitly addressing multimodal alignment, leading to inconsistent m…",
+        "motivation": "Vision-Language Models (VLMs) have shown remarkable capabilities in joint vision-language understanding, but their large scale poses significant challenges for deployment in resource-constrained scenarios.",
+        "core_idea": "To address this, we propose Switch-KD, a visual-switch distillation framework that unifies vision-language knowledge transfer within a shared text-probability space.",
+        "method": "However, applying KD to VLMs is challenged by modality-specific supervision: although multimodal knowledge in VLMs is fused within the language space, current methods supervise each modality separately without explicitly addressing multimodal alignment, leading to inconsistent m…",
+        "training": "Vision-Language Models (VLMs) have shown remarkable capabilities in joint vision-language understanding, but their large scale poses significant challenges for deployment in resource-constrained scenarios.",
+        "inference": "Vision-Language Models (VLMs) have shown remarkable capabilities in joint vision-language understanding, but their large scale poses significant challenges for deployment in resource-constrained scenarios.",
+        "evaluation": "Guided by Switch-KD, a 0.5B TinyLLaVA effectively distills rich multimodal knowledge from its 3B teacher, yielding an average improvement of 3.6 points across 10 multimodal benchmarks without any architectural modification.",
+        "main_results": "Vision-Language Models (VLMs) have shown remarkable capabilities in joint vision-language understanding, but their large scale poses significant challenges for deployment in resource-constrained scenarios.",
+        "claim": "Vision-Language Models (VLMs) have shown remarkable capabilities in joint vision-language understanding, but their large scale poses significant challenges for deployment in resource-constrained scenarios."
+      },
+      "novelty_points": [
+        "主线聚焦在 Multimodal LLMs，并给出了相对明确的方法叙述。",
+        "配套资源已有公开线索，后续做 related work / reproduction 会更顺。"
+      ],
+      "strengths": [
+        "标题和摘要都能清楚定位到研究问题。",
+        "摘要里明确给出了评测或实验设置。"
+      ],
+      "weaknesses": [
+        "摘要无法支撑太细的结论，需要正文补充。"
+      ],
+      "assumptions": [
+        "默认多模态对齐质量足以支撑推理或工具调用。"
+      ],
+      "risks": [
+        "真实 deployment 条件和 benchmark 表现之间可能存在落差。"
+      ],
+      "open_questions": [
+        "真实多模态长上下文场景里的收益是否稳定？",
+        "grounding 误差会不会拖累推理质量？"
+      ],
+      "relation_to_prior_work": "仅靠摘要还不足以精确判断它与哪条 prior work 路线最接近。",
+      "domain_analysis": {
+        "vla": {
+          "embodiment": "unknown",
+          "action_space": "unknown",
+          "control_level": "unknown",
+          "memory_usage": "unknown",
+          "planner_usage": "no",
+          "reasoner_usage": "yes",
+          "world_model_usage": "no",
+          "real_robot": "no",
+          "simulator": "null",
+          "data_source": "unknown"
+        },
+        "world_models": {
+          "state_representation": "unknown",
+          "prediction_target": "unknown",
+          "horizon": "unknown",
+          "planning_interface": "unknown",
+          "control_coupling": "unclear"
+        },
+        "multimodal_llms": {
+          "modalities": [
+            "text"
+          ],
+          "reasoning_type": "none",
+          "long_context_usage": "no",
+          "grounding_method": "none"
+        },
+        "agents": {
+          "agent_type": "unknown",
+          "tooling": "unknown",
+          "memory_type": "none",
+          "planning_style": "unknown",
+          "verification_style": "no verifier"
+        }
+      },
+      "reproducibility": {
+        "code_available": true,
+        "weights_available": false,
+        "dataset_available": false,
+        "env_instructions_available": true,
+        "repro_effort_estimate": "medium"
+      },
+      "my_take": {
+        "should_i_read_it": "视方向而定",
+        "should_i_reproduce_it": "条件满足时再看",
+        "what_can_i_borrow": "问题定义和评测拆解方式",
+        "what_do_i_not_buy": "重点核对实验设置和资源完整度。",
+        "best_use_case": "Multimodal LLMs"
+      },
+      "hf_upvotes": 6,
+      "hf_ai_summary": "Vision-language models face deployment challenges due to their large size, but knowledge distillation can improve efficiency while maintaining performance through a novel visual-switch framework that enhances multimodal knowledge transfer.",
+      "hf_ai_keywords": [
+        "Knowledge Distillation",
+        "Vision-Language Models",
+        "cross-modal probabilistic references",
+        "dynamic bi-directional logits difference loss",
+        "multimodal alignment",
+        "multimodal knowledge transfer",
+        "teacher-student framework",
+        "visual-switch distillation"
+      ],
+      "submitted_on_daily_at": "2026-04-17T06:37:04.519000+00:00"
+    }
+  ],
+  "paper_list_by_topic": {
+    "VLA": [],
+    "Agents": [
+      {
+        "paper_id": "arxiv-2604.11661",
+        "title": "Towards Autonomous Mechanistic Reasoning in Virtual Cells",
+        "authors": [
+          "Yunhui Jang",
+          "Lu Zhu",
+          "Jake Fawkes",
+          "Alisandra Kaye Denton",
+          "Dominique Beaini",
+          "Emmanuel Noutahi"
+        ],
+        "first_author": "Yunhui Jang",
+        "source_primary": "HuggingFace Papers",
+        "source_aliases": [
+          "HuggingFace Papers / Daily Papers"
+        ],
+        "arxiv_id": "2604.11661",
+        "version": null,
+        "hf_paper_url": "https://huggingface.co/papers/2604.11661",
+        "paper_url": "https://arxiv.org/abs/2604.11661",
+        "pdf_url": "https://arxiv.org/pdf/2604.11661.pdf",
+        "project_url": "https://valencelabs.substack.com/p/towards-reasoning-in-virtual-cells",
+        "code_url": "https://github.com/valence-labs/VCR-Agent",
+        "model_url": null,
+        "dataset_url": null,
+        "demo_url": null,
+        "published_at": "2026-04-14T00:00:00+00:00",
+        "updated_at": "2026-04-14T00:00:00+00:00",
+        "primary_category": null,
+        "categories": [],
+        "institution_hint": null,
+        "license_hint": null,
+        "comment": null,
+        "journal_ref": null,
+        "doi": null,
+        "summary": "Large language models (LLMs) have recently gained significant attention as a promising approach to accelerate scientific discovery. However, their application in open-ended scientific domains such as biology remains limited, primarily due to the lack of factually grounded and actionable explanations. To address this, we introduce a structured explanation formalism for virtual cells that represents biological reasoning as mechanistic action graphs, enabling systematic verification and falsification. Building upon this, we propose VCR-Agent, a multi-agent framework that integrates biologically grounded knowledge retrieval with a verifier-based filtering approach to generate and validate mechanistic reasoning autonomously. Using this framework, we release VC-TRACES dataset, which consists of verified mechanistic explanations derived from the Tahoe-100M atlas. Empirically, we demonstrate that training with these explanations improves factual precision and provides a more effective supervision signal for downstream gene expression prediction. These results underscore the importance of reliable mechanistic reasoning for virtual cells, achieved through the synergy of multi-agent and rigorous verification.",
+        "topics": [
+          "Agents"
+        ],
+        "primary_topic": "Agents",
+        "query_groups": [],
+        "method_tags": [
+          "memory",
+          "multi-agent",
+          "verification"
+        ],
+        "application_tags": [],
+        "one_line_summary": "Large language models are enhanced for biological research through a multi-agent framework that generates and validates mechanistic explanations using structured formalism and verified datasets.",
+        "why_read_today": "它直接落在 Agents 方向，并且已经能追踪到开源资源。",
+        "relevance_level": "medium",
+        "highlight_score": 3.02,
+        "recommended_action": "track",
+        "topic_scores": {
+          "VLA": 0.0,
+          "World Models": 0.0,
+          "Multimodal LLMs": 0.0,
+          "Agents": 2.79
+        },
+        "structured_summary": {
+          "problem": "To address this, we introduce a structured explanation formalism for virtual cells that represents biological reasoning as mechanistic action graphs, enabling systematic verification and falsification.",
+          "motivation": "However, their application in open-ended scientific domains such as biology remains limited, primarily due to the lack of factually grounded and actionable explanations.",
+          "core_idea": "To address this, we introduce a structured explanation formalism for virtual cells that represents biological reasoning as mechanistic action graphs, enabling systematic verification and falsification.",
+          "method": "Large language models (LLMs) have recently gained significant attention as a promising approach to accelerate scientific discovery.",
+          "training": "Empirically, we demonstrate that training with these explanations improves factual precision and provides a more effective supervision signal for downstream gene expression prediction.",
+          "inference": "摘要未明确描述推理阶段流程。",
+          "evaluation": "摘要只给出了有限的评测线索。",
+          "main_results": "Empirically, we demonstrate that training with these explanations improves factual precision and provides a more effective supervision signal for downstream gene expression prediction.",
+          "claim": "Empirically, we demonstrate that training with these explanations improves factual precision and provides a more effective supervision signal for downstream gene expression prediction."
+        },
+        "novelty_points": [
+          "主线聚焦在 Agents，并给出了相对明确的方法叙述。",
+          "方法标签里最显眼的是：memory, multi-agent, verification。"
+        ],
+        "strengths": [
+          "标题和摘要都能清楚定位到研究问题。",
+          "存在可继续追踪的开源资源。"
+        ],
+        "weaknesses": [
+          "摘要无法支撑太细的结论，需要正文补充。"
+        ],
+        "assumptions": [
+          "默认工具链、环境接口和反馈信号都是稳定可用的。"
+        ],
+        "risks": [
+          "真实任务链路上的鲁棒性和成本可能比摘要看起来更敏感。"
+        ],
+        "open_questions": [
+          "长任务中的 memory / verifier 成本是否可控？",
+          "工具调用失败时的恢复策略是什么？"
+        ],
+        "relation_to_prior_work": "从摘要看，它更接近以 memory 为核心的 Agents 路线。",
+        "domain_analysis": {
+          "vla": {
+            "embodiment": "unknown",
+            "action_space": "unknown",
+            "control_level": "unknown",
+            "memory_usage": "unknown",
+            "planner_usage": "yes",
+            "reasoner_usage": "yes",
+            "world_model_usage": "no",
+            "real_robot": "no",
+            "simulator": "null",
+            "data_source": "unknown"
+          },
+          "world_models": {
+            "state_representation": "unknown",
+            "prediction_target": "actions",
+            "horizon": "unknown",
+            "planning_interface": "unknown",
+            "control_coupling": "unclear"
+          },
+          "multimodal_llms": {
+            "modalities": [
+              "text"
+            ],
+            "reasoning_type": "verifier",
+            "long_context_usage": "no",
+            "grounding_method": "none"
+          },
+          "agents": {
+            "agent_type": "multi-agent",
+            "tooling": "retrieval",
+            "memory_type": "none",
+            "planning_style": "unknown",
+            "verification_style": "judge"
+          }
+        },
+        "reproducibility": {
+          "code_available": true,
+          "weights_available": false,
+          "dataset_available": false,
+          "env_instructions_available": true,
+          "repro_effort_estimate": "medium"
+        },
+        "my_take": {
+          "should_i_read_it": "视方向而定",
+          "should_i_reproduce_it": "条件满足时再看",
+          "what_can_i_borrow": "memory, multi-agent, verification",
+          "what_do_i_not_buy": "重点核对实验设置和资源完整度。",
+          "best_use_case": "Agents"
+        },
+        "hf_upvotes": 1,
+        "hf_ai_summary": "Large language models are enhanced for biological research through a multi-agent framework that generates and validates mechanistic explanations using structured formalism and verified datasets.",
+        "hf_ai_keywords": [
+          "Tahoe-100M atlas",
+          "VC-TRACES dataset",
+          "biologically grounded knowledge retrieval",
+          "gene expression prediction",
+          "large language models",
+          "mechanistic action graphs",
+          "mechanistic reasoning",
+          "multi-agent framework",
+          "verifier-based filtering",
+          "virtual cells"
+        ],
+        "submitted_on_daily_at": "2026-04-17T04:42:24.890000+00:00"
+      }
+    ],
+    "Multimodal LLMs": [
+      {
+        "paper_id": "arxiv-2604.15231",
+        "title": "RadAgent: A tool-using AI agent for stepwise interpretation of chest computed tomography",
+        "authors": [
+          "Mélanie Roschewitz",
+          "Kenneth Styppa",
+          "Yitian Tao",
+          "Jiwoong Sohn",
+          "Jean-Benoit Delbrouck",
+          "Benjamin Gundersen",
+          "Nicolas Deperrois",
+          "Christian Bluethgen",
+          "Julia Vogt",
+          "Bjoern Menze",
+          "Farhad Nooralahzadeh",
+          "Michael Krauthammer",
+          "Michael Moor"
+        ],
+        "first_author": "Mélanie Roschewitz",
+        "source_primary": "HuggingFace Papers",
+        "source_aliases": [
+          "HuggingFace Papers / Daily Papers"
+        ],
+        "arxiv_id": "2604.15231",
+        "version": null,
+        "hf_paper_url": "https://huggingface.co/papers/2604.15231",
+        "paper_url": "https://arxiv.org/abs/2604.15231",
+        "pdf_url": "https://arxiv.org/pdf/2604.15231.pdf",
+        "project_url": "https://rad-agent.github.io",
+        "code_url": null,
+        "model_url": "https://huggingface.co/RadAgent/radagent-qwen3-14b-lora",
+        "dataset_url": null,
+        "demo_url": null,
+        "published_at": "2026-04-16T00:00:00+00:00",
+        "updated_at": "2026-04-16T00:00:00+00:00",
+        "primary_category": null,
+        "categories": [],
+        "institution_hint": null,
+        "license_hint": "other",
+        "comment": null,
+        "journal_ref": null,
+        "doi": null,
+        "summary": "Vision-language models (VLM) have markedly advanced AI-driven interpretation and reporting of complex medical imaging, such as computed tomography (CT). Yet, existing methods largely relegate clinicians to passive observers of final outputs, offering no interpretable reasoning trace for them to inspect, validate, or refine. To address this, we introduce RadAgent, a tool-using AI agent that generates CT reports through a stepwise and interpretable process. Each resulting report is accompanied by a fully inspectable trace of intermediate decisions and tool interactions, allowing clinicians to examine how the reported findings are derived. In our experiments, we observe that RadAgent improves Chest CT report generation over its 3D VLM counterpart, CT-Chat, across three dimensions. Clinical accuracy improves by 6.0 points (36.4% relative) in macro-F1 and 5.4 points (19.6% relative) in micro-F1. Robustness under adversarial conditions improves by 24.7 points (41.9% relative). Furthermore, RadAgent achieves 37.0% in faithfulness, a new capability entirely absent in its 3D VLM counterpart. By structuring the interpretation of chest CT as an explicit, tool-augmented and iterative reasoning trace, RadAgent brings us closer toward transparent and reliable AI for radiology.",
+        "topics": [
+          "Multimodal LLMs"
+        ],
+        "primary_topic": "Multimodal LLMs",
+        "query_groups": [],
+        "method_tags": [
+          "reasoning",
+          "tool use"
+        ],
+        "application_tags": [
+          "document understanding",
+          "embodied reasoning"
+        ],
+        "one_line_summary": "RadAgent, a tool-using AI agent, enhances chest CT report generation through interpretable step-by-step reasoning traces that improve clinical accuracy, robustness, and faithfulness compared to existing 3D vision-langua…",
+        "why_read_today": "它直接落在 Multimodal LLMs 方向，并且已经能追踪到开源资源。",
+        "relevance_level": "medium",
+        "highlight_score": 3.16,
+        "recommended_action": "track",
+        "topic_scores": {
+          "VLA": 0.0,
+          "World Models": 0.0,
+          "Multimodal LLMs": 2.34,
+          "Agents": 1.35
+        },
+        "structured_summary": {
+          "problem": "To address this, we introduce RadAgent, a tool-using AI agent that generates CT reports through a stepwise and interpretable process.",
+          "motivation": "Yet, existing methods largely relegate clinicians to passive observers of final outputs, offering no interpretable reasoning trace for them to inspect, validate, or refine.",
+          "core_idea": "To address this, we introduce RadAgent, a tool-using AI agent that generates CT reports through a stepwise and interpretable process.",
+          "method": "Yet, existing methods largely relegate clinicians to passive observers of final outputs, offering no interpretable reasoning trace for them to inspect, validate, or refine.",
+          "training": "摘要未明确说明训练细节。",
+          "inference": "摘要未明确描述推理阶段流程。",
+          "evaluation": "In our experiments, we observe that RadAgent improves Chest CT report generation over its 3D VLM counterpart, CT-Chat, across three dimensions.",
+          "main_results": "In our experiments, we observe that RadAgent improves Chest CT report generation over its 3D VLM counterpart, CT-Chat, across three dimensions.",
+          "claim": "In our experiments, we observe that RadAgent improves Chest CT report generation over its 3D VLM counterpart, CT-Chat, across three dimensions."
+        },
+        "novelty_points": [
+          "主线聚焦在 Multimodal LLMs，并给出了相对明确的方法叙述。",
+          "方法标签里最显眼的是：reasoning, tool use。"
+        ],
+        "strengths": [
+          "标题和摘要都能清楚定位到研究问题。",
+          "摘要里明确给出了评测或实验设置。"
+        ],
+        "weaknesses": [
+          "摘要无法支撑太细的结论，需要正文补充。"
+        ],
+        "assumptions": [
+          "默认多模态对齐质量足以支撑推理或工具调用。"
+        ],
+        "risks": [
+          "目前更多依赖 abstract claim，短期复现价值有限。",
+          "真实 deployment 条件和 benchmark 表现之间可能存在落差。"
+        ],
+        "open_questions": [
+          "真实多模态长上下文场景里的收益是否稳定？",
+          "grounding 误差会不会拖累推理质量？"
+        ],
+        "relation_to_prior_work": "从摘要看，它更接近以 reasoning 为核心的 Multimodal LLMs 路线。",
+        "domain_analysis": {
+          "vla": {
+            "embodiment": "unknown",
+            "action_space": "unknown",
+            "control_level": "unknown",
+            "memory_usage": "unknown",
+            "planner_usage": "no",
+            "reasoner_usage": "yes",
+            "world_model_usage": "no",
+            "real_robot": "no",
+            "simulator": "null",
+            "data_source": "unknown"
+          },
+          "world_models": {
+            "state_representation": "unknown",
+            "prediction_target": "actions",
+            "horizon": "unknown",
+            "planning_interface": "unknown",
+            "control_coupling": "unclear"
+          },
+          "multimodal_llms": {
+            "modalities": [
+              "text"
+            ],
+            "reasoning_type": "tool-use",
+            "long_context_usage": "no",
+            "grounding_method": "none"
+          },
+          "agents": {
+            "agent_type": "single-agent",
+            "tooling": "unknown",
+            "memory_type": "none",
+            "planning_style": "unknown",
+            "verification_style": "no verifier"
+          }
+        },
+        "reproducibility": {
+          "code_available": false,
+          "weights_available": true,
+          "dataset_available": false,
+          "env_instructions_available": true,
+          "repro_effort_estimate": "medium"
+        },
+        "my_take": {
+          "should_i_read_it": "视方向而定",
+          "should_i_reproduce_it": "条件满足时再看",
+          "what_can_i_borrow": "reasoning, tool use",
+          "what_do_i_not_buy": "目前还需要正文确认 claim 的外推性。",
+          "best_use_case": "document understanding"
+        },
+        "hf_upvotes": 3,
+        "hf_ai_summary": "RadAgent, a tool-using AI agent, enhances chest CT report generation through interpretable step-by-step reasoning traces that improve clinical accuracy, robustness, and faithfulness compared to existing 3D vision-language models.",
+        "hf_ai_keywords": [
+          "CT reports",
+          "Vision-language models",
+          "clinical accuracy",
+          "faithfulness",
+          "interpretability",
+          "reasoning trace",
+          "robustness",
+          "tool-using AI agent"
+        ],
+        "submitted_on_daily_at": "2026-04-17T08:31:27.596000+00:00"
+      },
+      {
+        "paper_id": "arxiv-2604.14967",
+        "title": "UniDoc-RL: Coarse-to-Fine Visual RAG with Hierarchical Actions and Dense Rewards",
+        "authors": [
+          "Jun Wang",
+          "Shuo Tan",
+          "Zelong Sun",
+          "Tiancheng Gu",
+          "Yongle Zhao",
+          "Ziyong Feng",
+          "Kaicheng Yang",
+          "Cewu Lu"
+        ],
+        "first_author": "Jun Wang",
+        "source_primary": "HuggingFace Papers",
+        "source_aliases": [
+          "HuggingFace Papers / Daily Papers"
+        ],
+        "arxiv_id": "2604.14967",
+        "version": null,
+        "hf_paper_url": "https://huggingface.co/papers/2604.14967",
+        "paper_url": "https://arxiv.org/abs/2604.14967",
+        "pdf_url": "https://arxiv.org/pdf/2604.14967.pdf",
+        "project_url": null,
+        "code_url": "https://github.com/deepglint/UniDoc-RL",
+        "model_url": null,
+        "dataset_url": null,
+        "demo_url": null,
+        "published_at": "2026-04-16T00:00:00+00:00",
+        "updated_at": "2026-04-16T00:00:00+00:00",
+        "primary_category": null,
+        "categories": [],
+        "institution_hint": null,
+        "license_hint": null,
+        "comment": null,
+        "journal_ref": null,
+        "doi": null,
+        "summary": "Retrieval-Augmented Generation (RAG) extends Large Vision-Language Models (LVLMs) with external visual knowledge. However, existing visual RAG systems typically rely on generic retrieval signals that overlook the fine-grained visual semantics essential for complex reasoning. To address this limitation, we propose UniDoc-RL, a unified reinforcement learning framework in which an LVLM agent jointly performs retrieval, reranking, active visual perception, and reasoning. UniDoc-RL formulates visual information acquisition as a sequential decision-making problem with a hierarchical action space. Specifically, it progressively refines visual evidence from coarse-grained document retrieval to fine-grained image selection and active region cropping, allowing the model to suppress irrelevant content and attend to information-dense regions. For effective end-to-end training, we introduce a dense multi-reward scheme that provides task-aware supervision for each action. Based on Group Relative Policy Optimization (GRPO), UniDoc-RL aligns agent behavior with multiple objectives without relying on a separate value network. To support this training paradigm, we curate a comprehensive dataset of high-quality reasoning trajectories with fine-grained action annotations. Experiments on three benchmarks demonstrate that UniDoc-RL consistently surpasses state-of-the-art baselines, yielding up to 17.7% gains over prior RL-based methods.",
+        "topics": [
+          "Multimodal LLMs"
+        ],
+        "primary_topic": "Multimodal LLMs",
+        "query_groups": [],
+        "method_tags": [
+          "memory",
+          "reasoning"
+        ],
+        "application_tags": [
+          "document understanding",
+          "embodied reasoning"
+        ],
+        "one_line_summary": "UniDoc-RL introduces a reinforcement learning framework for LVLMs that jointly optimizes retrieval, reranking, visual perception, and reasoning through hierarchical decision-making and dense multi-reward supervision.",
+        "why_read_today": "它直接落在 Multimodal LLMs 方向，并且已经能追踪到开源资源。",
+        "relevance_level": "medium",
+        "highlight_score": 3.11,
+        "recommended_action": "track",
+        "topic_scores": {
+          "VLA": 0.0,
+          "World Models": 0.0,
+          "Multimodal LLMs": 2.34,
+          "Agents": 1.35
+        },
+        "structured_summary": {
+          "problem": "To address this limitation, we propose UniDoc-RL, a unified reinforcement learning framework in which an LVLM agent jointly performs retrieval, reranking, active visual perception, and reasoning.",
+          "motivation": "However, existing visual RAG systems typically rely on generic retrieval signals that overlook the fine-grained visual semantics essential for complex reasoning.",
+          "core_idea": "To address this limitation, we propose UniDoc-RL, a unified reinforcement learning framework in which an LVLM agent jointly performs retrieval, reranking, active visual perception, and reasoning.",
+          "method": "To address this limitation, we propose UniDoc-RL, a unified reinforcement learning framework in which an LVLM agent jointly performs retrieval, reranking, active visual perception, and reasoning.",
+          "training": "To address this limitation, we propose UniDoc-RL, a unified reinforcement learning framework in which an LVLM agent jointly performs retrieval, reranking, active visual perception, and reasoning.",
+          "inference": "摘要未明确描述推理阶段流程。",
+          "evaluation": "Experiments on three benchmarks demonstrate that UniDoc-RL consistently surpasses state-of-the-art baselines, yielding up to 17.7% gains over prior RL-based methods.",
+          "main_results": "Experiments on three benchmarks demonstrate that UniDoc-RL consistently surpasses state-of-the-art baselines, yielding up to 17.7% gains over prior RL-based methods.",
+          "claim": "Experiments on three benchmarks demonstrate that UniDoc-RL consistently surpasses state-of-the-art baselines, yielding up to 17.7% gains over prior RL-based methods."
+        },
+        "novelty_points": [
+          "主线聚焦在 Multimodal LLMs，并给出了相对明确的方法叙述。",
+          "方法标签里最显眼的是：memory, reasoning。"
+        ],
+        "strengths": [
+          "标题和摘要都能清楚定位到研究问题。",
+          "摘要里明确给出了评测或实验设置。"
+        ],
+        "weaknesses": [
+          "摘要无法支撑太细的结论，需要正文补充。"
+        ],
+        "assumptions": [
+          "默认多模态对齐质量足以支撑推理或工具调用。"
+        ],
+        "risks": [
+          "真实 deployment 条件和 benchmark 表现之间可能存在落差。"
+        ],
+        "open_questions": [
+          "真实多模态长上下文场景里的收益是否稳定？",
+          "grounding 误差会不会拖累推理质量？"
+        ],
+        "relation_to_prior_work": "从摘要看，它更接近以 memory 为核心的 Multimodal LLMs 路线。",
+        "domain_analysis": {
+          "vla": {
+            "embodiment": "unknown",
+            "action_space": "unknown",
+            "control_level": "high-level",
+            "memory_usage": "unknown",
+            "planner_usage": "no",
+            "reasoner_usage": "yes",
+            "world_model_usage": "no",
+            "real_robot": "no",
+            "simulator": "null",
+            "data_source": "unknown"
+          },
+          "world_models": {
+            "state_representation": "unknown",
+            "prediction_target": "rewards",
+            "horizon": "unknown",
+            "planning_interface": "direct policy",
+            "control_coupling": "coupled with policy / control"
+          },
+          "multimodal_llms": {
+            "modalities": [
+              "image",
+              "document"
+            ],
+            "reasoning_type": "none",
+            "long_context_usage": "no",
+            "grounding_method": "none"
+          },
+          "agents": {
+            "agent_type": "single-agent",
+            "tooling": "retrieval",
+            "memory_type": "none",
+            "planning_style": "hierarchical",
+            "verification_style": "no verifier"
+          }
+        },
+        "reproducibility": {
+          "code_available": true,
+          "weights_available": false,
+          "dataset_available": false,
+          "env_instructions_available": false,
+          "repro_effort_estimate": "medium"
+        },
+        "my_take": {
+          "should_i_read_it": "视方向而定",
+          "should_i_reproduce_it": "条件满足时再看",
+          "what_can_i_borrow": "memory, reasoning",
+          "what_do_i_not_buy": "重点核对实验设置和资源完整度。",
+          "best_use_case": "document understanding"
+        },
+        "hf_upvotes": 6,
+        "hf_ai_summary": "UniDoc-RL introduces a reinforcement learning framework for LVLMs that jointly optimizes retrieval, reranking, visual perception, and reasoning through hierarchical decision-making and dense multi-reward supervision.",
+        "hf_ai_keywords": [
+          "Group Relative Policy Optimization",
+          "Large Vision-Language Models",
+          "Retrieval-Augmented Generation",
+          "active visual perception",
+          "dense multi-reward scheme",
+          "fine-grained visual semantics",
+          "hierarchical action space",
+          "reinforcement learning",
+          "sequential decision-making",
+          "visual information acquisition"
+        ],
+        "submitted_on_daily_at": "2026-04-17T00:58:28.201000+00:00"
+      }
+    ]
+  },
+  "cross_paper_insights": {
+    "trends": [
+      "reasoning 在今天的入选论文里重复出现 4 次。",
+      "planning 在今天的入选论文里重复出现 3 次。",
+      "memory 在今天的入选论文里重复出现 3 次。"
+    ],
+    "motifs": {
+      "memory": "今天出现 3 次，主要集中在 Agents, Multimodal LLMs。",
+      "planning": "今天出现 3 次，主要集中在 Agents, VLA。",
+      "retrieval": "今天出现 0 次，主要集中在 暂无明显集中方向。",
+      "verification": "今天出现 2 次，主要集中在 Agents。",
+      "world model": "今天出现 0 次，主要集中在 暂无明显集中方向。"
+    },
+    "gaps": [
+      "真实机器人验证仍然稀缺，尤其缺少能跨 embodiment 的证据。"
+    ],
+    "inspiration": [
+      "可以优先整理 reasoning 相关论文，做成一页 related work matrix。",
+      "可以优先整理 planning 相关论文，做成一页 related work matrix。",
+      "可以优先整理 memory 相关论文，做成一页 related work matrix。"
+    ]
+  },
+  "action_queue": {
+    "read_now": [],
+    "track": [
+      {
+        "title": "HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System",
+        "reason": "它直接落在 VLA 方向。"
+      },
+      {
+        "title": "Boosting Visual Instruction Tuning with Self-Supervised Guidance",
+        "reason": "它直接落在 Multimodal LLMs 方向，并且已经能追踪到开源资源。"
+      },
+      {
+        "title": "Switch-KD: Visual-Switch Knowledge Distillation for Vision-Language Models",
+        "reason": "它直接落在 Multimodal LLMs 方向，并且已经能追踪到开源资源。"
+      },
+      {
+        "title": "RadAgent: A tool-using AI agent for stepwise interpretation of chest computed tomography",
+        "reason": "它直接落在 Multimodal LLMs 方向，并且已经能追踪到开源资源。"
+      },
+      {
+        "title": "UniDoc-RL: Coarse-to-Fine Visual RAG with Hierarchical Actions and Dense Rewards",
+        "reason": "它直接落在 Multimodal LLMs 方向，并且已经能追踪到开源资源。"
+      },
+      {
+        "title": "Towards Autonomous Mechanistic Reasoning in Virtual Cells",
+        "reason": "它直接落在 Agents 方向，并且已经能追踪到开源资源。"
+      }
+    ],
+    "reproduce": [
+      {
+        "title": "MM-WebAgent: A Hierarchical Multimodal Web Agent for Webpage Generation",
+        "reason": "它直接落在 Agents 方向，并且已经能追踪到开源资源。"
+      },
+      {
+        "title": "DR^{3}-Eval: Towards Realistic and Reproducible Deep Research Evaluation",
+        "reason": "它直接落在 Agents 方向，并且已经能追踪到开源资源。"
+      }
+    ],
+    "ignore": []
+  },
+  "appendix": {
+    "raw_candidates": [
+      {
+        "title": "HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System",
+        "source": "HuggingFace Papers",
+        "topic": "VLA"
+      },
+      {
+        "title": "MM-WebAgent: A Hierarchical Multimodal Web Agent for Webpage Generation",
+        "source": "HuggingFace Papers",
+        "topic": "Agents"
+      },
+      {
+        "title": "DR^{3}-Eval: Towards Realistic and Reproducible Deep Research Evaluation",
+        "source": "HuggingFace Papers",
+        "topic": "Agents"
+      },
+      {
+        "title": "Boosting Visual Instruction Tuning with Self-Supervised Guidance",
+        "source": "HuggingFace Papers",
+        "topic": "Multimodal LLMs"
+      },
+      {
+        "title": "Switch-KD: Visual-Switch Knowledge Distillation for Vision-Language Models",
+        "source": "HuggingFace Papers",
+        "topic": "Multimodal LLMs"
+      },
+      {
+        "title": "RadAgent: A tool-using AI agent for stepwise interpretation of chest computed tomography",
+        "source": "HuggingFace Papers",
+        "topic": "Multimodal LLMs"
+      },
+      {
+        "title": "UniDoc-RL: Coarse-to-Fine Visual RAG with Hierarchical Actions and Dense Rewards",
+        "source": "HuggingFace Papers",
+        "topic": "Multimodal LLMs"
+      },
+      {
+        "title": "Towards Autonomous Mechanistic Reasoning in Virtual Cells",
+        "source": "HuggingFace Papers",
+        "topic": "Agents"
+      }
+    ],
+    "filtered_out": [
+      {
+        "title": "LeapAlign: Post-Training Flow Matching Models at Any Generation Step by Building Two-Step Trajectories",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "MM-WebAgent: A Hierarchical Multimodal Web Agent for Webpage Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "RAD-2: Scaling Reinforcement Learning in a Generator-Discriminator Framework",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "GlobalSplat: Efficient Feed-Forward 3D Gaussian Splatting via Global Scene Tokens",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Optimal last-iterate convergence in matrix games with bandit feedback using the log-barrier",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "RadAgent: A tool-using AI agent for stepwise interpretation of chest computed tomography",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "QuantCode-Bench: A Benchmark for Evaluating the Ability of Large Language Models to Generate Executable Algorithmic Trading Strategies",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "ControlFoley: Unified and Controllable Video-to-Audio Generation with Cross-Modal Conflict Handling",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Blazing the trails before beating the path: Sample-efficient Monte-Carlo planning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "UniDoc-RL: Coarse-to-Fine Visual RAG with Hierarchical Actions and Dense Rewards",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Learning to Concatenate Quantum Codes",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "LongAct: Harnessing Intrinsic Activation Patterns for Long-Context Reinforcement Learning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Beyond Prompts: Unconditional 3D Inversion for Out-of-Distribution Shapes",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Best of both worlds: Stochastic & adversarial best-arm identification",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Benchmarks for Trajectory Safety Evaluation and Diagnosis in OpenClaw and Codex: ATBench-Claw and ATBench-CodeX",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "DR^{3}-Eval: Towards Realistic and Reproducible Deep Research Evaluation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Switch-KD: Visual-Switch Knowledge Distillation for Vision-Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "CoDaS: AI Co-Data-Scientist for Biomarker Discovery via Wearable Sensors",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Don't Retrieve, Navigate: Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "TRACER: Trace-Based Adaptive Cost-Efficient Routing for LLM Classification",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Model Capability Dominates: Inference-Time Optimization Lessons from AIMO 3",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "An Optimal Transport-driven Approach for Cultivating Latent Space in Online Incremental Learning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "How Can We Synthesize High-Quality Pretraining Data? A Systematic Study of Prompt Design, Generator Model, and Source Data",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Three-Phase Transformer",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "DharmaOCR: Specialized Small Language Models for Structured OCR that outperform Open-Source and Commercial Baselines",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Seedance 2.0: Advancing Video Generation for World Complexity",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "ROSE: Retrieval-Oriented Segmentation Enhancement",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "SpatialEvo: Self-Evolving Spatial Intelligence via Deterministic Geometric Environments",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "From P(y|x) to P(y): Investigating Reinforcement Learning in Pre-train Space",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Geometric Context Transformer for Streaming 3D Reconstruction",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "LongCoT: Benchmarking Long-Horizon Chain-of-Thought Reasoning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "TREX: Automating LLM Fine-tuning via Agent-Driven Tree-based Exploration",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "UI-Zoomer: Uncertainty-Driven Adaptive Zoom-In for GUI Grounding",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "TIP: Token Importance in On-Policy Distillation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "OneHOI: Unifying Human-Object Interaction Generation and Editing",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Free Geometry: Refining 3D Reconstruction from Longer Versions of Itself",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Feed-Forward 3D Scene Modeling: A Problem-Driven Perspective",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Memory Transfer Learning: How Memories are Transferred Across Domains in Coding Agents",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Blind Bitstream-corrupted Video Recovery via Metadata-guided Diffusion Model",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "UI-Copilot: Advancing Long-Horizon GUI Automation via Tool-Integrated Policy Optimization",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Gaslight, Gatekeep, V1-V3: Early Visual Cortex Alignment Shields Vision-Language Models from Sycophantic Manipulation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "ToolOmni: Enabling Open-World Tool Use via Agentic learning with Proactive Retrieval and Grounded Execution",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "RealVuln: Benchmarking Rule-Based, General-Purpose LLM, and Security-Specialized Scanners on Real-World Code",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "MedRCube: A Multidimensional Framework for Fine-Grained and In-Depth Evaluation of MLLMs in Medical Imaging",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Online learning with noisy side observations",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Spectral Thompson sampling",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Covariance-adapting algorithm for semi-bandits with application to sparse rewards",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Syn-TurnTurk: A Synthetic Dataset for Turn-Taking Prediction in Turkish Dialogues",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "C2: Scalable Rubric-Augmented Reward Modeling from Binary Preferences",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Towards Scalable Lightweight GUI Agents via Multi-role Orchestration",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Bridging MARL to SARL: An Order-Independent Multi-Agent Transformer via Latent Consensus",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "MERRIN: A Benchmark for Multimodal Evidence Retrieval and Reasoning in Noisy Web Environments",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "LangFlow: Continuous Diffusion Rivals Discrete in Language Modeling",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Simplicity Prevails: The Emergence of Generalizable AIGI Detection in Visual Foundation Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "A Bayesian Perspective on the Role of Epistemic Uncertainty for Delayed Generalization in In-Context Learning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Right Regions, Wrong Labels: Semantic Label Flips in Segmentation under Correlation Shift",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "KV Packet: Recomputation-Free Context-Independent KV Caching for LLMs",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "InfiniteScienceGym: An Unbounded, Procedurally-Generated Benchmark for Scientific Analysis",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Exploration and Exploitation Errors Are Measurable for Language Model Agents",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Lyra 2.0: Explorable Generative 3D Worlds",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Generative Refinement Networks for Visual Synthesis",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Visual Preference Optimization with Rubric Rewards",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "SpotSound: Enhancing Large Audio-Language Models with Fine-Grained Temporal Grounding",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Toward Autonomous Long-Horizon Engineering for ML Research",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Learning Versatile Humanoid Manipulation with Touch Dreaming",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Lightning OPD: Efficient Post-Training for Large Reasoning Models with Offline On-Policy Distillation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Accelerating Speculative Decoding with Block Diffusion Draft Trees",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "ROSE: An Intent-Centered Evaluation Metric for NL2SQL",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "GlotOCR Bench: OCR Models Still Struggle Beyond a Handful of Unicode Scripts",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Boosting Visual Instruction Tuning with Self-Supervised Guidance",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Parcae: Scaling Laws For Stable Looped Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Distorted or Fabricated? A Survey on Hallucination in Video LLMs",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "MoshiRAG: Asynchronous Knowledge Retrieval for Full-Duplex Speech Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "M3D-Stereo: A Multiple-Medium and Multiple-Degradation Dataset for Stereo Image Restoration",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Towards Long-horizon Agentic Multimodal Search",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "VideoFlexTok: Flexible-Length Coarse-to-Fine Video Tokenization",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Multilingual Multi-Label Emotion Classification at Scale with Synthetic Data",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "KnowRL: Boosting LLM Reasoning via Reinforcement Learning with Minimal-Sufficient Knowledge Guidance",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Habitat-GS: A High-Fidelity Navigation Simulator with Dynamic Gaussian Splatting",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "SOAR: Self-Correction for Optimal Alignment and Refinement in Diffusion Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "StructDiff: A Structure-Preserving and Spatially Controllable Diffusion Model for Single-Image Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "CoD-Lite: Real-Time Diffusion-Based Generative Image Compression",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Beyond Transcription: Unified Audio Schema for Perception-Aware AudioLLMs",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "SCRIPT: A Subcharacter Compositional Representation Injection Module for Korean Pre-Trained Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Nemotron 3 Super: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Masked by Consensus: Disentangling Privileged Knowledge in LLM Correctness",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "ReflectCAP: Detailed Image Captioning with Reflective Memory",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Self-Adversarial One Step Generation via Condition Shifting",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Frontier-Eng: Benchmarking Self-Evolving Agents on Real-World Engineering Tasks with Generative Optimization",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Nucleus-Image: Sparse MoE for Image Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Domain-Specific Latent Representations Improve the Fidelity of Diffusion-Based Medical Image Super-Resolution",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Towards Autonomous Mechanistic Reasoning in Virtual Cells",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Persona Non Grata: Single-Method Safety Evaluation Is Incomplete for Persona-Imbued LLMs",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Grid2Matrix: Revealing Digital Agnosia in Vision-Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Avenir-UX: Automated UX Evaluation via Simulated Human Web Interaction with GUI Grounding",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "IatroBench: Pre-Registered Evidence of Iatrogenic Harm from AI Safety Measures",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "RAD-2: Scaling Reinforcement Learning in a Generator-Discriminator Framework",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "ASGuard: Activation-Scaling Guard to Mitigate Targeted Jailbreaking Attack",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "How to Fine-Tune a Reasoning Model? A Teacher-Student Cooperation Framework to Synthesize Student-Consistent SFT Data",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "GlobalSplat: Efficient Feed-Forward 3D Gaussian Splatting via Global Scene Tokens",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "TRACER: Trace-Based Adaptive Cost-Efficient Routing for LLM Classification",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Dive into Claude Code: The Design Space of Today's and Future AI Agent Systems",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Representations Before Pixels: Semantics-Guided Hierarchical Video Prediction",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Beyond Prompts: Unconditional 3D Inversion for Out-of-Distribution Shapes",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Don't Retrieve, Navigate: Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "LongAct: Harnessing Intrinsic Activation Patterns for Long-Context Reinforcement Learning",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "KV Packet: Recomputation-Free Context-Independent KV Caching for LLMs",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Cross-Tokenizer LLM Distillation through a Byte-Level Interface",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "LeapAlign: Post-Training Flow Matching Models at Any Generation Step by Building Two-Step Trajectories",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "OneHOI: Unifying Human-Object Interaction Generation and Editing",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "SuperLocalMemory V3.3: The Living Brain -- Biologically-Inspired Forgetting, Cognitive Quantization, and Multi-Channel Retrieval for Zero-LLM Agent Memory Systems",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "An Optimal Transport-driven Approach for Cultivating Latent Space in Online Incremental Learning",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Model Capability Dominates: Inference-Time Optimization Lessons from AIMO 3",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Three-Phase Transformer",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "C2: Scalable Rubric-Augmented Reward Modeling from Binary Preferences",
+        "reason": "Classifier marked it as out of scope"
+      }
+    ],
+    "deduplication_log": [],
+    "crawl_errors": [
+      "arXiv / VLA — Client error '406 Not Acceptable' for url 'https://export.arxiv.org/api/query?search_query=all%3A%22vision-language-action%22+OR+all%3AVLA+OR+all%3A%22embodied+policy%22+OR+all%3A%22robot+manipulation+policy%22+OR+all%3A%22robot+foundation+model%22+OR+all%3A%22action+tokenizer%22&start=0&max_results=80&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406",
+      "arXiv / World Models — Client error '406 Not Acceptable' for url 'https://export.arxiv.org/api/query?search_query=all%3A%22world+model%22+OR+all%3A%22latent+dynamics%22+OR+all%3A%22predictive+model%22+OR+all%3A%22video+prediction+for+control%22+OR+all%3A%22model-based+reinforcement+learning%22+OR+all%3A%22action-conditioned+video+generation%22&start=0&max_results=80&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406",
+      "arXiv / Multimodal LLMs — Client error '406 Not Acceptable' for url 'https://export.arxiv.org/api/query?search_query=all%3A%22multimodal+large+language+model%22+OR+all%3A%22multimodal+llm%22+OR+all%3Amllm+OR+all%3A%22vision-language+model%22+OR+all%3Avlm+OR+all%3A%22multimodal+reasoning%22+OR+all%3A%22video-language+model%22&start=0&max_results=80&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406",
+      "arXiv / Agents — Client error '406 Not Acceptable' for url 'https://export.arxiv.org/api/query?search_query=all%3Aagent+OR+all%3A%22tool+use%22+OR+all%3A%22computer+use%22+OR+all%3A%22multi-agent%22+OR+all%3A%22planning+with+llm%22+OR+all%3A%22browser+agent%22+OR+all%3A%22code+agent%22&start=0&max_results=80&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406",
+      "HuggingFace Papers / Daily Papers / 2026-04-18 — Client error '400 Bad Request' for url 'https://huggingface.co/api/daily_papers?date=2026-04-18&limit=60'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+    ],
+    "parsing_warnings": [],
+    "llm_warnings": [],
+    "todo_for_tomorrow": [
+      "回看 HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System 是否补出了 code / project link。",
+      "检查被 classifier 或窗口规则过滤掉的边界样本，必要时扩充关键词。"
+    ]
+  }
+}
