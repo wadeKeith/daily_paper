@@ -6,17 +6,17 @@
     "start": "2026-04-01",
     "end": "2026-04-30"
   },
-  "generated_at": "2026-04-14T22:14:59.838755+08:00",
+  "generated_at": "2026-04-16T11:07:35.735845+08:00",
   "generator": {
     "repo_name": "daily-ai-paper-digest",
-    "repo_commit": "02628071c389efc1058aa07f94d4de29e0409755",
+    "repo_commit": "7c9b8a9e7e0f3fdbd83230bf4115672f36eba10a",
     "pipeline_version": "v1.0.0"
   },
   "llm": {
-    "enabled": false,
+    "enabled": true,
     "provider": "openai_responses",
-    "model": "",
-    "enhanced": false
+    "model": "GPT_ejyoyz",
+    "enhanced": true
   },
   "statistics": {
     "reports_included": 1,
@@ -469,28 +469,32 @@
     }
   ],
   "executive_summary": {
-    "headline": "2026-04 期间最活跃的主题是 Multimodal LLMs，共覆盖 35 篇独立论文。",
+    "headline": "2026年4月的核心变化是：研究重心从单点多模态能力扩展，明显转向“可落地的代理/世界模型闭环”，即以 grounding、planning、tool use、memory 和 reward/credit assignment 共同支撑可评测、可追踪、可部署的 agentic 系统。",
     "summary_points": [
-      "周期内共纳入 1 份日报，累计提及 35 篇论文记录。",
-      "高亮论文累计出现 5 次，其中独立高亮论文 5 篇。",
-      "本周期最值得回看的一组论文包括：CocoaBench: Evaluating Unified Digital Agents in the Wild, CodeTracer: Towards Traceable Agent States, LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment。"
+      "本月仅纳入1份报告，但覆盖35篇独立论文，主题分布已高度集中在 Agents（12）与 Multimodal LLMs（12），World Models（8）次之，说明研究关注点正从基础感知/生成继续上移到任务执行与环境交互层。",
+      "方法标签上，model-based control 以20次显著领先，远高于 grounding、planning、reasoning（各10）以及 tool use、多智能体（各9），表明“先建内部控制/状态演化框架，再接推理与工具”的路线正在成为主流组织方式。",
+      "高亮论文集中体现三条主线：CocoaBench 强调野外统一数字代理评测，CodeTracer 强调代理状态可追踪性，LARY 面向 vision-to-action 泛化，另有 MedP-CLIP 与 test-time scaling 工作分别补强医学视觉 grounding 与图像推理中的感知瓶颈。",
+      "应用侧开始出现更明确的垂直落地信号：code agent、workflow automation、robot control、video understanding、manufacturing、mobile GUI privacy personalization 等场景同时出现，说明研究正从通用能力比较转向“任务闭环+行业约束”的联合优化。"
     ]
   },
   "trend_analysis": {
     "trends": [
-      "重复出现最多的方法标签是：model-based control, grounding, planning。",
-      "主要落地方向集中在：embodied reasoning, code agent, robot control。",
-      "主导主题是：Multimodal LLMs。"
+      "代理研究不再只比最终成功率，而开始系统补齐评测与可观测性基础设施；CocoaBench 与 CodeTracer 分别对应“真实环境测评”与“内部状态追踪”，说明 agent 研究正在从 demo 驱动转向工程化与审计化。",
+      "多模态方向的关键矛盾从“会不会看”转向“看得准后能否推理并行动”；Test-time Scaling over Perception 直接指向 grounding paradox，FORGE、MedP-CLIP 等则用细粒度场景和区域感知提示把感知误差压缩到可决策范围内。",
+      "VLA 与世界模型相关工作虽数量不如 Agents/MLLMs，但其影响方式更底层：LARY、DA-PTQ 等分别覆盖泛化评测与部署效率，反映 VLA 研究正从单纯对齐扩展到‘泛化能力可证实、模型成本可接受’。",
+      "强化学习与 agentic LLM 的结合更加具体，研究开始处理 credit assignment、reward modeling、verification 等长期任务核心问题，意味着社区已意识到仅靠提示工程难以支撑复杂自治行为。"
     ],
     "gaps": [
-      "仍需继续观察哪些高频论文真正有可复现资源。",
-      "跨主题的方法迁移价值还需要更长时间窗才能看清。",
-      "高亮论文之外的长尾样本仍值得人工抽查，避免错过边界创新。"
+      "尽管 model-based control 占比最高，但公开结果仍以 benchmark 与子任务优化为主，跨任务、跨环境、跨模态的长期稳健性证据不足，尤其缺少统一比较不同控制范式收益的实验设计。",
+      "多篇工作涉及 grounding、reasoning、tool use，但三者之间的误差传播链条仍未被充分量化：感知偏差如何传导到规划失误、工具误用与最终任务失败，现有论文大多只展示局部改进，缺少端到端失效归因。",
+      "代理系统的可追踪性开始被重视，但 memory 相关工作仍偏机制层或工程层，尚未形成针对长期记忆污染、隐私泄漏、状态漂移和恢复策略的标准评测协议。",
+      "垂直场景扩展明显，但真实部署约束仍覆盖不全；例如移动 GUI 隐私、制造业细粒度评测、医疗区域提示各自推进，却缺少统一的安全、合规、鲁棒性基线，导致跨场景方法难以直接迁移。"
     ],
     "next_actions": [
-      "优先精读 CocoaBench: Evaluating Unified Digital Agents in the Wild。",
-      "优先精读 CodeTracer: Towards Traceable Agent States。",
-      "优先精读 LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment。"
+      "优先持续跟踪“评测/可观测性基础设施”方向，尤其是 CocoaBench、CodeTracer 一类工作后的新 benchmark、新 tracing 框架和 failure taxonomy；这是判断 agent 研究是否真正进入工程成熟期的领先指标。",
+      "在后续月报中建议单独建立‘控制闭环栈’观察维度：perception grounding → latent/world state → planning/reasoning → tool execution → reward/verification，用于比较不同论文究竟补强了闭环的哪个薄弱环节。",
+      "对高频方法标签开展交叉统计，重点观察 model-based control 与 grounding、planning、reward modeling 的共现是否继续上升；若共现增强，意味着社区正从模块改良走向统一架构整合。",
+      "针对已出现的行业化信号，建议下月增设专题追踪：代码代理/工作流自动化、机器人/VLA、医疗多模态、移动端 GUI 与制造业评测；每个专题重点记录数据闭环、在线评测、部署成本和安全约束四项指标。"
     ]
   },
   "appendix": {

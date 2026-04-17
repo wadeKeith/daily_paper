@@ -799,6 +799,27 @@ class DigestPipeline:
             return
 
         executive = patch.get("executive_summary", {})
+        if not executive and ("conclusion_lines" in patch or "research_observations" in patch):
+            executive = {
+                "conclusion_lines": patch.get("conclusion_lines"),
+                "research_observations": patch.get("research_observations"),
+            }
+
+        raw_paper_overrides = patch.get("paper_overrides", [])
+        invalid_override_items = 0
+        if isinstance(raw_paper_overrides, dict):
+            paper_overrides = [item for item in raw_paper_overrides.values() if isinstance(item, dict)]
+            invalid_override_items = len(raw_paper_overrides) - len(paper_overrides)
+        elif isinstance(raw_paper_overrides, list):
+            paper_overrides = [item for item in raw_paper_overrides if isinstance(item, dict)]
+            invalid_override_items = len(raw_paper_overrides) - len(paper_overrides)
+        else:
+            paper_overrides = []
+            invalid_override_items = 1
+        if invalid_override_items:
+            llm_warnings.append(
+                f"LLM daily enhancement returned {invalid_override_items} invalid paper_overrides item(s); skipped them."
+            )
         if executive:
             report_json["executive_summary"]["conclusion_lines"] = executive.get(
                 "conclusion_lines",
@@ -809,7 +830,7 @@ class DigestPipeline:
                 report_json["executive_summary"]["research_observations"],
             )
 
-        overrides = {item["paper_id"]: item for item in patch.get("paper_overrides", []) if item.get("paper_id")}
+        overrides = {item["paper_id"]: item for item in paper_overrides if item.get("paper_id")}
         for paper in report_json.get("highlight_papers", []):
             override = overrides.get(paper["paper_id"])
             if not override:
