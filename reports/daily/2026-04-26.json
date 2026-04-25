@@ -1,0 +1,667 @@
+{
+  "report_type": "daily_paper_digest",
+  "report_date": "2026-04-26",
+  "timezone": "Asia/Shanghai",
+  "generated_at": "2026-04-26T00:25:49.871739+08:00",
+  "generator": {
+    "repo_name": "daily-ai-paper-digest",
+    "repo_commit": "ad3a0fbae2174c3f15954c1bc0d23d092aadef52",
+    "pipeline_version": "v1.0.0"
+  },
+  "llm": {
+    "enabled": false,
+    "provider": "openai_responses",
+    "model": "",
+    "enhanced": false
+  },
+  "sources": [
+    {
+      "name": "arXiv",
+      "enabled": true,
+      "query_groups": [
+        "VLA",
+        "World Models",
+        "Multimodal LLMs",
+        "Agents"
+      ]
+    },
+    {
+      "name": "HuggingFace Papers",
+      "enabled": true,
+      "query_groups": [
+        "VLA",
+        "World Models",
+        "Multimodal LLMs",
+        "Agents"
+      ]
+    }
+  ],
+  "crawl_window": {
+    "start": "2026-04-25T00:00:00+08:00",
+    "end": "2026-04-26T23:59:59+08:00",
+    "note": "日报统计窗口；不一定等同于平台原始发布时间"
+  },
+  "statistics": {
+    "raw_candidates_total": 100,
+    "deduplicated_total": 0,
+    "selected_total": 0,
+    "highlights_total": 0
+  },
+  "topic_counts": {
+    "vla": 0,
+    "world_models": 0,
+    "multimodal_llm": 0,
+    "agents": 0,
+    "other_relevant": 0
+  },
+  "selection_policy": {
+    "included_if": [
+      "与 VLA / 世界模型 / 多模态大模型 / 智能体直接相关",
+      "或对这些方向的方法、训练、评测、系统化落地有明显参考价值"
+    ],
+    "excluded_if": [
+      "主题过远",
+      "纯行业新闻，无论文主体",
+      "重复条目",
+      "仅有转发，无原始论文页"
+    ]
+  },
+  "ranking_policy": {
+    "highlight_score_formula": "0.35*topic_relevance + 0.20*novelty + 0.20*evidence_strength + 0.15*resource_readiness + 0.10*discussion_value",
+    "score_range": "0-5"
+  },
+  "tags": [
+    "daily-digest",
+    "ai-research",
+    "arxiv",
+    "huggingface",
+    "vla",
+    "world-model",
+    "mllm",
+    "agents"
+  ],
+  "executive_summary": {
+    "conclusion_lines": [
+      "今天最值得关注的方向是：`VLA`",
+      "主要趋势是：`资源完整度更高的条目更值得精读`",
+      "真正建议精读的论文数量：`0` 篇"
+    ],
+    "top_highlights": [],
+    "research_observations": [
+      {
+        "label": "趋势 1",
+        "text": "今天出现频率最高的方法 motif 是：资源和评测导向。"
+      },
+      {
+        "label": "趋势 2",
+        "text": "最集中爆发的主题是：VLA。"
+      },
+      {
+        "label": "趋势 3",
+        "text": "Read-now 信号论文共有 0 篇。"
+      },
+      {
+        "label": "空白点 / 机会点",
+        "text": "真实机器人验证仍然稀缺，尤其缺少能跨 embodiment 的证据。"
+      }
+    ]
+  },
+  "metadata_summary": {
+    "report_date": "2026-04-26",
+    "timezone": "Asia/Shanghai",
+    "generated_at": "2026-04-26T00:25:49.871739+08:00",
+    "raw_candidates_total": 100,
+    "deduplicated_total": 0,
+    "selected_total": 0
+  },
+  "query_groups": [
+    "VLA",
+    "World Models",
+    "Multimodal LLMs",
+    "Agents"
+  ],
+  "query_terms": {
+    "VLA": [
+      "vision-language-action",
+      "VLA",
+      "embodied policy",
+      "robot manipulation policy",
+      "robot foundation model",
+      "action tokenizer"
+    ],
+    "World Models": [
+      "world model",
+      "latent dynamics",
+      "predictive model",
+      "video prediction for control",
+      "model-based reinforcement learning",
+      "action-conditioned video generation"
+    ],
+    "Multimodal LLMs": [
+      "multimodal large language model",
+      "multimodal llm",
+      "mllm",
+      "vision-language model",
+      "vlm",
+      "multimodal reasoning",
+      "video-language model"
+    ],
+    "Agents": [
+      "agent",
+      "tool use",
+      "computer use",
+      "multi-agent",
+      "planning with llm",
+      "browser agent",
+      "code agent"
+    ]
+  },
+  "topic_overview": [
+    {
+      "name": "VLA",
+      "count": 0,
+      "judgement": "今天这个方向没有足够强的入选条目。",
+      "top_papers": [],
+      "commonalities": [
+        "暂无明显共性"
+      ],
+      "pitfalls": [
+        "暂无足够样本。"
+      ]
+    },
+    {
+      "name": "World Models",
+      "count": 0,
+      "judgement": "今天这个方向没有足够强的入选条目。",
+      "top_papers": [],
+      "commonalities": [
+        "暂无明显共性"
+      ],
+      "pitfalls": [
+        "暂无足够样本。"
+      ]
+    },
+    {
+      "name": "Multimodal LLMs",
+      "count": 0,
+      "judgement": "今天这个方向没有足够强的入选条目。",
+      "top_papers": [],
+      "commonalities": [
+        "暂无明显共性"
+      ],
+      "pitfalls": [
+        "暂无足够样本。"
+      ]
+    },
+    {
+      "name": "Agents",
+      "count": 0,
+      "judgement": "今天这个方向没有足够强的入选条目。",
+      "top_papers": [],
+      "commonalities": [
+        "暂无明显共性"
+      ],
+      "pitfalls": [
+        "暂无足够样本。"
+      ]
+    },
+    {
+      "name": "Other Relevant",
+      "count": 0,
+      "judgement": "今天这个方向没有足够强的入选条目。",
+      "top_papers": [],
+      "commonalities": [
+        "暂无明显共性"
+      ],
+      "pitfalls": [
+        "暂无足够样本。"
+      ]
+    }
+  ],
+  "highlight_papers": [],
+  "paper_list_by_topic": {},
+  "cross_paper_insights": {
+    "trends": [
+      "今天的样本量还不足以形成稳定趋势。"
+    ],
+    "motifs": {
+      "memory": "今天出现 0 次，主要集中在 暂无明显集中方向。",
+      "planning": "今天出现 0 次，主要集中在 暂无明显集中方向。",
+      "retrieval": "今天出现 0 次，主要集中在 暂无明显集中方向。",
+      "verification": "今天出现 0 次，主要集中在 暂无明显集中方向。",
+      "world model": "今天出现 0 次，主要集中在 暂无明显集中方向。"
+    },
+    "gaps": [
+      "真实机器人验证仍然稀缺，尤其缺少能跨 embodiment 的证据。",
+      "可直接复现的开源资源占比仍偏低。",
+      "agent 方向里 verifier / judge 设计还没有形成明显主线。"
+    ],
+    "inspiration": [
+      "先积累 3-5 天数据，再做横向趋势判断会更稳。"
+    ]
+  },
+  "action_queue": {
+    "read_now": [],
+    "track": [],
+    "reproduce": [],
+    "ignore": []
+  },
+  "appendix": {
+    "raw_candidates": [],
+    "filtered_out": [
+      {
+        "title": "Seeing Fast and Slow: Learning the Flow of Time in Videos",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Context Unrolling in Omni Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Vista4D: Video Reshooting with 4D Point Clouds",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "UniGenDet: A Unified Generative-Discriminative Framework for Co-Evolutionary Image Generation and Generated Image Detection",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "TingIS: Real-time Risk Event Discovery from Noisy Customer Incidents at Enterprise Scale",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Revisiting Non-Verbatim Memorization in Large Language Models: The Role of Entity Surface Forms",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "SyMTRS: Benchmark Multi-Task Synthetic Dataset for Depth, Domain Adaptation and Super-Resolution in Aerial Imagery",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Thinking with Reasoning Skills: Fewer Tokens, More Accuracy",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "StyleID: A Perception-Aware Dataset and Metric for Stylization-Agnostic Facial Identity Recognition",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "WorldMark: A Unified Benchmark Suite for Interactive Video World Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Sapiens2",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Encoder-Free Human Motion Understanding via Structured Motion Descriptions",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Process Supervision via Verbal Critique Improves Reasoning in Large Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "DiffNR: Diffusion-Enhanced Neural Representation Optimization for Sparse-View 3D Tomographic Reconstruction",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Conditional anomaly detection with soft harmonic functions",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "VARestorer: One-Step VAR Distillation for Real-World Image Super-Resolution",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "A single algorithm for both restless and rested rotting bandits",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "S1-VL: Scientific Multimodal Reasoning Model with Thinking-with-Images",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "VLAA-GUI: Knowing When to Stop, Recover, and Search, A Modular Framework for GUI Automation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Trust-SSL: Additive-Residual Selective Invariance for Robust Aerial Self-Supervised Learning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "FryNet: Dual-Stream Adversarial Fusion for Non-Destructive Frying Oil Oxidation Assessment",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "PAPERMIND: Benchmarking Agentic Reasoning and Critique over Scientific Papers in Multimodal LLMs",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Explainable Disentangled Representation Learning for Generalizable Authorship Attribution in the Era of Generative AI",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "The Platform Is Mostly Not a Platform: Token Economies and Agent Discourse on Moltbook",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "StabilizerBench: A Benchmark for AI-Assisted Quantum Error Correction Circuit Synthesis",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "ARFBench: Benchmarking Time Series Question Answering Ability for Software Incident Response",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Trust but Verify: Introducing DAVinCI -- A Framework for Dual Attribution and Verification in Claim Inference for Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "MAGIC-TTS: Fine-Grained Controllable Speech Synthesis with Explicit Local Duration and Pause Control",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "MOMO: A framework for seamless physical, verbal, and graphical robot skill learning and adaptation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "FunduSegmenter: Leveraging the RETFound Foundation Model for Joint Optic Disc and Optic Cup Segmentation in Retinal Fundus Images",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Improved large-scale graph learning through ridge spectral sparsification",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Analysis of Nystrom method with sequential ridge leverage scores",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Maximum Entropy Semi-Supervised Inverse Reinforcement Learning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Building a Precise Video Language with Human-AI Oversight",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Cross-Session Threats in AI Agents: Benchmark, Evaluation, and Algorithms",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "TRAVELFRAUDBENCH: A Configurable Evaluation Framework for GNN Fraud Ring Detection in Travel Networks",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "StyleVAR: Controllable Image Style Transfer via Visual Autoregressive Modeling",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Co-Evolving LLM Decision and Skill Bank Agents for Long-Horizon Tasks",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "SpeechParaling-Bench: A Comprehensive Benchmark for Paralinguistic-Aware Speech Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "DeVI: Physics-based Dexterous Human-Object Interaction via Synthetic Video Imitation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Convergent Evolution: How Different Language Models Learn Similar Number Representations",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "ParetoSlider: Diffusion Models Post-Training for Continuous Reward Control",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Adapting TrOCR for Printed Tigrinya Text Recognition: Word-Aware Loss Weighting for Cross-Script Transfer Learning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "LEXIS: LatEnt ProXimal Interaction Signatures for 3D HOI from an Image",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "LLaDA2.0-Uni: Unifying Multimodal Understanding and Generation with Diffusion Large Language Model",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "SWE-chat: Coding Agent Interactions From Real Users in the Wild",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Near-Future Policy Optimization",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "COMPASS: COntinual Multilingual PEFT with Adaptive Semantic Sampling",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "The Expense of Seeing: Attaining Trustworthy Multimodal Reasoning Within the Monolithic Paradigm",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "RSRCC: A Remote Sensing Regional Change Comprehension Benchmark Constructed via Retrieval-Augmented Best-of-N Ranking",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Semi supervised GAN for smart microscopy, fast and data efficient cell cycle classification",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Ask Only When Needed: Proactive Retrieval from Memory and Skills for Experience-Driven Lifelong Agents",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Exploring Spatial Intelligence from a Generative Perspective",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "FASER: Fine-Grained Phase Management for Speculative Decoding in Dynamic LLM Serving",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Video-ToC: Video Tree-of-Cue Reasoning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Finding Duplicates in 1.1M BDD Steps: cukereuse, a Paraphrase-Robust Static Detector for Cucumber and Gherkin",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Decoding Text Spans for Efficient and Accurate Named-Entity Recognition",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "OVPD: A Virtual-Physical Fusion Testing Dataset of OnSite Auton-omous Driving Challenge",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "WebGen-R1: Incentivizing Large Language Models to Generate Functional and Aesthetic Websites with Reinforcement Learning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Graph2Counsel: Clinically Grounded Synthetic Counseling Dialogue Generation from Client Psychological Graphs",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Image Generators are Generalist Vision Learners",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Formalising the Logit Shift Induced by LoRA: A Technical Note",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Synthetic Flight Data Generation Using Generative Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Generative Augmentation of Imbalanced Flight Records for Flight Diversion Prediction: A Multi-objective Optimisation Framework",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "AROMA: Augmented Reasoning Over a Multimodal Architecture for Virtual Cell Genetic Perturbation Modeling",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Cortex 2.0: Grounding World Models in Real-World Industrial Deployment",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Hybrid Policy Distillation for LLMs",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Chasing the Public Score: User Pressure and Evaluation Exploitation in Coding Agent Workflows",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "All Languages Matter: Understanding and Mitigating Language Bias in Multilingual RAG",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Temporally Extended Mixture-of-Experts Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "On the Quantization Robustness of Diffusion Language Models in Coding Benchmarks",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "MER 2026: From Discriminative Emotion Recognition to Generative Emotion Understanding",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "DASH-KV: Accelerating Long-Context LLM Inference via Asymmetric KV Cache Hashing",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "LLM-as-Judge Framework for Evaluating Tone-Induced Hallucination in Vision-Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "BARD: Bridging AutoRegressive and Diffusion Vision-Language Models Via Highly Efficient Progressive Block Merging and Stage-Wise Distillation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Prefill-as-a-Service: KVCache of Next-Generation Models Could Go Cross-Datacenter",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "CEDAR: Context Engineering for Agentic Data Science",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Differentiated Services: an Experimental vs. Simulated Case Study",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "EmbodiedMidtrain: Bridging the Gap between Vision-Language Models and Vision-Language-Action Models via Mid-training",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Visual Reasoning through Tool-supervised Reinforcement Learning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "CreativeGame:Toward Mechanic-Aware Creative Game Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "MMCORE: MultiModal COnnection with Representation Aligned Latent Embeddings",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "From Signal Degradation to Computation Collapse: Uncovering the Two Failure Modes of LLM Quantization",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Super Apriel: One Checkpoint, Many Speeds",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "DR-Venus: Towards Frontier Edge-Scale Deep Research Agents with Only 10K Open Data",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Expert Upcycling: Shifting the Compute-Efficient Frontier of Mixture-of-Experts",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Tstars-Tryon 1.0: Robust and Realistic Virtual Try-On for Diverse Fashion Items",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "AnyRecon: Arbitrary-View 3D Reconstruction with Video Diffusion Model",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "PlayCoder: Making LLM-Generated GUI Code Playable",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "CityRAG: Stepping Into a City via Spatially-Grounded Video Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "UniT: Toward a Unified Physical Language for Human-to-Humanoid Policy Learning and World Modeling",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "VLA Foundry: A Unified Framework for Training Vision-Language-Action Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "ReImagine: Rethinking Controllable High-Quality Human Video Generation via Image-First Synthesis",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "On two ways to use determinantal point processes for Monte Carlo integration",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Planning in entropy-regularized Markov decision processes and games",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Budgeted Online Influence Maximization",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Chat2Workflow: A Benchmark for Generating Executable Visual Workflows with Natural Language",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Pause or Fabricate? Training Language Models for Grounded Reasoning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Micro Language Models Enable Instant Responses",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      }
+    ],
+    "deduplication_log": [],
+    "crawl_errors": [
+      "arXiv / VLA — Client error '406 Not Acceptable' for url 'https://export.arxiv.org/api/query?search_query=all%3A%22vision-language-action%22+OR+all%3AVLA+OR+all%3A%22embodied+policy%22+OR+all%3A%22robot+manipulation+policy%22+OR+all%3A%22robot+foundation+model%22+OR+all%3A%22action+tokenizer%22&start=0&max_results=80&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406",
+      "arXiv / World Models — Client error '406 Not Acceptable' for url 'https://export.arxiv.org/api/query?search_query=all%3A%22world+model%22+OR+all%3A%22latent+dynamics%22+OR+all%3A%22predictive+model%22+OR+all%3A%22video+prediction+for+control%22+OR+all%3A%22model-based+reinforcement+learning%22+OR+all%3A%22action-conditioned+video+generation%22&start=0&max_results=80&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406",
+      "arXiv / Multimodal LLMs — Client error '406 Not Acceptable' for url 'https://export.arxiv.org/api/query?search_query=all%3A%22multimodal+large+language+model%22+OR+all%3A%22multimodal+llm%22+OR+all%3Amllm+OR+all%3A%22vision-language+model%22+OR+all%3Avlm+OR+all%3A%22multimodal+reasoning%22+OR+all%3A%22video-language+model%22&start=0&max_results=80&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406",
+      "arXiv / Agents — Client error '406 Not Acceptable' for url 'https://export.arxiv.org/api/query?search_query=all%3Aagent+OR+all%3A%22tool+use%22+OR+all%3A%22computer+use%22+OR+all%3A%22multi-agent%22+OR+all%3A%22planning+with+llm%22+OR+all%3A%22browser+agent%22+OR+all%3A%22code+agent%22&start=0&max_results=80&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406",
+      "HuggingFace Papers / Daily Papers / 2026-04-26 — Client error '400 Bad Request' for url 'https://huggingface.co/api/daily_papers?date=2026-04-26&limit=60'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+    ],
+    "parsing_warnings": [],
+    "llm_warnings": [],
+    "todo_for_tomorrow": [
+      "检查被 classifier 或窗口规则过滤掉的边界样本，必要时扩充关键词。"
+    ]
+  }
+}
