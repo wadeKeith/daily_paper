@@ -6,33 +6,156 @@
     "start": "2026-04-01",
     "end": "2026-04-30"
   },
-  "generated_at": "2026-04-16T11:07:35.735845+08:00",
+  "generated_at": "2026-05-01T01:05:59.538622+08:00",
   "generator": {
     "repo_name": "daily-ai-paper-digest",
-    "repo_commit": "7c9b8a9e7e0f3fdbd83230bf4115672f36eba10a",
+    "repo_commit": "a1b9abc98b3226fc7e2adc9d4dae37cbbc10df09",
     "pipeline_version": "v1.0.0"
   },
   "llm": {
-    "enabled": true,
+    "enabled": false,
     "provider": "openai_responses",
-    "model": "GPT_ejyoyz",
-    "enhanced": true
+    "model": "",
+    "enhanced": false
   },
   "statistics": {
-    "reports_included": 1,
-    "papers_mentioned_total": 35,
-    "unique_papers_total": 35,
-    "highlight_mentions_total": 5,
-    "unique_highlights_total": 5
+    "reports_included": 18,
+    "papers_mentioned_total": 206,
+    "unique_papers_total": 184,
+    "highlight_mentions_total": 66,
+    "unique_highlights_total": 59
   },
   "topic_counts": {
-    "VLA": 3,
-    "World Models": 8,
-    "Multimodal LLMs": 12,
-    "Agents": 12,
+    "VLA": 28,
+    "World Models": 22,
+    "Multimodal LLMs": 78,
+    "Agents": 78,
     "Other Relevant": 0
   },
   "top_papers": [
+    {
+      "paper_id": "arxiv-2604.11689",
+      "title": "LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment",
+      "primary_topic": "VLA",
+      "method_tags": [
+        "model-based control"
+      ],
+      "application_tags": [
+        "embodied planning",
+        "robot control"
+      ],
+      "mention_count": 3,
+      "highlight_count": 3,
+      "read_now_count": 2,
+      "reproduce_count": 0,
+      "best_score": 4.34,
+      "source_primary": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2604.11689v1",
+      "code_url": null,
+      "first_seen_report_date": "2026-04-14",
+      "last_seen_report_date": "2026-04-16",
+      "avg_score": 4.09
+    },
+    {
+      "paper_id": "arxiv-2604.14125",
+      "title": "HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System",
+      "primary_topic": "VLA",
+      "method_tags": [
+        "grounding",
+        "hierarchical control",
+        "model-based control",
+        "planning",
+        "reasoning"
+      ],
+      "application_tags": [
+        "embodied planning",
+        "embodied reasoning",
+        "robot control",
+        "robot manipulation",
+        "simulation"
+      ],
+      "mention_count": 3,
+      "highlight_count": 3,
+      "read_now_count": 0,
+      "reproduce_count": 0,
+      "best_score": 3.72,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.14125",
+      "code_url": null,
+      "first_seen_report_date": "2026-04-15",
+      "last_seen_report_date": "2026-04-18",
+      "avg_score": 3.66
+    },
+    {
+      "paper_id": "arxiv-2604.12966",
+      "title": "Boosting Visual Instruction Tuning with Self-Supervised Guidance",
+      "primary_topic": "Multimodal LLMs",
+      "method_tags": [
+        "reasoning"
+      ],
+      "application_tags": [
+        "embodied reasoning"
+      ],
+      "mention_count": 3,
+      "highlight_count": 2,
+      "read_now_count": 0,
+      "reproduce_count": 0,
+      "best_score": 3.5,
+      "source_primary": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2604.12966v1",
+      "code_url": null,
+      "first_seen_report_date": "2026-04-15",
+      "last_seen_report_date": "2026-04-18",
+      "avg_score": 3.4
+    },
+    {
+      "paper_id": "arxiv-2604.19734",
+      "title": "UniT: Toward a Unified Physical Language for Human-to-Humanoid Policy Learning and World Modeling",
+      "primary_topic": "VLA",
+      "method_tags": [
+        "action tokenizer",
+        "model-based control",
+        "world model"
+      ],
+      "application_tags": [
+        "robot control",
+        "simulation"
+      ],
+      "mention_count": 2,
+      "highlight_count": 2,
+      "read_now_count": 0,
+      "reproduce_count": 1,
+      "best_score": 3.4,
+      "source_primary": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2604.19734v1",
+      "code_url": null,
+      "first_seen_report_date": "2026-04-23",
+      "last_seen_report_date": "2026-04-25",
+      "avg_score": 3.27
+    },
+    {
+      "paper_id": "arxiv-2604.12119",
+      "title": "Beyond Perception Errors: Semantic Fixation in Large Vision-Language Models",
+      "primary_topic": "Multimodal LLMs",
+      "method_tags": [
+        "model-based control"
+      ],
+      "application_tags": [
+        "document understanding",
+        "embodied reasoning"
+      ],
+      "mention_count": 2,
+      "highlight_count": 2,
+      "read_now_count": 0,
+      "reproduce_count": 0,
+      "best_score": 3.36,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.12119",
+      "code_url": "https://github.com/maveryn/vlm-fix",
+      "first_seen_report_date": "2026-04-13",
+      "last_seen_report_date": "2026-04-16",
+      "avg_score": 3.16
+    },
     {
       "paper_id": "arxiv-2604.11201",
       "title": "CocoaBench: Evaluating Unified Digital Agents in the Wild",
@@ -47,17 +170,17 @@
       "application_tags": [
         "code agent"
       ],
-      "mention_count": 1,
+      "mention_count": 2,
       "highlight_count": 1,
       "read_now_count": 1,
-      "reproduce_count": 0,
+      "reproduce_count": 1,
       "best_score": 3.98,
       "source_primary": "arXiv",
       "paper_url": "https://arxiv.org/abs/2604.11201v1",
       "code_url": "https://github.com/cocoabench/cocoa-agent",
       "first_seen_report_date": "2026-04-14",
-      "last_seen_report_date": "2026-04-14",
-      "avg_score": 3.98
+      "last_seen_report_date": "2026-04-15",
+      "avg_score": 3.79
     },
     {
       "paper_id": "arxiv-2604.11641",
@@ -72,106 +195,140 @@
         "code agent",
         "workflow automation"
       ],
-      "mention_count": 1,
+      "mention_count": 2,
       "highlight_count": 1,
       "read_now_count": 1,
-      "reproduce_count": 0,
+      "reproduce_count": 1,
       "best_score": 3.9,
       "source_primary": "arXiv",
       "paper_url": "https://arxiv.org/abs/2604.11641v1",
       "code_url": "https://github.com/NJU-LINK/CodeTracer",
       "first_seen_report_date": "2026-04-14",
-      "last_seen_report_date": "2026-04-14",
-      "avg_score": 3.9
+      "last_seen_report_date": "2026-04-15",
+      "avg_score": 3.71
     },
     {
-      "paper_id": "arxiv-2604.11689",
-      "title": "LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment",
-      "primary_topic": "VLA",
+      "paper_id": "arxiv-2604.13074",
+      "title": "PersonaVLM: Long-Term Personalized Multimodal LLMs",
+      "primary_topic": "Multimodal LLMs",
       "method_tags": [
-        "model-based control"
+        "reasoning"
       ],
       "application_tags": [
-        "embodied planning",
-        "robot control"
+        "embodied reasoning"
       ],
       "mention_count": 1,
       "highlight_count": 1,
-      "read_now_count": 0,
+      "read_now_count": 1,
       "reproduce_count": 0,
-      "best_score": 3.75,
-      "source_primary": "arXiv",
-      "paper_url": "https://arxiv.org/abs/2604.11689v1",
-      "code_url": null,
-      "first_seen_report_date": "2026-04-14",
-      "last_seen_report_date": "2026-04-14",
-      "avg_score": 3.75
+      "best_score": 4.19,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.13074",
+      "code_url": "https://github.com/MiG-NJU/PersonaVLM",
+      "first_seen_report_date": "2026-04-21",
+      "last_seen_report_date": "2026-04-21",
+      "avg_score": 4.19
     },
     {
-      "paper_id": "arxiv-2604.11197",
-      "title": "MedP-CLIP: Medical CLIP with Region-Aware Prompt Integration",
-      "primary_topic": "Multimodal LLMs",
+      "paper_id": "arxiv-2604.18564",
+      "title": "MultiWorld: Scalable Multi-Agent Multi-View Video World Models",
+      "primary_topic": "World Models",
       "method_tags": [
-        "grounding"
+        "model-based control",
+        "multi-agent",
+        "video prediction",
+        "world model"
       ],
-      "application_tags": [],
+      "application_tags": [
+        "code agent",
+        "robot control",
+        "robot manipulation"
+      ],
       "mention_count": 1,
       "highlight_count": 1,
-      "read_now_count": 0,
+      "read_now_count": 1,
       "reproduce_count": 0,
-      "best_score": 3.72,
+      "best_score": 4.19,
       "source_primary": "arXiv",
-      "paper_url": "https://arxiv.org/abs/2604.11197v1",
-      "code_url": null,
-      "first_seen_report_date": "2026-04-14",
-      "last_seen_report_date": "2026-04-14",
-      "avg_score": 3.72
+      "paper_url": "https://arxiv.org/abs/2604.18564v1",
+      "code_url": "https://github.com/CIntellifusion/MultiWorld",
+      "first_seen_report_date": "2026-04-22",
+      "last_seen_report_date": "2026-04-22",
+      "avg_score": 4.19
     },
     {
-      "paper_id": "arxiv-2604.11025",
-      "title": "Test-time Scaling over Perception: Resolving the Grounding Paradox in Thinking with Images",
-      "primary_topic": "Multimodal LLMs",
+      "paper_id": "arxiv-2604.15710",
+      "title": "VoxMind: An End-to-End Agentic Spoken Dialogue System",
+      "primary_topic": "Agents",
       "method_tags": [
-        "grounding",
-        "reasoning",
-        "tool use"
+        "memory",
+        "multi-agent",
+        "planning",
+        "tool use",
+        "verification"
       ],
-      "application_tags": [],
+      "application_tags": [
+        "autonomous driving",
+        "code agent"
+      ],
       "mention_count": 1,
       "highlight_count": 1,
-      "read_now_count": 0,
+      "read_now_count": 1,
       "reproduce_count": 0,
-      "best_score": 3.58,
-      "source_primary": "arXiv",
-      "paper_url": "https://arxiv.org/abs/2604.11025v1",
-      "code_url": null,
-      "first_seen_report_date": "2026-04-14",
-      "last_seen_report_date": "2026-04-14",
-      "avg_score": 3.58
+      "best_score": 4.11,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.15710",
+      "code_url": "https://github.com/MM-Speech/VoxMind",
+      "first_seen_report_date": "2026-04-22",
+      "last_seen_report_date": "2026-04-22",
+      "avg_score": 4.11
     },
     {
-      "paper_id": "arxiv-2604.11244",
-      "title": "Script-a-Video: Deep Structured Audio-visual Captions via Factorized Streams and Relational Grounding",
+      "paper_id": "arxiv-2604.22748",
+      "title": "Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond",
+      "primary_topic": "World Models",
+      "method_tags": [
+        "model-based control",
+        "multi-agent"
+      ],
+      "application_tags": [
+        "simulation",
+        "web agent"
+      ],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 1,
+      "reproduce_count": 0,
+      "best_score": 4.04,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.22748",
+      "code_url": "https://github.com/matrix-agent/awesome-agentic-world-modeling",
+      "first_seen_report_date": "2026-04-28",
+      "last_seen_report_date": "2026-04-28",
+      "avg_score": 4.04
+    },
+    {
+      "paper_id": "arxiv-2604.09687",
+      "title": "Grid2Matrix: Revealing Digital Agnosia in Vision-Language Models",
       "primary_topic": "Multimodal LLMs",
       "method_tags": [
-        "grounding",
         "model-based control",
         "reasoning"
       ],
       "application_tags": [
-        "video understanding"
+        "document understanding"
       ],
       "mention_count": 1,
-      "highlight_count": 0,
-      "read_now_count": 0,
+      "highlight_count": 1,
+      "read_now_count": 1,
       "reproduce_count": 0,
-      "best_score": 3.57,
-      "source_primary": "arXiv",
-      "paper_url": "https://arxiv.org/abs/2604.11244v1",
-      "code_url": null,
-      "first_seen_report_date": "2026-04-14",
-      "last_seen_report_date": "2026-04-14",
-      "avg_score": 3.57
+      "best_score": 3.92,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.09687",
+      "code_url": "https://github.com/zhykoties/Grid2Matrix_DigitalAgnosia",
+      "first_seen_report_date": "2026-04-15",
+      "last_seen_report_date": "2026-04-15",
+      "avg_score": 3.92
     },
     {
       "paper_id": "arxiv-2604.07413",
@@ -183,211 +340,104 @@
       "application_tags": [
         "embodied reasoning"
       ],
-      "mention_count": 1,
-      "highlight_count": 0,
+      "mention_count": 2,
+      "highlight_count": 1,
       "read_now_count": 0,
-      "reproduce_count": 1,
+      "reproduce_count": 2,
       "best_score": 3.53,
       "source_primary": "HuggingFace Papers",
       "paper_url": "https://arxiv.org/abs/2604.07413",
       "code_url": "https://github.com/AI4Manufacturing/FORGE",
-      "first_seen_report_date": "2026-04-14",
+      "first_seen_report_date": "2026-04-13",
       "last_seen_report_date": "2026-04-14",
       "avg_score": 3.53
     },
     {
-      "paper_id": "arxiv-2604.11283",
-      "title": "Empowering Video Translation using Multimodal Large Language Models",
+      "paper_id": "arxiv-2604.13491",
+      "title": "Enhanced Text-to-Image Generation by Fine-grained Multimodal Reasoning",
       "primary_topic": "Multimodal LLMs",
       "method_tags": [
         "model-based control",
-        "reasoning"
-      ],
-      "application_tags": [
-        "video understanding"
-      ],
-      "mention_count": 1,
-      "highlight_count": 0,
-      "read_now_count": 0,
-      "reproduce_count": 0,
-      "best_score": 3.44,
-      "source_primary": "arXiv",
-      "paper_url": "https://arxiv.org/abs/2604.11283v1",
-      "code_url": null,
-      "first_seen_report_date": "2026-04-14",
-      "last_seen_report_date": "2026-04-14",
-      "avg_score": 3.44
-    },
-    {
-      "paper_id": "arxiv-2604.11259",
-      "title": "Mobile GUI Agent Privacy Personalization with Trajectory Induced Preference Optimization",
-      "primary_topic": "Multimodal LLMs",
-      "method_tags": [],
-      "application_tags": [
-        "code agent",
-        "document understanding",
-        "embodied reasoning"
-      ],
-      "mention_count": 1,
-      "highlight_count": 0,
-      "read_now_count": 0,
-      "reproduce_count": 0,
-      "best_score": 3.36,
-      "source_primary": "arXiv",
-      "paper_url": "https://arxiv.org/abs/2604.11259v1",
-      "code_url": null,
-      "first_seen_report_date": "2026-04-14",
-      "last_seen_report_date": "2026-04-14",
-      "avg_score": 3.36
-    },
-    {
-      "paper_id": "arxiv-2604.09459",
-      "title": "From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models",
-      "primary_topic": "Agents",
-      "method_tags": [
-        "model-based control",
-        "multi-agent",
-        "reward modeling",
-        "verification"
-      ],
-      "application_tags": [
-        "autonomous driving"
-      ],
-      "mention_count": 1,
-      "highlight_count": 0,
-      "read_now_count": 0,
-      "reproduce_count": 0,
-      "best_score": 3.32,
-      "source_primary": "HuggingFace Papers",
-      "paper_url": "https://arxiv.org/abs/2604.09459",
-      "code_url": "https://github.com/xxzcc/Awesome-Credit-Assignment-in-LLM-RL",
-      "first_seen_report_date": "2026-04-14",
-      "last_seen_report_date": "2026-04-14",
-      "avg_score": 3.32
-    },
-    {
-      "paper_id": "arxiv-2604.11572",
-      "title": "DA-PTQ: Drift-Aware Post-Training Quantization for Efficient Vision-Language-Action Models",
-      "primary_topic": "VLA",
-      "method_tags": [
-        "memory",
-        "model-based control"
-      ],
-      "application_tags": [
-        "autonomous driving",
-        "embodied planning",
-        "robot control"
-      ],
-      "mention_count": 1,
-      "highlight_count": 0,
-      "read_now_count": 0,
-      "reproduce_count": 0,
-      "best_score": 3.31,
-      "source_primary": "arXiv",
-      "paper_url": "https://arxiv.org/abs/2604.11572v1",
-      "code_url": null,
-      "first_seen_report_date": "2026-04-14",
-      "last_seen_report_date": "2026-04-14",
-      "avg_score": 3.31
-    },
-    {
-      "paper_id": "arxiv-2604.11518",
-      "title": "From Translation to Superset: Benchmark-Driven Evolution of a Production AI Agent from Rust to Python",
-      "primary_topic": "Agents",
-      "method_tags": [
-        "memory",
-        "multi-agent",
-        "tool use"
-      ],
-      "application_tags": [
-        "code agent",
-        "web agent"
-      ],
-      "mention_count": 1,
-      "highlight_count": 0,
-      "read_now_count": 0,
-      "reproduce_count": 0,
-      "best_score": 3.3,
-      "source_primary": "arXiv",
-      "paper_url": "https://arxiv.org/abs/2604.11518v1",
-      "code_url": null,
-      "first_seen_report_date": "2026-04-14",
-      "last_seen_report_date": "2026-04-14",
-      "avg_score": 3.3
-    },
-    {
-      "paper_id": "arxiv-2604.11161",
-      "title": "A Simulation-Based Method for Testing Collaborative Learning Scaffolds Using LLM-Based Multi-Agent Systems",
-      "primary_topic": "Agents",
-      "method_tags": [
-        "multi-agent",
-        "tool use"
+        "reasoning",
+        "tool use",
+        "verifier"
       ],
       "application_tags": [],
       "mention_count": 1,
-      "highlight_count": 0,
+      "highlight_count": 1,
       "read_now_count": 0,
       "reproduce_count": 0,
-      "best_score": 3.3,
+      "best_score": 3.78,
       "source_primary": "arXiv",
-      "paper_url": "https://arxiv.org/abs/2604.11161v1",
+      "paper_url": "https://arxiv.org/abs/2604.13491v1",
       "code_url": null,
-      "first_seen_report_date": "2026-04-14",
-      "last_seen_report_date": "2026-04-14",
-      "avg_score": 3.3
+      "first_seen_report_date": "2026-04-15",
+      "last_seen_report_date": "2026-04-15",
+      "avg_score": 3.78
     },
     {
-      "paper_id": "arxiv-2604.11757",
-      "title": "StarVLA-$α$: Reducing Complexity in Vision-Language-Action Systems",
-      "primary_topic": "VLA",
+      "paper_id": "arxiv-2604.12833",
+      "title": "Challenging Vision-Language Models with Physically Deployable Multimodal Semantic Lighting Attacks",
+      "primary_topic": "Multimodal LLMs",
       "method_tags": [
         "model-based control",
-        "planning"
+        "reasoning",
+        "verifier"
       ],
-      "application_tags": [
-        "code agent",
-        "embodied reasoning",
-        "robot control"
-      ],
+      "application_tags": [],
       "mention_count": 1,
-      "highlight_count": 0,
+      "highlight_count": 1,
       "read_now_count": 0,
       "reproduce_count": 0,
-      "best_score": 3.3,
+      "best_score": 3.74,
       "source_primary": "arXiv",
-      "paper_url": "https://arxiv.org/abs/2604.11757v1",
+      "paper_url": "https://arxiv.org/abs/2604.12833v1",
       "code_url": null,
-      "first_seen_report_date": "2026-04-14",
-      "last_seen_report_date": "2026-04-14",
-      "avg_score": 3.3
-    },
-    {
-      "paper_id": "arxiv-2604.07209",
-      "title": "INSPATIO-WORLD: A Real-Time 4D World Simulator via Spatiotemporal Autoregressive Modeling",
-      "primary_topic": "World Models",
-      "method_tags": [
-        "model-based control"
-      ],
-      "application_tags": [
-        "simulation"
-      ],
-      "mention_count": 1,
-      "highlight_count": 0,
-      "read_now_count": 0,
-      "reproduce_count": 0,
-      "best_score": 3.29,
-      "source_primary": "arXiv",
-      "paper_url": "https://arxiv.org/abs/2604.07209v2",
-      "code_url": "https://github.com/inspatio/inspatio-world",
-      "first_seen_report_date": "2026-04-14",
-      "last_seen_report_date": "2026-04-14",
-      "avg_score": 3.29
+      "first_seen_report_date": "2026-04-15",
+      "last_seen_report_date": "2026-04-15",
+      "avg_score": 3.74
     }
   ],
   "top_days": [
     {
+      "report_date": "2026-04-15",
+      "selected_total": 41,
+      "highlights_total": 5,
+      "top_topic": "Multimodal LLMs"
+    },
+    {
       "report_date": "2026-04-14",
       "selected_total": 35,
+      "highlights_total": 5,
+      "top_topic": "Multimodal LLMs"
+    },
+    {
+      "report_date": "2026-04-22",
+      "selected_total": 18,
+      "highlights_total": 5,
+      "top_topic": "Agents"
+    },
+    {
+      "report_date": "2026-04-17",
+      "selected_total": 17,
+      "highlights_total": 5,
+      "top_topic": "Multimodal LLMs"
+    },
+    {
+      "report_date": "2026-04-23",
+      "selected_total": 17,
+      "highlights_total": 5,
+      "top_topic": "Multimodal LLMs"
+    },
+    {
+      "report_date": "2026-04-29",
+      "selected_total": 15,
+      "highlights_total": 5,
+      "top_topic": "Agents"
+    },
+    {
+      "report_date": "2026-04-24",
+      "selected_total": 14,
       "highlights_total": 5,
       "top_topic": "Multimodal LLMs"
     }
@@ -395,111 +445,226 @@
   "method_tag_counts": [
     [
       "model-based control",
-      20
-    ],
-    [
-      "grounding",
-      10
-    ],
-    [
-      "planning",
-      10
+      80
     ],
     [
       "reasoning",
-      10
+      61
     ],
     [
-      "tool use",
-      9
+      "planning",
+      53
     ],
     [
       "multi-agent",
-      9
+      51
+    ],
+    [
+      "tool use",
+      49
+    ],
+    [
+      "grounding",
+      45
     ],
     [
       "memory",
-      7
+      38
     ],
     [
-      "reward modeling",
-      7
+      "verification",
+      23
     ]
   ],
   "application_tag_counts": [
     [
       "embodied reasoning",
-      8
+      62
     ],
     [
       "code agent",
-      7
+      43
     ],
     [
       "robot control",
-      6
-    ],
-    [
-      "autonomous driving",
-      5
-    ],
-    [
-      "video understanding",
-      5
-    ],
-    [
-      "embodied planning",
-      4
-    ],
-    [
-      "robot manipulation",
-      4
+      38
     ],
     [
       "document understanding",
-      3
+      30
+    ],
+    [
+      "simulation",
+      24
+    ],
+    [
+      "embodied planning",
+      23
+    ],
+    [
+      "robot manipulation",
+      23
+    ],
+    [
+      "video understanding",
+      19
     ]
   ],
   "daily_reports": [
+    {
+      "report_date": "2026-04-13",
+      "selected_total": 6,
+      "highlights_total": 5,
+      "top_topic": "Multimodal LLMs"
+    },
     {
       "report_date": "2026-04-14",
       "selected_total": 35,
       "highlights_total": 5,
       "top_topic": "Multimodal LLMs"
+    },
+    {
+      "report_date": "2026-04-15",
+      "selected_total": 41,
+      "highlights_total": 5,
+      "top_topic": "Multimodal LLMs"
+    },
+    {
+      "report_date": "2026-04-16",
+      "selected_total": 11,
+      "highlights_total": 5,
+      "top_topic": "Multimodal LLMs"
+    },
+    {
+      "report_date": "2026-04-17",
+      "selected_total": 17,
+      "highlights_total": 5,
+      "top_topic": "Multimodal LLMs"
+    },
+    {
+      "report_date": "2026-04-18",
+      "selected_total": 8,
+      "highlights_total": 5,
+      "top_topic": "Multimodal LLMs"
+    },
+    {
+      "report_date": "2026-04-19",
+      "selected_total": 0,
+      "highlights_total": 0,
+      "top_topic": "VLA"
+    },
+    {
+      "report_date": "2026-04-20",
+      "selected_total": 0,
+      "highlights_total": 0,
+      "top_topic": "VLA"
+    },
+    {
+      "report_date": "2026-04-21",
+      "selected_total": 3,
+      "highlights_total": 3,
+      "top_topic": "Multimodal LLMs"
+    },
+    {
+      "report_date": "2026-04-22",
+      "selected_total": 18,
+      "highlights_total": 5,
+      "top_topic": "Agents"
+    },
+    {
+      "report_date": "2026-04-23",
+      "selected_total": 17,
+      "highlights_total": 5,
+      "top_topic": "Multimodal LLMs"
+    },
+    {
+      "report_date": "2026-04-24",
+      "selected_total": 14,
+      "highlights_total": 5,
+      "top_topic": "Multimodal LLMs"
+    },
+    {
+      "report_date": "2026-04-25",
+      "selected_total": 5,
+      "highlights_total": 5,
+      "top_topic": "VLA"
+    },
+    {
+      "report_date": "2026-04-26",
+      "selected_total": 0,
+      "highlights_total": 0,
+      "top_topic": "VLA"
+    },
+    {
+      "report_date": "2026-04-27",
+      "selected_total": 0,
+      "highlights_total": 0,
+      "top_topic": "VLA"
+    },
+    {
+      "report_date": "2026-04-28",
+      "selected_total": 3,
+      "highlights_total": 3,
+      "top_topic": "VLA"
+    },
+    {
+      "report_date": "2026-04-29",
+      "selected_total": 15,
+      "highlights_total": 5,
+      "top_topic": "Agents"
+    },
+    {
+      "report_date": "2026-04-30",
+      "selected_total": 13,
+      "highlights_total": 5,
+      "top_topic": "Agents"
     }
   ],
   "executive_summary": {
-    "headline": "2026年4月的核心变化是：研究重心从单点多模态能力扩展，明显转向“可落地的代理/世界模型闭环”，即以 grounding、planning、tool use、memory 和 reward/credit assignment 共同支撑可评测、可追踪、可部署的 agentic 系统。",
+    "headline": "2026-04 期间最活跃的主题是 Multimodal LLMs，共覆盖 184 篇独立论文。",
     "summary_points": [
-      "本月仅纳入1份报告，但覆盖35篇独立论文，主题分布已高度集中在 Agents（12）与 Multimodal LLMs（12），World Models（8）次之，说明研究关注点正从基础感知/生成继续上移到任务执行与环境交互层。",
-      "方法标签上，model-based control 以20次显著领先，远高于 grounding、planning、reasoning（各10）以及 tool use、多智能体（各9），表明“先建内部控制/状态演化框架，再接推理与工具”的路线正在成为主流组织方式。",
-      "高亮论文集中体现三条主线：CocoaBench 强调野外统一数字代理评测，CodeTracer 强调代理状态可追踪性，LARY 面向 vision-to-action 泛化，另有 MedP-CLIP 与 test-time scaling 工作分别补强医学视觉 grounding 与图像推理中的感知瓶颈。",
-      "应用侧开始出现更明确的垂直落地信号：code agent、workflow automation、robot control、video understanding、manufacturing、mobile GUI privacy personalization 等场景同时出现，说明研究正从通用能力比较转向“任务闭环+行业约束”的联合优化。"
+      "周期内共纳入 18 份日报，累计提及 206 篇论文记录。",
+      "高亮论文累计出现 66 次，其中独立高亮论文 59 篇。",
+      "本周期最值得回看的一组论文包括：LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment, HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System, Boosting Visual Instruction Tuning with Self-Supervised Guidance。"
     ]
   },
   "trend_analysis": {
     "trends": [
-      "代理研究不再只比最终成功率，而开始系统补齐评测与可观测性基础设施；CocoaBench 与 CodeTracer 分别对应“真实环境测评”与“内部状态追踪”，说明 agent 研究正在从 demo 驱动转向工程化与审计化。",
-      "多模态方向的关键矛盾从“会不会看”转向“看得准后能否推理并行动”；Test-time Scaling over Perception 直接指向 grounding paradox，FORGE、MedP-CLIP 等则用细粒度场景和区域感知提示把感知误差压缩到可决策范围内。",
-      "VLA 与世界模型相关工作虽数量不如 Agents/MLLMs，但其影响方式更底层：LARY、DA-PTQ 等分别覆盖泛化评测与部署效率，反映 VLA 研究正从单纯对齐扩展到‘泛化能力可证实、模型成本可接受’。",
-      "强化学习与 agentic LLM 的结合更加具体，研究开始处理 credit assignment、reward modeling、verification 等长期任务核心问题，意味着社区已意识到仅靠提示工程难以支撑复杂自治行为。"
+      "重复出现最多的方法标签是：model-based control, reasoning, planning。",
+      "主要落地方向集中在：embodied reasoning, code agent, robot control。",
+      "主导主题是：Multimodal LLMs。"
     ],
     "gaps": [
-      "尽管 model-based control 占比最高，但公开结果仍以 benchmark 与子任务优化为主，跨任务、跨环境、跨模态的长期稳健性证据不足，尤其缺少统一比较不同控制范式收益的实验设计。",
-      "多篇工作涉及 grounding、reasoning、tool use，但三者之间的误差传播链条仍未被充分量化：感知偏差如何传导到规划失误、工具误用与最终任务失败，现有论文大多只展示局部改进，缺少端到端失效归因。",
-      "代理系统的可追踪性开始被重视，但 memory 相关工作仍偏机制层或工程层，尚未形成针对长期记忆污染、隐私泄漏、状态漂移和恢复策略的标准评测协议。",
-      "垂直场景扩展明显，但真实部署约束仍覆盖不全；例如移动 GUI 隐私、制造业细粒度评测、医疗区域提示各自推进，却缺少统一的安全、合规、鲁棒性基线，导致跨场景方法难以直接迁移。"
+      "仍需继续观察哪些高频论文真正有可复现资源。",
+      "跨主题的方法迁移价值还需要更长时间窗才能看清。",
+      "高亮论文之外的长尾样本仍值得人工抽查，避免错过边界创新。"
     ],
     "next_actions": [
-      "优先持续跟踪“评测/可观测性基础设施”方向，尤其是 CocoaBench、CodeTracer 一类工作后的新 benchmark、新 tracing 框架和 failure taxonomy；这是判断 agent 研究是否真正进入工程成熟期的领先指标。",
-      "在后续月报中建议单独建立‘控制闭环栈’观察维度：perception grounding → latent/world state → planning/reasoning → tool execution → reward/verification，用于比较不同论文究竟补强了闭环的哪个薄弱环节。",
-      "对高频方法标签开展交叉统计，重点观察 model-based control 与 grounding、planning、reward modeling 的共现是否继续上升；若共现增强，意味着社区正从模块改良走向统一架构整合。",
-      "针对已出现的行业化信号，建议下月增设专题追踪：代码代理/工作流自动化、机器人/VLA、医疗多模态、移动端 GUI 与制造业评测；每个专题重点记录数据闭环、在线评测、部署成本和安全约束四项指标。"
+      "优先精读 LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment。",
+      "优先精读 HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System。",
+      "优先精读 Boosting Visual Instruction Tuning with Self-Supervised Guidance。"
     ]
   },
   "appendix": {
     "source_reports": [
-      "2026-04-14"
+      "2026-04-13",
+      "2026-04-14",
+      "2026-04-15",
+      "2026-04-16",
+      "2026-04-17",
+      "2026-04-18",
+      "2026-04-19",
+      "2026-04-20",
+      "2026-04-21",
+      "2026-04-22",
+      "2026-04-23",
+      "2026-04-24",
+      "2026-04-25",
+      "2026-04-26",
+      "2026-04-27",
+      "2026-04-28",
+      "2026-04-29",
+      "2026-04-30"
     ],
     "llm_warnings": []
   }

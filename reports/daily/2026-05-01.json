@@ -1,0 +1,3083 @@
+{
+  "report_type": "daily_paper_digest",
+  "report_date": "2026-05-01",
+  "timezone": "Asia/Shanghai",
+  "generated_at": "2026-05-01T01:05:59.251979+08:00",
+  "generator": {
+    "repo_name": "daily-ai-paper-digest",
+    "repo_commit": "a1b9abc98b3226fc7e2adc9d4dae37cbbc10df09",
+    "pipeline_version": "v1.0.0"
+  },
+  "llm": {
+    "enabled": false,
+    "provider": "openai_responses",
+    "model": "",
+    "enhanced": false
+  },
+  "sources": [
+    {
+      "name": "arXiv",
+      "enabled": true,
+      "query_groups": [
+        "VLA",
+        "World Models",
+        "Multimodal LLMs",
+        "Agents"
+      ]
+    },
+    {
+      "name": "HuggingFace Papers",
+      "enabled": true,
+      "query_groups": [
+        "VLA",
+        "World Models",
+        "Multimodal LLMs",
+        "Agents"
+      ]
+    }
+  ],
+  "crawl_window": {
+    "start": "2026-04-30T00:00:00+08:00",
+    "end": "2026-05-01T23:59:59+08:00",
+    "note": "日报统计窗口；不一定等同于平台原始发布时间"
+  },
+  "statistics": {
+    "raw_candidates_total": 433,
+    "deduplicated_total": 25,
+    "selected_total": 6,
+    "highlights_total": 5
+  },
+  "topic_counts": {
+    "vla": 2,
+    "world_models": 1,
+    "multimodal_llm": 1,
+    "agents": 2,
+    "other_relevant": 0
+  },
+  "selection_policy": {
+    "included_if": [
+      "与 VLA / 世界模型 / 多模态大模型 / 智能体直接相关",
+      "或对这些方向的方法、训练、评测、系统化落地有明显参考价值"
+    ],
+    "excluded_if": [
+      "主题过远",
+      "纯行业新闻，无论文主体",
+      "重复条目",
+      "仅有转发，无原始论文页"
+    ]
+  },
+  "ranking_policy": {
+    "highlight_score_formula": "0.35*topic_relevance + 0.20*novelty + 0.20*evidence_strength + 0.15*resource_readiness + 0.10*discussion_value",
+    "score_range": "0-5"
+  },
+  "tags": [
+    "daily-digest",
+    "ai-research",
+    "arxiv",
+    "huggingface",
+    "vla",
+    "world-model",
+    "mllm",
+    "agents"
+  ],
+  "executive_summary": {
+    "conclusion_lines": [
+      "今天最值得关注的方向是：`VLA`",
+      "主要趋势是：`tool use / planning / reasoning`",
+      "真正建议精读的论文数量：`5` 篇"
+    ],
+    "top_highlights": [
+      {
+        "title": "GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents",
+        "reason": "它直接落在 Agents 方向，并且已经能追踪到开源资源。"
+      },
+      {
+        "title": "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning",
+        "reason": "它直接落在 World Models 方向，并且已经能追踪到开源资源，属于当前统计窗口内的新条目。"
+      },
+      {
+        "title": "STARRY: Spatial-Temporal Action-Centric World Modeling for Robotic Manipulation",
+        "reason": "它直接落在 VLA 方向，属于当前统计窗口内的新条目。"
+      },
+      {
+        "title": "Artistic Practice Opportunities in CST Evaluations: A Longitudinal Group Deployment of ArtKrit",
+        "reason": "它直接落在 Agents 方向，属于当前统计窗口内的新条目。"
+      },
+      {
+        "title": "Three-Step Nav: A Hierarchical Global-Local Planner for Zero-Shot Vision-and-Language Navigation",
+        "reason": "它直接落在 Multimodal LLMs 方向，属于当前统计窗口内的新条目。"
+      }
+    ],
+    "research_observations": [
+      {
+        "label": "趋势 1",
+        "text": "今天出现频率最高的方法 motif 是：tool use。"
+      },
+      {
+        "label": "趋势 2",
+        "text": "最集中爆发的主题是：VLA。"
+      },
+      {
+        "label": "趋势 3",
+        "text": "Read-now 信号论文共有 0 篇。"
+      },
+      {
+        "label": "空白点 / 机会点",
+        "text": "可直接复现的开源资源占比仍偏低。"
+      }
+    ]
+  },
+  "metadata_summary": {
+    "report_date": "2026-05-01",
+    "timezone": "Asia/Shanghai",
+    "generated_at": "2026-05-01T01:05:59.251979+08:00",
+    "raw_candidates_total": 433,
+    "deduplicated_total": 25,
+    "selected_total": 6
+  },
+  "query_groups": [
+    "VLA",
+    "World Models",
+    "Multimodal LLMs",
+    "Agents"
+  ],
+  "query_terms": {
+    "VLA": [
+      "vision-language-action",
+      "VLA",
+      "embodied policy",
+      "robot manipulation policy",
+      "robot foundation model",
+      "action tokenizer"
+    ],
+    "World Models": [
+      "world model",
+      "latent dynamics",
+      "predictive model",
+      "video prediction for control",
+      "model-based reinforcement learning",
+      "action-conditioned video generation"
+    ],
+    "Multimodal LLMs": [
+      "multimodal large language model",
+      "multimodal llm",
+      "mllm",
+      "vision-language model",
+      "vlm",
+      "multimodal reasoning",
+      "video-language model"
+    ],
+    "Agents": [
+      "agent",
+      "tool use",
+      "computer use",
+      "multi-agent",
+      "planning with llm",
+      "browser agent",
+      "code agent"
+    ]
+  },
+  "topic_overview": [
+    {
+      "name": "VLA",
+      "count": 2,
+      "judgement": "今天 VLA 方向更偏 world model, grounding，整体更适合做趋势跟踪而不是一次性下重注。",
+      "top_papers": [
+        "STARRY: Spatial-Temporal Action-Centric World Modeling for Robotic Manipulation",
+        "Walk With Me: Long-Horizon Social Navigation for Human-Centric Outdoor Assistance"
+      ],
+      "commonalities": [
+        "world model",
+        "grounding"
+      ],
+      "pitfalls": [
+        "多数条目暂时没有明确代码入口，复现节奏会偏慢。"
+      ]
+    },
+    {
+      "name": "World Models",
+      "count": 1,
+      "judgement": "今天 World Models 方向更偏 reasoning, tool use，整体更适合做趋势跟踪而不是一次性下重注。",
+      "top_papers": [
+        "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning"
+      ],
+      "commonalities": [
+        "reasoning",
+        "tool use"
+      ],
+      "pitfalls": [
+        "多数条目暂时没有明确代码入口，复现节奏会偏慢。",
+        "长 horizon 误差累积仍是核心风险。"
+      ]
+    },
+    {
+      "name": "Multimodal LLMs",
+      "count": 1,
+      "judgement": "今天 Multimodal LLMs 方向更偏 暂无明显共性，整体更适合做趋势跟踪而不是一次性下重注。",
+      "top_papers": [
+        "Three-Step Nav: A Hierarchical Global-Local Planner for Zero-Shot Vision-and-Language Navigation"
+      ],
+      "commonalities": [
+        "暂无明显共性"
+      ],
+      "pitfalls": [
+        "多数条目暂时没有明确代码入口，复现节奏会偏慢。"
+      ]
+    },
+    {
+      "name": "Agents",
+      "count": 2,
+      "judgement": "今天 Agents 方向更偏 tool use, planning，整体更适合做趋势跟踪而不是一次性下重注。",
+      "top_papers": [
+        "GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents",
+        "Artistic Practice Opportunities in CST Evaluations: A Longitudinal Group Deployment of ArtKrit"
+      ],
+      "commonalities": [
+        "tool use",
+        "planning"
+      ],
+      "pitfalls": [
+        "真实工具链和环境回放成本可能高于摘要给出的直觉。"
+      ]
+    },
+    {
+      "name": "Other Relevant",
+      "count": 0,
+      "judgement": "今天这个方向没有足够强的入选条目。",
+      "top_papers": [],
+      "commonalities": [
+        "暂无明显共性"
+      ],
+      "pitfalls": [
+        "暂无足够样本。"
+      ]
+    }
+  ],
+  "highlight_papers": [
+    {
+      "paper_id": "arxiv-2604.26752",
+      "title": "GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents",
+      "authors": [
+        "V Team",
+        "Wenyi Hong",
+        "Xiaotao Gu",
+        "Ziyang Pan",
+        "Zhen Yang",
+        "Yuting Wang",
+        "Yue Wang",
+        "Yuanchang Yue",
+        "Yu Wang",
+        "Yanling Wang",
+        "Yan Wang",
+        "Xijun Liu",
+        "Wenmeng Yu",
+        "Weihan Wang",
+        "Wei Li",
+        "Shuaiqi Duan",
+        "Sheng Yang",
+        "Ruiliang Lv",
+        "Mingdao Liu",
+        "Lihang Pan",
+        "Ke Ning",
+        "Junhui Ji",
+        "Jinjiang Wang",
+        "Jing Chen",
+        "Jiazheng Xu",
+        "Jiale Zhu",
+        "Jiale Cheng",
+        "Ji Qi",
+        "Guobing Gan",
+        "Guo Wang",
+        "Cong Yao",
+        "Zijun Dou",
+        "Zihao Zhou",
+        "Zihan Wang",
+        "Zhiqi Ge",
+        "Zhijie Li",
+        "Zhenyu Hou",
+        "Zhao Xue",
+        "Zehui Wang",
+        "Zehai He",
+        "Yusen Liu",
+        "Yukuo Cen",
+        "Yuchen Li",
+        "Yuan Wang",
+        "Yijian Lu",
+        "Yanzi Wang",
+        "Yadong Xue",
+        "Xinyu Zhang",
+        "Xinyu Liu",
+        "Wenkai Li",
+        "Tianyu Tong",
+        "Tianshu Zhang",
+        "Shengdong Yan",
+        "Qinkai Zheng",
+        "Mingde Xu",
+        "Licheng Bao",
+        "Jiaxing Xu",
+        "Jiaxin Fan",
+        "Jiawen Qian",
+        "Jiali Chen",
+        "Jiahui Lin",
+        "Haozhi Zheng",
+        "Haoran Wang",
+        "Haochen Li",
+        "Fan Yang",
+        "Dan Zhang",
+        "Chuangxin Zhao",
+        "Chengcheng Wu",
+        "Boyan Shi",
+        "Bowei Jia",
+        "Baoxu Wang",
+        "Peng Zhang",
+        "Debing Liu",
+        "Bin Xu",
+        "Juanzi Li",
+        "Minlie Huang",
+        "Yuxiao Dong",
+        "Jie Tang"
+      ],
+      "first_author": "V Team",
+      "source_primary": "HuggingFace Papers",
+      "source_aliases": [
+        "HuggingFace Papers / Daily Papers"
+      ],
+      "arxiv_id": "2604.26752",
+      "version": null,
+      "hf_paper_url": "https://huggingface.co/papers/2604.26752",
+      "paper_url": "https://arxiv.org/abs/2604.26752",
+      "pdf_url": "https://arxiv.org/pdf/2604.26752.pdf",
+      "project_url": null,
+      "code_url": "https://github.com/zai-org/GLM-V",
+      "model_url": null,
+      "dataset_url": null,
+      "demo_url": null,
+      "published_at": "2026-04-29T00:00:00+00:00",
+      "updated_at": "2026-04-29T00:00:00+00:00",
+      "primary_category": null,
+      "categories": [],
+      "institution_hint": null,
+      "license_hint": null,
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "summary": "We present GLM-5V-Turbo, a step toward native foundation models for multimodal agents. As foundation models are increasingly deployed in real environments, agentic capability depends not only on language reasoning, but also on the ability to perceive, interpret, and act over heterogeneous contexts such as images, videos, webpages, documents, GUIs. GLM-5V-Turbo is built around this objective: multimodal perception is integrated as a core component of reasoning, planning, tool use, and execution, rather than as an auxiliary interface to a language model. This report summarizes the main improvements behind GLM-5V-Turbo across model design, multimodal training, reinforcement learning, toolchain expansion, and integration with agent frameworks. These developments lead to strong performance in multimodal coding, visual tool use, and framework-based agentic tasks, while preserving competitive text-only coding capability. More importantly, our development process offers practical insights for building multimodal agents, highlighting the central role of multimodal perception, hierarchical optimization, and reliable end-to-end verification.",
+      "topics": [
+        "Agents"
+      ],
+      "primary_topic": "Agents",
+      "query_groups": [],
+      "method_tags": [
+        "planning",
+        "tool use"
+      ],
+      "application_tags": [
+        "web agent"
+      ],
+      "one_line_summary": "GLM-5V-Turbo integrates multimodal perception as a core reasoning component for agentic tasks, demonstrating strong performance in multimodal coding and visual tool use while maintaining text-only capabilities.",
+      "why_read_today": "它直接落在 Agents 方向，并且已经能追踪到开源资源。",
+      "relevance_level": "high",
+      "highlight_score": 3.2,
+      "recommended_action": "track",
+      "topic_scores": {
+        "VLA": 0.0,
+        "World Models": 0.45,
+        "Multimodal LLMs": 0.0,
+        "Agents": 3.24
+      },
+      "structured_summary": {
+        "problem": "We present GLM-5V-Turbo, a step toward native foundation models for multimodal agents.",
+        "motivation": "As foundation models are increasingly deployed in real environments, agentic capability depends not only on language reasoning, but also on the ability to perceive, interpret, and act over heterogeneous contexts such as images, videos, webpages, documents, GUIs.",
+        "core_idea": "We present GLM-5V-Turbo, a step toward native foundation models for multimodal agents.",
+        "method": "This report summarizes the main improvements behind GLM-5V-Turbo across model design, multimodal training, reinforcement learning, toolchain expansion, and integration with agent frameworks.",
+        "training": "This report summarizes the main improvements behind GLM-5V-Turbo across model design, multimodal training, reinforcement learning, toolchain expansion, and integration with agent frameworks.",
+        "inference": "摘要未明确描述推理阶段流程。",
+        "evaluation": "摘要只给出了有限的评测线索。",
+        "main_results": "This report summarizes the main improvements behind GLM-5V-Turbo across model design, multimodal training, reinforcement learning, toolchain expansion, and integration with agent frameworks.",
+        "claim": "This report summarizes the main improvements behind GLM-5V-Turbo across model design, multimodal training, reinforcement learning, toolchain expansion, and integration with agent frameworks."
+      },
+      "novelty_points": [
+        "主线聚焦在 Agents，并给出了相对明确的方法叙述。",
+        "方法标签里最显眼的是：planning, tool use。"
+      ],
+      "strengths": [
+        "标题和摘要都能清楚定位到研究问题。",
+        "存在可继续追踪的开源资源。"
+      ],
+      "weaknesses": [
+        "摘要无法支撑太细的结论，需要正文补充。"
+      ],
+      "assumptions": [
+        "默认工具链、环境接口和反馈信号都是稳定可用的。"
+      ],
+      "risks": [
+        "真实任务链路上的鲁棒性和成本可能比摘要看起来更敏感。"
+      ],
+      "open_questions": [
+        "长任务中的 memory / verifier 成本是否可控？",
+        "工具调用失败时的恢复策略是什么？"
+      ],
+      "relation_to_prior_work": "从摘要看，它更接近以 planning 为核心的 Agents 路线。",
+      "domain_analysis": {
+        "vla": {
+          "embodiment": "unknown",
+          "action_space": "unknown",
+          "control_level": "high-level",
+          "memory_usage": "unknown",
+          "planner_usage": "yes",
+          "reasoner_usage": "yes",
+          "world_model_usage": "no",
+          "real_robot": "no",
+          "simulator": "null",
+          "data_source": "unknown"
+        },
+        "world_models": {
+          "state_representation": "unknown",
+          "prediction_target": "unknown",
+          "horizon": "unknown",
+          "planning_interface": "unknown",
+          "control_coupling": "unclear"
+        },
+        "multimodal_llms": {
+          "modalities": [
+            "image",
+            "video",
+            "text",
+            "document"
+          ],
+          "reasoning_type": "tool-use",
+          "long_context_usage": "no",
+          "grounding_method": "none"
+        },
+        "agents": {
+          "agent_type": "single-agent",
+          "tooling": "unknown",
+          "memory_type": "none",
+          "planning_style": "hierarchical",
+          "verification_style": "no verifier"
+        }
+      },
+      "reproducibility": {
+        "code_available": true,
+        "weights_available": false,
+        "dataset_available": false,
+        "env_instructions_available": false,
+        "repro_effort_estimate": "medium"
+      },
+      "my_take": {
+        "should_i_read_it": "视方向而定",
+        "should_i_reproduce_it": "条件满足时再看",
+        "what_can_i_borrow": "planning, tool use",
+        "what_do_i_not_buy": "重点核对实验设置和资源完整度。",
+        "best_use_case": "web agent"
+      },
+      "hf_upvotes": 71,
+      "hf_ai_summary": "GLM-5V-Turbo integrates multimodal perception as a core reasoning component for agentic tasks, demonstrating strong performance in multimodal coding and visual tool use while maintaining text-only capabilities.",
+      "hf_ai_keywords": [
+        "end-to-end verification",
+        "foundation models",
+        "hierarchical optimization",
+        "multimodal agents",
+        "multimodal perception",
+        "visual tool use"
+      ],
+      "submitted_on_daily_at": "2026-04-30T02:22:30.897000+00:00"
+    },
+    {
+      "paper_id": "arxiv-2604.26934",
+      "title": "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning",
+      "authors": [
+        "Wanyue Zhang",
+        "Wenxiang Wu",
+        "Wang Xu",
+        "Jiaxin Luo",
+        "Helu Zhi",
+        "Yibin Huang",
+        "Shuo Ren",
+        "Zitao Liu",
+        "Jiajun Zhang"
+      ],
+      "first_author": "Wanyue Zhang",
+      "source_primary": "arXiv",
+      "source_aliases": [
+        "arXiv / Multimodal LLMs",
+        "arXiv / World Models"
+      ],
+      "arxiv_id": "2604.26934",
+      "version": "v1",
+      "hf_paper_url": "https://huggingface.co/papers/2604.26934",
+      "paper_url": "https://arxiv.org/abs/2604.26934v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.26934v1",
+      "project_url": null,
+      "code_url": null,
+      "model_url": null,
+      "dataset_url": "https://huggingface.co/datasets/WanyueZhang/World2VLM",
+      "demo_url": null,
+      "published_at": "2026-04-29T17:48:01+00:00",
+      "updated_at": "2026-04-29T17:48:01+00:00",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV"
+      ],
+      "institution_hint": null,
+      "license_hint": "apache-2.0",
+      "comment": "The code is available at https://github.com/WanyueZhang-ai/World2VLM. The dataset is available at https://huggingface.co/datasets/WanyueZhang/World2VLM",
+      "journal_ref": null,
+      "doi": null,
+      "summary": "Vision-language models (VLMs) have shown strong performance on static visual understanding, yet they still struggle with dynamic spatial reasoning that requires imagining how scenes evolve under egocentric motion. Recent efforts address this limitation either by scaling spatial supervision with synthetic data or by coupling VLMs with world models at inference time. However, the former often lacks explicit modeling of motion-conditioned state transitions, while the latter incurs substantial computational overhead. In this work, we propose World2VLM, a training framework that distills spatial imagination from a generative world model into a vision-language model. Given an initial observation and a parameterized camera trajectory, we use a view-consistent world model to synthesize geometrically aligned future views and derive structured supervision for both forward (action-to-outcome) and inverse (outcome-to-action) spatial reasoning. We post-train the VLM with a two-stage recipe on a compact dataset generated by this pipeline and evaluate it on multiple spatial reasoning benchmarks. World2VLM delivers consistent improvements over the base model across diverse benchmarks, including SAT-Real, SAT-Synthesized, VSI-Bench, and MindCube. It also outperforms the test-time world-model-coupled methods while eliminating the need for expensive inference-time generation. Our results suggest that world models can serve not only as inference-time tools, but also as effective training-time teachers, enabling VLMs to internalize spatial imagination in a scalable and efficient manner.",
+      "topics": [
+        "World Models",
+        "Multimodal LLMs"
+      ],
+      "primary_topic": "World Models",
+      "query_groups": [
+        "Multimodal LLMs",
+        "World Models"
+      ],
+      "method_tags": [
+        "reasoning",
+        "tool use"
+      ],
+      "application_tags": [
+        "autonomous driving",
+        "embodied reasoning"
+      ],
+      "one_line_summary": "World2VLM enhances vision-language models with spatial imagination by distilling knowledge from a generative world model, improving dynamic spatial reasoning while avoiding computational overhead.",
+      "why_read_today": "它直接落在 World Models 方向，并且已经能追踪到开源资源，属于当前统计窗口内的新条目。",
+      "relevance_level": "medium",
+      "highlight_score": 3.0,
+      "recommended_action": "track",
+      "topic_scores": {
+        "VLA": 0.0,
+        "World Models": 2.94,
+        "Multimodal LLMs": 2.94,
+        "Agents": 0.45
+      },
+      "structured_summary": {
+        "problem": "Recent efforts address this limitation either by scaling spatial supervision with synthetic data or by coupling VLMs with world models at inference time.",
+        "motivation": "However, the former often lacks explicit modeling of motion-conditioned state transitions, while the latter incurs substantial computational overhead.",
+        "core_idea": "In this work, we propose World2VLM, a training framework that distills spatial imagination from a generative world model into a vision-language model.",
+        "method": "In this work, we propose World2VLM, a training framework that distills spatial imagination from a generative world model into a vision-language model.",
+        "training": "In this work, we propose World2VLM, a training framework that distills spatial imagination from a generative world model into a vision-language model.",
+        "inference": "Recent efforts address this limitation either by scaling spatial supervision with synthetic data or by coupling VLMs with world models at inference time.",
+        "evaluation": "We post-train the VLM with a two-stage recipe on a compact dataset generated by this pipeline and evaluate it on multiple spatial reasoning benchmarks.",
+        "main_results": "Vision-language models (VLMs) have shown strong performance on static visual understanding, yet they still struggle with dynamic spatial reasoning that requires imagining how scenes evolve under egocentric motion.",
+        "claim": "Vision-language models (VLMs) have shown strong performance on static visual understanding, yet they still struggle with dynamic spatial reasoning that requires imagining how scenes evolve under egocentric motion."
+      },
+      "novelty_points": [
+        "主线聚焦在 World Models，并给出了相对明确的方法叙述。",
+        "方法标签里最显眼的是：reasoning, tool use。"
+      ],
+      "strengths": [
+        "标题和摘要都能清楚定位到研究问题。",
+        "摘要里明确给出了评测或实验设置。"
+      ],
+      "weaknesses": [
+        "摘要无法支撑太细的结论，需要正文补充。"
+      ],
+      "assumptions": [
+        "默认 learned dynamics 足以覆盖目标 horizon 和控制需求。"
+      ],
+      "risks": [
+        "目前更多依赖 abstract claim，短期复现价值有限。",
+        "长 horizon 下的误差累积风险可能被摘要低估。"
+      ],
+      "open_questions": [
+        "世界模型和控制器的耦合是否足够稳健？",
+        "长 horizon 预测误差如何被抑制？"
+      ],
+      "relation_to_prior_work": "从摘要看，它更接近以 reasoning 为核心的 World Models 路线。",
+      "domain_analysis": {
+        "vla": {
+          "embodiment": "unknown",
+          "action_space": "unknown",
+          "control_level": "unknown",
+          "memory_usage": "unknown",
+          "planner_usage": "no",
+          "reasoner_usage": "yes",
+          "world_model_usage": "yes",
+          "real_robot": "no",
+          "simulator": "null",
+          "data_source": "unknown"
+        },
+        "world_models": {
+          "state_representation": "unknown",
+          "prediction_target": "actions",
+          "horizon": "unknown",
+          "planning_interface": "unknown",
+          "control_coupling": "unclear"
+        },
+        "multimodal_llms": {
+          "modalities": [
+            "text"
+          ],
+          "reasoning_type": "tool-use",
+          "long_context_usage": "no",
+          "grounding_method": "none"
+        },
+        "agents": {
+          "agent_type": "unknown",
+          "tooling": "unknown",
+          "memory_type": "none",
+          "planning_style": "unknown",
+          "verification_style": "no verifier"
+        }
+      },
+      "reproducibility": {
+        "code_available": false,
+        "weights_available": false,
+        "dataset_available": true,
+        "env_instructions_available": false,
+        "repro_effort_estimate": "medium"
+      },
+      "my_take": {
+        "should_i_read_it": "视方向而定",
+        "should_i_reproduce_it": "条件满足时再看",
+        "what_can_i_borrow": "reasoning, tool use",
+        "what_do_i_not_buy": "目前还需要正文确认 claim 的外推性。",
+        "best_use_case": "autonomous driving"
+      },
+      "hf_upvotes": 0,
+      "hf_ai_summary": "World2VLM enhances vision-language models with spatial imagination by distilling knowledge from a generative world model, improving dynamic spatial reasoning while avoiding computational overhead.",
+      "hf_ai_keywords": [
+        "egocentric motion",
+        "forward reasoning",
+        "generative world model",
+        "inverse reasoning",
+        "spatial imagination",
+        "spatial reasoning",
+        "test-time world-model-coupled methods",
+        "view-consistent world model",
+        "vision-language models",
+        "world models"
+      ],
+      "submitted_on_daily_at": null
+    },
+    {
+      "paper_id": "arxiv-2604.26848",
+      "title": "STARRY: Spatial-Temporal Action-Centric World Modeling for Robotic Manipulation",
+      "authors": [
+        "Yuxuan Tian",
+        "Yurun Jin",
+        "Bin Yu",
+        "Yukun Shi",
+        "Hao Wu",
+        "Chi Harold Liu",
+        "Kai Chen",
+        "Cong Huang"
+      ],
+      "first_author": "Yuxuan Tian",
+      "source_primary": "arXiv",
+      "source_aliases": [
+        "arXiv / VLA",
+        "arXiv / World Models"
+      ],
+      "arxiv_id": "2604.26848",
+      "version": "v1",
+      "hf_paper_url": null,
+      "paper_url": "https://arxiv.org/abs/2604.26848v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.26848v1",
+      "project_url": null,
+      "code_url": null,
+      "model_url": null,
+      "dataset_url": null,
+      "demo_url": null,
+      "published_at": "2026-04-29T16:13:39+00:00",
+      "updated_at": "2026-04-29T16:13:39+00:00",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO"
+      ],
+      "institution_hint": null,
+      "license_hint": null,
+      "comment": "19 pages",
+      "journal_ref": null,
+      "doi": null,
+      "summary": "Robotic manipulation critically requires reasoning about future spatial-temporal interactions, yet existing VLA policies and world-model-enhanced policies do not fully model action-relevant spatial-temporal interaction structure. We propose STARRY, a world-model-enhanced action-generation policy that aligns spatial-temporal prediction with action generation. STARRY jointly denoises future spatial-temporal latents and action sequences, and introduces Geometry-Aware Selective Attention Modulation to convert predicted depth and end-effector geometry into token-aligned weights for selective action-attention modulation. On RoboTwin 2.0, STARRY achieves 93.82% / 93.30% average success under Clean and Randomized settings. Real-world experiments further improve average success from 42.5% to 70.8% over $π_{0.5}$, demonstrating the effectiveness of action-centric spatial-temporal world modeling for spatial-temporally demanding robotic action generation.",
+      "topics": [
+        "VLA"
+      ],
+      "primary_topic": "VLA",
+      "query_groups": [
+        "VLA",
+        "World Models"
+      ],
+      "method_tags": [
+        "world model"
+      ],
+      "application_tags": [
+        "robot control",
+        "robot manipulation"
+      ],
+      "one_line_summary": "Robotic manipulation critically requires reasoning about future spatial-temporal interactions, yet existing VLA policies and world-model-enhanced policies do not fully model action-relevant spatial-temporal interaction…",
+      "why_read_today": "它直接落在 VLA 方向，属于当前统计窗口内的新条目。",
+      "relevance_level": "medium",
+      "highlight_score": 2.79,
+      "recommended_action": "track",
+      "topic_scores": {
+        "VLA": 2.4,
+        "World Models": 2.04,
+        "Multimodal LLMs": 0.0,
+        "Agents": 0.0
+      },
+      "structured_summary": {
+        "problem": "Robotic manipulation critically requires reasoning about future spatial-temporal interactions, yet existing VLA policies and world-model-enhanced policies do not fully model action-relevant spatial-temporal interaction structure.",
+        "motivation": "We propose STARRY, a world-model-enhanced action-generation policy that aligns spatial-temporal prediction with action generation.",
+        "core_idea": "We propose STARRY, a world-model-enhanced action-generation policy that aligns spatial-temporal prediction with action generation.",
+        "method": "We propose STARRY, a world-model-enhanced action-generation policy that aligns spatial-temporal prediction with action generation.",
+        "training": "摘要未明确说明训练细节。",
+        "inference": "摘要未明确描述推理阶段流程。",
+        "evaluation": "Real-world experiments further improve average success from 42.5% to 70.8% over $π_{0.5}$, demonstrating the effectiveness of action-centric spatial-temporal world modeling for spatial-temporally demanding robotic action generation.",
+        "main_results": "On RoboTwin 2.0, STARRY achieves 93.82% / 93.30% average success under Clean and Randomized settings.",
+        "claim": "On RoboTwin 2.0, STARRY achieves 93.82% / 93.30% average success under Clean and Randomized settings."
+      },
+      "novelty_points": [
+        "主线聚焦在 VLA，并给出了相对明确的方法叙述。",
+        "方法标签里最显眼的是：world model。"
+      ],
+      "strengths": [
+        "标题和摘要都能清楚定位到研究问题。",
+        "摘要里明确给出了评测或实验设置。"
+      ],
+      "weaknesses": [
+        "当前还看不到足够完整的开源 artifact。",
+        "摘要没有明显展示真实机器人验证。"
+      ],
+      "assumptions": [
+        "默认任务分布、机器人形态和观测设置与实验环境接近。"
+      ],
+      "risks": [
+        "目前更多依赖 abstract claim，短期复现价值有限。",
+        "跨环境或跨 embodiment 的泛化能力仍需正文和附录验证。"
+      ],
+      "open_questions": [
+        "跨 embodiment / 跨场景泛化是否仍然成立？",
+        "失败恢复机制是 planner-guided 还是纯 policy-level？"
+      ],
+      "relation_to_prior_work": "从摘要看，它更接近以 world model 为核心的 VLA 路线。",
+      "domain_analysis": {
+        "vla": {
+          "embodiment": "robot manipulation",
+          "action_space": "tokenized",
+          "control_level": "unknown",
+          "memory_usage": "unknown",
+          "planner_usage": "no",
+          "reasoner_usage": "yes",
+          "world_model_usage": "yes",
+          "real_robot": "yes",
+          "simulator": "null",
+          "data_source": "unknown"
+        },
+        "world_models": {
+          "state_representation": "latent",
+          "prediction_target": "latent states",
+          "horizon": "unknown",
+          "planning_interface": "direct policy",
+          "control_coupling": "coupled with policy / control"
+        },
+        "multimodal_llms": {
+          "modalities": [
+            "text"
+          ],
+          "reasoning_type": "none",
+          "long_context_usage": "no",
+          "grounding_method": "none"
+        },
+        "agents": {
+          "agent_type": "unknown",
+          "tooling": "unknown",
+          "memory_type": "none",
+          "planning_style": "unknown",
+          "verification_style": "critic"
+        }
+      },
+      "reproducibility": {
+        "code_available": false,
+        "weights_available": false,
+        "dataset_available": false,
+        "env_instructions_available": false,
+        "repro_effort_estimate": "high"
+      },
+      "my_take": {
+        "should_i_read_it": "否",
+        "should_i_reproduce_it": "条件满足时再看",
+        "what_can_i_borrow": "world model",
+        "what_do_i_not_buy": "目前还需要正文确认 claim 的外推性。",
+        "best_use_case": "robot control"
+      },
+      "hf_upvotes": null,
+      "hf_ai_summary": null,
+      "hf_ai_keywords": [],
+      "submitted_on_daily_at": null
+    },
+    {
+      "paper_id": "arxiv-2604.26935",
+      "title": "Artistic Practice Opportunities in CST Evaluations: A Longitudinal Group Deployment of ArtKrit",
+      "authors": [
+        "Catherine Liu",
+        "Tao Long",
+        "Asya Vaisberg",
+        "Chau Vu",
+        "Jiaju Ma",
+        "Jingyi Li"
+      ],
+      "first_author": "Catherine Liu",
+      "source_primary": "arXiv",
+      "source_aliases": [
+        "arXiv / Agents"
+      ],
+      "arxiv_id": "2604.26935",
+      "version": "v1",
+      "hf_paper_url": null,
+      "paper_url": "https://arxiv.org/abs/2604.26935v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.26935v1",
+      "project_url": null,
+      "code_url": null,
+      "model_url": null,
+      "dataset_url": null,
+      "demo_url": null,
+      "published_at": "2026-04-29T17:49:03+00:00",
+      "updated_at": "2026-04-29T17:49:03+00:00",
+      "primary_category": "cs.HC",
+      "categories": [
+        "cs.HC"
+      ],
+      "institution_hint": null,
+      "license_hint": null,
+      "comment": "17 pages, 8 figures. Accepted to DIS 2026",
+      "journal_ref": null,
+      "doi": null,
+      "summary": "Creativity support tools (CSTs) aim to elevate the quality of artists' creative processes and artifacts. Yet most current CST evaluations overlook temporal and social aspects of tool use. To address this gap, we present a longitudinal, group-based CST evaluation through a three-week deployment of ArtKrit, a computational drawing tool that supports disciplined drawing. Nine digital artists, organized into three communities of practice, completed weekly \"master studies\" alongside a researcher-artist. Our results show users' evolving relationships with ArtKrit over time - from early experimentation to selective incorporation or misuse - alongside changes in their ways of artistic seeing. These changes unfolded within artist support networks that fostered confidence and creative safety, and validated individual expression. Overall, our findings suggest that CST evaluations can - and should - be designed as opportunities for meaningful artistic engagement rather than purely extractive measurement exercises. We contribute this longitudinal, group-based approach as one CST evaluation method.",
+      "topics": [
+        "Agents"
+      ],
+      "primary_topic": "Agents",
+      "query_groups": [
+        "Agents"
+      ],
+      "method_tags": [
+        "tool use"
+      ],
+      "application_tags": [],
+      "one_line_summary": "Creativity support tools (CSTs) aim to elevate the quality of artists' creative processes and artifacts.",
+      "why_read_today": "它直接落在 Agents 方向，属于当前统计窗口内的新条目。",
+      "relevance_level": "medium",
+      "highlight_score": 2.6,
+      "recommended_action": "ignore",
+      "topic_scores": {
+        "VLA": 0.0,
+        "World Models": 0.0,
+        "Multimodal LLMs": 0.0,
+        "Agents": 2.49
+      },
+      "structured_summary": {
+        "problem": "To address this gap, we present a longitudinal, group-based CST evaluation through a three-week deployment of ArtKrit, a computational drawing tool that supports disciplined drawing.",
+        "motivation": "Yet most current CST evaluations overlook temporal and social aspects of tool use.",
+        "core_idea": "To address this gap, we present a longitudinal, group-based CST evaluation through a three-week deployment of ArtKrit, a computational drawing tool that supports disciplined drawing.",
+        "method": "We contribute this longitudinal, group-based approach as one CST evaluation method.",
+        "training": "摘要未明确说明训练细节。",
+        "inference": "To address this gap, we present a longitudinal, group-based CST evaluation through a three-week deployment of ArtKrit, a computational drawing tool that supports disciplined drawing.",
+        "evaluation": "Yet most current CST evaluations overlook temporal and social aspects of tool use.",
+        "main_results": "Our results show users' evolving relationships with ArtKrit over time - from early experimentation to selective incorporation or misuse - alongside changes in their ways of artistic seeing.",
+        "claim": "Our results show users' evolving relationships with ArtKrit over time - from early experimentation to selective incorporation or misuse - alongside changes in their ways of artistic seeing."
+      },
+      "novelty_points": [
+        "主线聚焦在 Agents，并给出了相对明确的方法叙述。",
+        "方法标签里最显眼的是：tool use。"
+      ],
+      "strengths": [
+        "标题和摘要都能清楚定位到研究问题。",
+        "摘要里明确给出了评测或实验设置。"
+      ],
+      "weaknesses": [
+        "当前还看不到足够完整的开源 artifact。"
+      ],
+      "assumptions": [
+        "默认工具链、环境接口和反馈信号都是稳定可用的。"
+      ],
+      "risks": [
+        "目前更多依赖 abstract claim，短期复现价值有限。",
+        "真实任务链路上的鲁棒性和成本可能比摘要看起来更敏感。"
+      ],
+      "open_questions": [
+        "长任务中的 memory / verifier 成本是否可控？",
+        "工具调用失败时的恢复策略是什么？"
+      ],
+      "relation_to_prior_work": "从摘要看，它更接近以 tool use 为核心的 Agents 路线。",
+      "domain_analysis": {
+        "vla": {
+          "embodiment": "unknown",
+          "action_space": "unknown",
+          "control_level": "unknown",
+          "memory_usage": "unknown",
+          "planner_usage": "no",
+          "reasoner_usage": "no",
+          "world_model_usage": "no",
+          "real_robot": "no",
+          "simulator": "null",
+          "data_source": "unknown"
+        },
+        "world_models": {
+          "state_representation": "unknown",
+          "prediction_target": "unknown",
+          "horizon": "unknown",
+          "planning_interface": "search",
+          "control_coupling": "unclear"
+        },
+        "multimodal_llms": {
+          "modalities": [
+            "text"
+          ],
+          "reasoning_type": "tool-use",
+          "long_context_usage": "no",
+          "grounding_method": "none"
+        },
+        "agents": {
+          "agent_type": "unknown",
+          "tooling": "unknown",
+          "memory_type": "none",
+          "planning_style": "unknown",
+          "verification_style": "no verifier"
+        }
+      },
+      "reproducibility": {
+        "code_available": false,
+        "weights_available": false,
+        "dataset_available": false,
+        "env_instructions_available": false,
+        "repro_effort_estimate": "high"
+      },
+      "my_take": {
+        "should_i_read_it": "否",
+        "should_i_reproduce_it": "条件满足时再看",
+        "what_can_i_borrow": "tool use",
+        "what_do_i_not_buy": "目前还需要正文确认 claim 的外推性。",
+        "best_use_case": "Agents"
+      },
+      "hf_upvotes": null,
+      "hf_ai_summary": null,
+      "hf_ai_keywords": [],
+      "submitted_on_daily_at": null
+    },
+    {
+      "paper_id": "arxiv-2604.26946",
+      "title": "Three-Step Nav: A Hierarchical Global-Local Planner for Zero-Shot Vision-and-Language Navigation",
+      "authors": [
+        "Wanrong Zheng",
+        "Yunhao Ge",
+        "Laurent Itti"
+      ],
+      "first_author": "Wanrong Zheng",
+      "source_primary": "arXiv",
+      "source_aliases": [
+        "arXiv / Agents",
+        "arXiv / Multimodal LLMs"
+      ],
+      "arxiv_id": "2604.26946",
+      "version": "v1",
+      "hf_paper_url": null,
+      "paper_url": "https://arxiv.org/abs/2604.26946v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.26946v1",
+      "project_url": null,
+      "code_url": null,
+      "model_url": null,
+      "dataset_url": null,
+      "demo_url": null,
+      "published_at": "2026-04-29T17:55:05+00:00",
+      "updated_at": "2026-04-29T17:55:05+00:00",
+      "primary_category": "cs.CV",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "institution_hint": null,
+      "license_hint": null,
+      "comment": "Accepted to AISTATS 2026. Code: https://github.com/ZoeyZheng0/3-step-Nav",
+      "journal_ref": "Proceedings of the 29th International Conference on Artificial Intelligence and Statistics (AISTATS), 2026",
+      "doi": null,
+      "summary": "Breakthrough progress in vision-based navigation through unknown environments has been achieved by using multimodal large language models (MLLMs). These models can plan a sequence of motions by evaluating the current view at each time step against the task and goal given to the agent. However, current zero-shot Vision-and-Language Navigation (VLN) agents powered by MLLMs still tend to drift off course, halt prematurely, and achieve low overall success rates. We propose Three-Step Nav to counteract these failures with a three-view protocol: First, \"look forward\" to extract global landmarks and sketch a coarse plan. Then, \"look now\" to align the current visual observation with the next sub-goal for fine-grained guidance. Finally, \"look backward\" audits the entire trajectory to correct accumulated drift before stopping. Requiring no gradient updates or task-specific fine-tuning, our planner drops into existing VLN pipelines with minimal overhead. Three-Step Nav achieves state-of-the-art zero-shot performance on the R2R-CE and RxR-CE dataset. Our code is available at https://github.com/ZoeyZheng0/3-step-Nav.",
+      "topics": [
+        "Multimodal LLMs"
+      ],
+      "primary_topic": "Multimodal LLMs",
+      "query_groups": [
+        "Agents",
+        "Multimodal LLMs"
+      ],
+      "method_tags": [],
+      "application_tags": [
+        "code agent",
+        "embodied reasoning"
+      ],
+      "one_line_summary": "Breakthrough progress in vision-based navigation through unknown environments has been achieved by using multimodal large language models (MLLMs).",
+      "why_read_today": "它直接落在 Multimodal LLMs 方向，属于当前统计窗口内的新条目。",
+      "relevance_level": "medium",
+      "highlight_score": 2.56,
+      "recommended_action": "ignore",
+      "topic_scores": {
+        "VLA": 0.0,
+        "World Models": 0.0,
+        "Multimodal LLMs": 2.94,
+        "Agents": 1.5
+      },
+      "structured_summary": {
+        "problem": "These models can plan a sequence of motions by evaluating the current view at each time step against the task and goal given to the agent.",
+        "motivation": "However, current zero-shot Vision-and-Language Navigation (VLN) agents powered by MLLMs still tend to drift off course, halt prematurely, and achieve low overall success rates.",
+        "core_idea": "We propose Three-Step Nav to counteract these failures with a three-view protocol: First, \"look forward\" to extract global landmarks and sketch a coarse plan.",
+        "method": "Requiring no gradient updates or task-specific fine-tuning, our planner drops into existing VLN pipelines with minimal overhead.",
+        "training": "摘要未明确说明训练细节。",
+        "inference": "摘要未明确描述推理阶段流程。",
+        "evaluation": "摘要只给出了有限的评测线索。",
+        "main_results": "Breakthrough progress in vision-based navigation through unknown environments has been achieved by using multimodal large language models (MLLMs).",
+        "claim": "Breakthrough progress in vision-based navigation through unknown environments has been achieved by using multimodal large language models (MLLMs)."
+      },
+      "novelty_points": [
+        "主线聚焦在 Multimodal LLMs，并给出了相对明确的方法叙述。"
+      ],
+      "strengths": [
+        "标题和摘要都能清楚定位到研究问题。"
+      ],
+      "weaknesses": [
+        "当前还看不到足够完整的开源 artifact。"
+      ],
+      "assumptions": [
+        "默认多模态对齐质量足以支撑推理或工具调用。"
+      ],
+      "risks": [
+        "目前更多依赖 abstract claim，短期复现价值有限。",
+        "真实 deployment 条件和 benchmark 表现之间可能存在落差。"
+      ],
+      "open_questions": [
+        "真实多模态长上下文场景里的收益是否稳定？",
+        "grounding 误差会不会拖累推理质量？"
+      ],
+      "relation_to_prior_work": "仅靠摘要还不足以精确判断它与哪条 prior work 路线最接近。",
+      "domain_analysis": {
+        "vla": {
+          "embodiment": "unknown",
+          "action_space": "unknown",
+          "control_level": "high-level",
+          "memory_usage": "unknown",
+          "planner_usage": "yes",
+          "reasoner_usage": "yes",
+          "world_model_usage": "no",
+          "real_robot": "no",
+          "simulator": "null",
+          "data_source": "unknown"
+        },
+        "world_models": {
+          "state_representation": "unknown",
+          "prediction_target": "unknown",
+          "horizon": "unknown",
+          "planning_interface": "unknown",
+          "control_coupling": "unclear"
+        },
+        "multimodal_llms": {
+          "modalities": [
+            "text"
+          ],
+          "reasoning_type": "none",
+          "long_context_usage": "no",
+          "grounding_method": "none"
+        },
+        "agents": {
+          "agent_type": "single-agent",
+          "tooling": "code",
+          "memory_type": "none",
+          "planning_style": "hierarchical",
+          "verification_style": "no verifier"
+        }
+      },
+      "reproducibility": {
+        "code_available": false,
+        "weights_available": false,
+        "dataset_available": false,
+        "env_instructions_available": false,
+        "repro_effort_estimate": "high"
+      },
+      "my_take": {
+        "should_i_read_it": "否",
+        "should_i_reproduce_it": "条件满足时再看",
+        "what_can_i_borrow": "问题定义和评测拆解方式",
+        "what_do_i_not_buy": "目前还需要正文确认 claim 的外推性。",
+        "best_use_case": "code agent"
+      },
+      "hf_upvotes": null,
+      "hf_ai_summary": null,
+      "hf_ai_keywords": [],
+      "submitted_on_daily_at": null
+    }
+  ],
+  "paper_list_by_topic": {
+    "Agents": [],
+    "World Models": [],
+    "VLA": [
+      {
+        "paper_id": "arxiv-2604.26839",
+        "title": "Walk With Me: Long-Horizon Social Navigation for Human-Centric Outdoor Assistance",
+        "authors": [
+          "Lingfeng Zhang",
+          "Xiaoshuai Hao",
+          "Xizhou Bu",
+          "Yingbo Tang",
+          "Hongsheng Li",
+          "Jinghui Lu",
+          "Xiu-shen Wei",
+          "Jiayi Ma",
+          "Yu Liu",
+          "Jing Zhang",
+          "Hangjun Ye",
+          "Xiaojun Liang",
+          "Long Chen",
+          "Wenbo Ding"
+        ],
+        "first_author": "Lingfeng Zhang",
+        "source_primary": "arXiv",
+        "source_aliases": [
+          "arXiv / Multimodal LLMs",
+          "arXiv / VLA"
+        ],
+        "arxiv_id": "2604.26839",
+        "version": "v1",
+        "hf_paper_url": null,
+        "paper_url": "https://arxiv.org/abs/2604.26839v1",
+        "pdf_url": "https://arxiv.org/pdf/2604.26839v1",
+        "project_url": null,
+        "code_url": null,
+        "model_url": null,
+        "dataset_url": null,
+        "demo_url": null,
+        "published_at": "2026-04-29T16:02:13+00:00",
+        "updated_at": "2026-04-29T16:02:13+00:00",
+        "primary_category": "cs.RO",
+        "categories": [
+          "cs.RO"
+        ],
+        "institution_hint": null,
+        "license_hint": null,
+        "comment": null,
+        "journal_ref": null,
+        "doi": null,
+        "summary": "Assisting humans in open-world outdoor environments requires robots to translate high-level natural-language intentions into safe, long-horizon, and socially compliant navigation behavior. Existing map-based methods rely on costly pre-built HD maps, while learning-based policies are mostly limited to indoor and short-horizon settings. To bridge this gap, we propose Walk with Me, a map-free framework for long-horizon social navigation from high-level human instructions. Walk with Me leverages GPS context and lightweight candidate points-of-interest from a public map API for semantic destination grounding and waypoint proposal. A High-Level Vision-Language Model grounds abstract instructions into concrete destinations and plans coarse waypoint sequences. During execution, an observation-aware routing mechanism determines whether the Low-Level Vision-Language-Action policy can handle the current situation or whether explicit safety reasoning from the High-Level VLM is needed. Routine segments are executed by the Low-Level VLA, while complex situations such as crowded crossings trigger high-level reasoning and stop-and-wait behavior when unsafe. By combining semantic intent grounding, map-free long-horizon planning, safety-aware reasoning, and low-level action generation, Walk with Me enables practical outdoor social navigation for human-centric assistance.",
+        "topics": [
+          "VLA",
+          "Multimodal LLMs"
+        ],
+        "primary_topic": "VLA",
+        "query_groups": [
+          "Multimodal LLMs",
+          "VLA"
+        ],
+        "method_tags": [
+          "grounding",
+          "hierarchical control",
+          "planning",
+          "reasoning",
+          "tool use"
+        ],
+        "application_tags": [
+          "embodied planning",
+          "embodied reasoning",
+          "mobile manipulation",
+          "robot control"
+        ],
+        "one_line_summary": "Assisting humans in open-world outdoor environments requires robots to translate high-level natural-language intentions into safe, long-horizon, and socially compliant navigation behavior.",
+        "why_read_today": "它直接落在 VLA 方向，属于当前统计窗口内的新条目。",
+        "relevance_level": "high",
+        "highlight_score": 2.44,
+        "recommended_action": "ignore",
+        "topic_scores": {
+          "VLA": 3.39,
+          "World Models": 0.45,
+          "Multimodal LLMs": 3.39,
+          "Agents": 0.45
+        },
+        "structured_summary": {
+          "problem": "Assisting humans in open-world outdoor environments requires robots to translate high-level natural-language intentions into safe, long-horizon, and socially compliant navigation behavior.",
+          "motivation": "Existing map-based methods rely on costly pre-built HD maps, while learning-based policies are mostly limited to indoor and short-horizon settings.",
+          "core_idea": "To bridge this gap, we propose Walk with Me, a map-free framework for long-horizon social navigation from high-level human instructions.",
+          "method": "Existing map-based methods rely on costly pre-built HD maps, while learning-based policies are mostly limited to indoor and short-horizon settings.",
+          "training": "摘要未明确说明训练细节。",
+          "inference": "摘要未明确描述推理阶段流程。",
+          "evaluation": "摘要只给出了有限的评测线索。",
+          "main_results": "By combining semantic intent grounding, map-free long-horizon planning, safety-aware reasoning, and low-level action generation, Walk with Me enables practical outdoor social navigation for human-centric assistance.",
+          "claim": "By combining semantic intent grounding, map-free long-horizon planning, safety-aware reasoning, and low-level action generation, Walk with Me enables practical outdoor social navigation for human-centric assistance."
+        },
+        "novelty_points": [
+          "主线聚焦在 VLA，并给出了相对明确的方法叙述。",
+          "方法标签里最显眼的是：grounding, hierarchical control, planning。"
+        ],
+        "strengths": [
+          "标题和摘要都能清楚定位到研究问题。"
+        ],
+        "weaknesses": [
+          "当前还看不到足够完整的开源 artifact。",
+          "摘要没有明显展示真实机器人验证。"
+        ],
+        "assumptions": [
+          "默认任务分布、机器人形态和观测设置与实验环境接近。"
+        ],
+        "risks": [
+          "目前更多依赖 abstract claim，短期复现价值有限。",
+          "跨环境或跨 embodiment 的泛化能力仍需正文和附录验证。"
+        ],
+        "open_questions": [
+          "跨 embodiment / 跨场景泛化是否仍然成立？",
+          "失败恢复机制是 planner-guided 还是纯 policy-level？"
+        ],
+        "relation_to_prior_work": "从摘要看，它更接近以 grounding 为核心的 VLA 路线。",
+        "domain_analysis": {
+          "vla": {
+            "embodiment": "unknown",
+            "action_space": "unknown",
+            "control_level": "low-level",
+            "memory_usage": "unknown",
+            "planner_usage": "yes",
+            "reasoner_usage": "yes",
+            "world_model_usage": "no",
+            "real_robot": "no",
+            "simulator": "null",
+            "data_source": "unknown"
+          },
+          "world_models": {
+            "state_representation": "unknown",
+            "prediction_target": "actions",
+            "horizon": "long",
+            "planning_interface": "direct policy",
+            "control_coupling": "coupled with policy / control"
+          },
+          "multimodal_llms": {
+            "modalities": [
+              "text"
+            ],
+            "reasoning_type": "none",
+            "long_context_usage": "no",
+            "grounding_method": "latent grounding"
+          },
+          "agents": {
+            "agent_type": "unknown",
+            "tooling": "api",
+            "memory_type": "none",
+            "planning_style": "unknown",
+            "verification_style": "no verifier"
+          }
+        },
+        "reproducibility": {
+          "code_available": false,
+          "weights_available": false,
+          "dataset_available": false,
+          "env_instructions_available": false,
+          "repro_effort_estimate": "high"
+        },
+        "my_take": {
+          "should_i_read_it": "否",
+          "should_i_reproduce_it": "条件满足时再看",
+          "what_can_i_borrow": "grounding, hierarchical control, planning",
+          "what_do_i_not_buy": "目前还需要正文确认 claim 的外推性。",
+          "best_use_case": "embodied planning"
+        },
+        "hf_upvotes": null,
+        "hf_ai_summary": null,
+        "hf_ai_keywords": [],
+        "submitted_on_daily_at": null
+      }
+    ],
+    "Multimodal LLMs": []
+  },
+  "cross_paper_insights": {
+    "trends": [
+      "tool use 在今天的入选论文里重复出现 4 次。",
+      "planning 在今天的入选论文里重复出现 2 次。",
+      "reasoning 在今天的入选论文里重复出现 2 次。"
+    ],
+    "motifs": {
+      "memory": "今天出现 0 次，主要集中在 暂无明显集中方向。",
+      "planning": "今天出现 2 次，主要集中在 Agents, VLA。",
+      "retrieval": "今天出现 0 次，主要集中在 暂无明显集中方向。",
+      "verification": "今天出现 0 次，主要集中在 暂无明显集中方向。",
+      "world model": "今天出现 1 次，主要集中在 VLA。"
+    },
+    "gaps": [
+      "可直接复现的开源资源占比仍偏低。",
+      "agent 方向里 verifier / judge 设计还没有形成明显主线。"
+    ],
+    "inspiration": [
+      "可以优先整理 tool use 相关论文，做成一页 related work matrix。",
+      "可以优先整理 planning 相关论文，做成一页 related work matrix。",
+      "可以优先整理 reasoning 相关论文，做成一页 related work matrix。"
+    ]
+  },
+  "action_queue": {
+    "read_now": [],
+    "track": [
+      {
+        "title": "GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents",
+        "reason": "它直接落在 Agents 方向，并且已经能追踪到开源资源。"
+      },
+      {
+        "title": "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning",
+        "reason": "它直接落在 World Models 方向，并且已经能追踪到开源资源，属于当前统计窗口内的新条目。"
+      },
+      {
+        "title": "STARRY: Spatial-Temporal Action-Centric World Modeling for Robotic Manipulation",
+        "reason": "它直接落在 VLA 方向，属于当前统计窗口内的新条目。"
+      }
+    ],
+    "reproduce": [],
+    "ignore": [
+      {
+        "title": "Artistic Practice Opportunities in CST Evaluations: A Longitudinal Group Deployment of ArtKrit",
+        "reason": "Current score is below the action threshold."
+      },
+      {
+        "title": "Three-Step Nav: A Hierarchical Global-Local Planner for Zero-Shot Vision-and-Language Navigation",
+        "reason": "Current score is below the action threshold."
+      },
+      {
+        "title": "Walk With Me: Long-Horizon Social Navigation for Human-Centric Outdoor Assistance",
+        "reason": "Current score is below the action threshold."
+      }
+    ]
+  },
+  "appendix": {
+    "raw_candidates": [
+      {
+        "title": "GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents",
+        "source": "HuggingFace Papers",
+        "topic": "Agents"
+      },
+      {
+        "title": "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning",
+        "source": "arXiv",
+        "topic": "World Models"
+      },
+      {
+        "title": "STARRY: Spatial-Temporal Action-Centric World Modeling for Robotic Manipulation",
+        "source": "arXiv",
+        "topic": "VLA"
+      },
+      {
+        "title": "Artistic Practice Opportunities in CST Evaluations: A Longitudinal Group Deployment of ArtKrit",
+        "source": "arXiv",
+        "topic": "Agents"
+      },
+      {
+        "title": "Three-Step Nav: A Hierarchical Global-Local Planner for Zero-Shot Vision-and-Language Navigation",
+        "source": "arXiv",
+        "topic": "Multimodal LLMs"
+      },
+      {
+        "title": "Walk With Me: Long-Horizon Social Navigation for Human-Centric Outdoor Assistance",
+        "source": "arXiv",
+        "topic": "VLA"
+      }
+    ],
+    "filtered_out": [
+      {
+        "title": "Libra-VLA: Achieving Learning Equilibrium via Asynchronous Coarse-to-Fine Dual-System",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Learning Human-Intention Priors from Large-Scale Human Demonstrations for Robotic Manipulation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "CF-VLA: Efficient Coarse-to-Fine Action Generation for Vision-Language-Action Policies",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Characterizing Vision-Language-Action Models across XPUs: Constraints and Acceleration for On-Robot Deployment",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "$M^2$-VLA: Boosting Vision-Language Models for Generalizable Manipulation via Layer Mixture and Meta-Skills",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "AsyncShield: A Plug-and-Play Edge Adapter for Asynchronous Cloud-based VLA Navigation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Move-Then-Operate: Behavioral Phasing for Human-Like Robotic Manipulation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Modular Sensory Stream for Integrating Physical Feedback in Vision-Language-Action Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Breaking Lock-In: Preserving Steerability under Low-Data VLA Post-Training",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "RL Token: Bootstrapping Online RL with Vision-Language-Action Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Vision-Language-Action in Robotics: A Survey of Datasets, Benchmarks, and Data Engines",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "RedVLA: Physical Red Teaming for Vision-Language-Action Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "A Morphological Identification and Study of Radio Galaxies from LoTSS DR2. I. The \"Winged'' Radio Galaxies",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "CodeGraphVLP: Code-as-Planner Meets Semantic-Graph State for Non-Markovian Vision-Language-Action Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Long-Horizon Manipulation via Trace-Conditioned VLA Planning",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "From Noise to Intent: Anchoring Generative VLA Policies with Residual Bridges",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "CorridorVLA: Explicit Spatial Constraints for Generative Action Heads via Sparse Anchors",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "ReCAPA: Hierarchical Predictive Correction to Mitigate Cascading Failures",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "How VLAs (Really) Work In Open-World Environments",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Navigating the Clutter: Waypoint-Based Bi-Level Planning for Multi-Robot Systems",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "PokeVLA: Empowering Pocket-Sized Vision-Language-Action Model with Comprehensive World Knowledge Guidance",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Temporal Difference Calibration in Sequential Tasks: Application to Vision-Language-Action Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "A Vision-Language-Action Model for Adaptive Ultrasound-Guided Needle Insertion and Needle Tracking",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "EgoDyn-Bench: Evaluating Ego-Motion Understanding in Vision-Centric Foundation Models for Autonomous Driving",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Cortex 2.0: Grounding World Models in Real-World Industrial Deployment",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "JoyAI-RA 0.1: A Foundation Model for Robotic Autonomy",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "EmbodiedMidtrain: Bridging the Gap between Vision-Language Models and Vision-Language-Action Models via Mid-training",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "UniT: Toward a Unified Physical Language for Human-to-Humanoid Policy Learning and World Modeling",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "FASTER: Value-Guided Sampling for Fast RL",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "VLA Foundry: A Unified Framework for Training Vision-Language-Action Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "SpanVLA: Efficient Action Bridging and Learning from Negative-Recovery Samples for Vision-Language-Action Model",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "SDSSJ110546.07+145202.4: The first long-duration radio changing-look NLS1 galaxy",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "If you're waiting for a sign... that might not be it! Mitigating Trust Boundary Confusion from Visual Injections on Vision-Language Agentic Systems",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Very Long Baseline Interferometry Search for Nuclear Radio Continuum Emission in the Barred Spiral Galaxy NGC 7479",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "XEmbodied: A Foundation Model with Enhanced Geometric and Physical Cues for Large-Scale Embodied Environments",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Test-Time Perturbation Learning with Delayed Feedback for Vision-Language-Action Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Unmasking the Illusion of Embodied Reasoning in Vision-Language-Action Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "OneDrive: Unified Multi-Paradigm Driving with Vision-Language-Action Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Can Explicit Physical Feasibility Benefit VLA Learning? An Empirical Study",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "StableIDM: Stabilizing Inverse Dynamics Model against Manipulator Truncation via Spatio-Temporal Refinement",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "ST-$π$: Structured SpatioTemporal VLA for Robotic Manipulation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "OFlow: Injecting Object-Aware Temporal Flow Matching for Robust Robotic Manipulation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "ReFineVLA: Multimodal Reasoning-Aware Generalist Robotic Policies via Teacher-Guided Fine-Tuning",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "AnchorRefine: Synergy-Manipulation Based on Trajectory Anchor and Residual Refinement for Vision-Language-Action Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "OmniVLA-RL: A Vision-Language-Action Model with Spatial Understanding and Online RL",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Infrastructure-Centric World Models: Bridging Temporal Depth and Spatial Breadth for Roadside Perception",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Chain Of Interaction Benchmark (COIN): When Reasoning meets Embodied Interaction",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "LongBench: Evaluating Robotic Manipulation Policies on Real-World Long-Horizon Tasks",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "ReconVLA: An Uncertainty-Guided and Failure-Aware Vision-Language-Action Framework for Robotic Control",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "AEGIS: Anchor-Enforced Gradient Isolation for Knowledge-Preserving Vision-Language-Action Fine-Tuning",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Long-Term Memory for VLA-based Agents in Open-World Task Execution",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "$π_{0.7}$: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "A Hierarchical Spatiotemporal Action Tokenizer for In-Context Imitation Learning in Robotics",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Foundation Models in Robotics: A Comprehensive Review of Methods, Models, Datasets, Challenges and Future Research Directions",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "World-Value-Action Model: Implicit Planning for Vision-Language-Action Systems",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Goal2Skill: Long-Horizon Manipulation with Adaptive Planning and Reflection",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Jump-Start Reinforcement Learning with Vision-Language-Action Regularization",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Vision-and-Language Navigation for UAVs: Progress, Challenges, and a Research Roadmap",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Robotic Manipulation is Vision-to-Geometry Mapping ($f(v) \\rightarrow G$): Vision-Geometry Backbones over Language and Video Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "The spectrum of the persistent radio source associated with FRB 20190417A",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "HazardArena: Evaluating Semantic Safety in Vision-Language-Action Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Unveiling the Surprising Efficacy of Navigation Understanding in End-to-End Autonomous Driving",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Mapping the emission and spectral properties of the FRI radio galaxy 3C 449 with LOFAR and the VLA",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "StarVLA-$α$: Reducing Complexity in Vision-Language-Action Systems",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Grounded World Model for Semantically Generalizable Planning",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "AffordSim: A Scalable Data Generator and Benchmark for Affordance-Aware Robotic Manipulation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "DA-PTQ: Drift-Aware Post-Training Quantization for Efficient Vision-Language-Action Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Inferring Unreported Measurement Uncertainties via Information Geometry in Astrophysics",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "AnySlot: Goal-Conditioned Vision-Language-Action Policies for Zero-Shot Slot-Level Placement",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "ABot-Claw: A Foundation for Persistent, Cooperative, and Self-Evolving Robotic Agents",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "STRONG-VLA: Decoupled Robustness Learning for Vision-Language-Action Models under Multimodal Perturbations",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "ProGAL-VLA: Grounded Alignment through Prospective Reasoning in Vision-Language-Action Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Unified 4D World Action Modeling from Video Priors with Asynchronous Denoising",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Multiscale Decomposition Reveals Predictable Interannual Variability and Climate Trends in Antarctic Sea Ice Loss",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "AGEL-Comp: A Neuro-Symbolic Framework for Compositional Generalization in Interactive Agents",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "DepthPilot: From Controllability to Interpretability in Colonoscopy Video Generation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Lifting Embodied World Models for Planning and Control",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Orientation-Dependent Protein Binding at Nanoparticle Interfaces",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Privacy-Preserving Federated Learning Framework for Distributed Chemical Process Optimization",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Observable Neural ODEs for Identifiable Causal Forecasting in Continuous Time",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "A semiparametric autorregresive spatial prediction model",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Mini-Batch Class Composition Bias in Link Prediction",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Benchmarking bandgap prediction in semiconductors under experimental and realistic evaluation settings",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Biased Dreams: Limitations to Epistemic Uncertainty Quantification in Latent Space Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Commit-Aware Learning-Based Test Case Prioritization for Continuous Integration",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "ProDrive: Proactive Planning for Autonomous Driving via Ego-Environment Co-Evolution",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "DRAGON: A Benchmark for Evidence-Grounded Visual Reasoning over Diagrams",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Negative Ontology of True Target for Machine Learning: Towards Evaluation and Learning under Democratic Supervision",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Unfolding an Atomistic World: Atomistic Simulation of Reactor Pressure Vessel Steel Across Year-and-Meter Scales",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "ServImage: An Image Generation and Editing Benchmark from Real-world Commercial Imaging Services",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "From Visual Synthesis to Interactive Worlds: Toward Production-Ready 3D Asset Generation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Emotion-Conditioned Short-Horizon Human Pose Forecasting with a Lightweight Predictive World Model",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Machine learning models for estimating counterfactuals in a single-arm inflammatory bowel disease study",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Anchored Variational Inference for Personalized Sequential Latent-State Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Active Inference: A method for Phenotyping Agency in AI systems?",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Learning the Weather-Grid Nexus via Weather-to-Voltage (W2V) Predictive Modeling",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Collaborative Trajectory Prediction via Late Fusion",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Deep Clustering for Climate: Analyzing Teleconnections through Learned Categorical States",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Beyond Patient Invariance: Learning Cardiac Dynamics via Action-Conditioned JEPAs",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "A Surfactant Prediction Model for Rising Bubbles",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "OccDirector: Language-Guided Behavior and Interaction Generation in 4D Occupancy Space",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "AI-Driven Performance-to-Design Generation and Optimization of Marine Propellers",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "dWorldEval: Scalable Robotic Policy Evaluation via Discrete Diffusion World Model",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Causality and Semantic Separation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Seeing Fast and Slow: Learning the Flow of Time in Videos",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Machine Behavior in Relational Moral Dilemmas: Moral Rightness, Predicted Human Behavior, and Model Decisions",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Only Brains Align with Brains: Cross-Region Alignment Patterns Expose Limits of Normative Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Hi-WM: Human-in-the-World-Model for Scalable Robot Post-Training",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "WorldMark: A Unified Benchmark Suite for Interactive Video World Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Transferable SCF-Acceleration through Solver-Aligned Initialization Learning",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Calibeating Prediction-Powered Inference",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Neutron and X-ray Diffraction Reveal the Limits of Long-Range Machine Learning Potentials for Medium-Range Order in Silica Glass",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Development of Anisotropic Magnetized Viscosity for Magnetized Liner Inertial Fusion Simulations in FLASH",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Self-Predictive Representation for Autonomous UAV Object-Goal Navigation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "A Systematic Review and Taxonomy of Reinforcement Learning-Model Predictive Control Integration for Linear Systems",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Relative Entropy Estimation in Function Space: Theory and Applications to Trajectory Inference",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Evaluating Software Defect Prediction Models via the Area Under the ROC Curve Can Be Misleading",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Load-dependent Hardness Prediction for Materials using Machine Learning",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Occupancy Reward Shaping: Improving Credit Assignment for Offline Goal-Conditioned Reinforcement Learning",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Dynamic Prediction of the Target Survival Time in Metastatic Solid Tumor Cancer Clinical Trials",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "CCTVBench: Contrastive Consistency Traffic VideoQA Benchmark for Multimodal LLMs",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Calibrating conditional risk",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Synthetic Flight Data Generation Using Generative Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "X-Cache: Cross-Chunk Block Caching for Few-Step Autoregressive World Models Inference",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Generative Augmentation of Imbalanced Flight Records for Flight Diversion Prediction: A Multi-objective Optimisation Framework",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Learning Reasoning World Models for Parallel Code",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "AROMA: Augmented Reasoning Over a Multimodal Architecture for Virtual Cell Genetic Perturbation Modeling",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Cortex 2.0: Grounding World Models in Real-World Industrial Deployment",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Toward Safe Autonomous Robotic Endovascular Interventions using World Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Decision-Focused Federated Learning Under Heterogeneous Objectives and Constraints",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Efficient Reinforcement Learning using Linear Koopman Dynamics for Nonlinear Robotic Systems",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Are LLM Uncertainty and Correctness Encoded by the Same Features? A Functional Dissociation via Sparse Autoencoders",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "UniT: Toward a Unified Physical Language for Human-to-Humanoid Policy Learning and World Modeling",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "ChipCraftBrain: Validation-First RTL Generation via Multi-Agent Orchestration",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Mask World Model: Predicting What Matters for Robust Robot Policy Learning",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Safety-Critical Contextual Control via Online Riemannian Optimization with World Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Autonomous UAV Pipeline Near-proximity Inspection via Disturbance-Aware Predictive Visual Servoing",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Deep Supervised Contrastive Learning of Pitch Contours for Robust Pitch Accent Classification in Seoul Korean",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Robust Nonlinear Trajectory Tracking Control for Autonomous Racing on Three-Dimensional Tracks",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Heterogeneity-Aware Personalized Federated Learning for Industrial Predictive Analytics",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "LASER: Learning Active Sensing for Continuum Field Reconstruction",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Early Prediction of Student Performance Using Bayesian Updating with Informative Priors Across Cohorts",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "RoboWM-Bench: A Benchmark for Evaluating World Models in Robotic Manipulation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "HALO: Hybrid Auto-encoded Locomotion with Learned Latent Dynamics, Poincaré Maps, and Regions of Attraction",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "A Dynamic Mode Decomposition Approach to Parameter Identification",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Curiosity-Critic: Cumulative Prediction Error Improvement as a Tractable Intrinsic Reward for World Model Training",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "MultiWorld: Scalable Multi-Agent Multi-View Video World Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "SynSur: An end-to-end generative pipeline for synthetic industrial surface defect generation and detection",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "State Beyond Appearance: Diagnosing and Improving State Consistency in Dial-Based Measurement Reading",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Multimodal LLMs are not all you need for Pediatric Speech Language Pathology",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Progressive Semantic Communication for Efficient Edge-Cloud Vision-Language Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "A Multistage Extraction Pipeline for Long Scanned Financial Documents: An Empirical Study in Industrial KYC Workflows",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Delineating Knowledge Boundaries for Honest Large Vision-Language Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Topology-Aware Representation Alignment for Semi-Supervised Vision-Language Learning",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "UIGaze: How Closely Can VLMs Approximate Human Visual Attention on User Interfaces?",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "SpatialFusion: Endowing Unified Image Generation with Intrinsic 3D Geometric Awareness",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Efficient, VRAM-Constrained xLM Inference on Clients",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "CheXthought: A global multimodal dataset of clinical chain-of-thought reasoning and visual attention for chest X-ray interpretation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "MedSynapse-V: Bridging Visual Perception and Clinical Intuition via Latent Memory Evolution",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Multiple Consistent 2D-3D Mappings for Robust Zero-Shot 3D Visual Grounding",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Beyond Shortcuts: Mitigating Visual Illusions in Frozen VLMs via Qualitative Reasoning",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Beyond Screenshots: Evaluating VLMs' Understanding of UI Animations",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "DV-World: Benchmarking Data Visualization Agents in Real-World Scenarios",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "QCalEval: Benchmarking Vision-Language Models for Quantum Calibration Plot Understanding",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "SIEVES: Selective Prediction Generalizes through Visual Evidence Scoring",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Instruction-Evidence Contrastive Dual-Stream Decoding for Grounded Vision-Language Reasoning",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Toward Multimodal Conversational AI for Age-Related Macular Degeneration",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Prefill-Time Intervention for Mitigating Hallucination in Large Vision-Language Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Beyond Isolated Utterances: Cue-Guided Interaction for Context-Dependent Conversational Multimodal Understanding",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "SnapGuard: Lightweight Prompt Injection Detection for Screenshot-Based Web Agents",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Recommending Usability Improvements with Multimodal Large Language Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "HuM-Eval: A Coarse-to-Fine Framework for Human-Centric Video Evaluation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Learning from Medical Entity Trees: An Entity-Centric Medical Data Engineering Framework for MLLMs",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "OmniVTG: A Large-Scale Dataset and Training Paradigm for Open-World Video Temporal Grounding",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Personalized Cross-Modal Emotional Correlation Learning for Speech-Preserving Facial Expression Manipulation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "VLM Judges Can Rank but Cannot Score: Task-Dependent Uncertainty in Multimodal Evaluation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "DRAGON: A Benchmark for Evidence-Grounded Visual Reasoning over Diagrams",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "FCMBench-Video: Benchmarking Document Video Intelligence",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "M$^3$-VQA: A Benchmark for Multimodal, Multi-Entity, Multi-Hop Visual Question Answering",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "One Perturbation, Two Failure Modes: Probing VLM Safety via Embedding-Guided Typographic Perturbations",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Dynamic Decision Learning: Test-Time Evolution for Abnormality Grounding in Rare Diseases",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Agentic AI for Remote Sensing: Technical Challenges and Research Directions",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Interactive Episodic Memory with User Feedback",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "World-R1: Reinforcing 3D Constraints for Text-to-Video Generation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "NeuroClaw Technical Report",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "K-MetBench: A Multi-Dimensional Benchmark for Fine-Grained Evaluation of Expert Reasoning, Locality, and Multimodality in Meteorology",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Majorization-Guided Test-Time Adaptation for Vision-Language Models under Modality-Specific Shift",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "A systematic evaluation of vision-language models for observational astronomical reasoning tasks",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Improving Vision-language Models with Perception-centric Process Reward Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "MEG-RAG: Quantifying Multi-modal Evidence Grounding for Evidence Selection in RAG",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Zero-to-CAD: Agentic Synthesis of Interpretable CAD Programs at Million-Scale Without Real Data",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Characterizing Vision-Language-Action Models across XPUs: Constraints and Acceleration for On-Robot Deployment",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "PhysNote: Self-Knowledge Notes for Evolvable Physical Reasoning in Vision-Language Model",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "AutoGUI-v2: A Comprehensive Multi-Modal GUI Functionality Understanding Benchmark",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Global Context or Local Detail? Adaptive Visual Grounding for Hallucination Mitigation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Aligning with Your Own Voice: Self-Corrected Preference Learning for Hallucination Mitigation in LVLMs",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Structural Pruning of Large Vision Language Models: A Comprehensive Study on Pruning Dynamics, Recovery, and Data Efficiency",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "OS-SPEAR: A Toolkit for the Safety, Performance,Efficiency, and Robustness Analysis of OS Agents",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "SycoPhantasy: Quantifying Sycophancy and Hallucination in Small Open Weight VLMs for Vision-Language Scoring of Fantasy Characters",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "See Further, Think Deeper: Advancing VLM's Reasoning Ability with Low-level Visual Cues and Reflection",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "ReVSI: Rebuilding Visual Spatial Intelligence Evaluation for Accurate Assessment of VLM 3D Reasoning",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "$M^2$-VLA: Boosting Vision-Language Models for Generalizable Manipulation via Layer Mixture and Meta-Skills",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "MemeScouts@LT-EDI 2026: Asking the Right Questions -- Prompted Weak Supervision for Meme Hate Speech Detection",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Jailbreaking Frontier Foundation Models Through Intention Deception",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Grounding Before Generalizing: How AI Differs from Humans in Causal Transfer",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Robust Grounding with MLLMs Against Occlusion and Small Objects via Language-Guided Semantic Cues",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "IntentVLM: Open-Vocabulary Intention Recognition through Forward-Inverse Modeling with Video-Language Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "SMoES: Soft Modality-Guided Expert Specialization in MoE-VLMs",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Hindsight Preference Optimization for Financial Time Series Advisory",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Multi-View Synergistic Learning with Vision-Language Adaption for Low-Resource Biomedical Image Classification",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "LearnPruner: Rethinking Attention-based Token Pruning in Vision Language Models",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "GoClick: Lightweight Element Grounding Model for Autonomous GUI Interaction",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "2nd of the 5th PVUW MeViS-Audio Track: ASR-SaSaSa2VA",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "VLM-VPI: A Vision-Language Reasoning Framework for Improving Automated Vehicle-Pedestrian Interactions",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "AMAVA: Adaptive Motion-Aware Video-to-Audio Framework for Visually-Impaired Assistance",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "ShredBench: Evaluating the Semantic Reasoning Capabilities of Multimodal LLMs in Document Reconstruction",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "MIRAGE: A Micro-Interaction Relational Architecture for Grounded Exploration in Multi-Figure Artworks",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "FAIR_XAI: Improving Multimodal Foundation Model Fairness via Explainability for Wellbeing Assessment",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Prox-E: Fine-Grained 3D Shape Editing via Primitive-Based Abstractions",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Multimodal QUD: Inquisitive Questions from Scientific Figures",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "DynProto: Dynamic Prototype Evolution for Out-of-Distribution Detection",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Zoom In, Reason Out: Efficient Far-field Anomaly Detection in Expressway Surveillance Videos via Focused VLM Reasoning Guided by Bayesian Inference",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Agri-CPJ: A Training-Free Explainable Framework for Agricultural Pest Diagnosis Using Caption-Prompt-Judge and LLM-as-a-Judge",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "MISES: Minimal Information Sufficiency for Effective Service",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Bian Que: An Agentic Framework with Flexible Skill Arrangement for Online System Operations",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "From Hypotheses to Factors: Constrained LLM Agents in Cryptocurrency Markets",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "FutureWorld: A Live Environment for Training Predictive Agents with Real-World Outcome Rewards",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "A self-evolving agent for explainable diagnosis of DFT-experiment band-gap mismatch",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "FACT: Compositional Kernel Synthesis with a Three-Stage Agentic Workflow",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "AgentSim: A Platform for Verifiable Agent-Trace Simulation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "SciHorizon-DataEVA: An Agentic System for AI-Readiness Evaluation of Heterogeneous Scientific Data",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "OCR-Memory: Optical Context Retrieval for Long-Horizon Agent Memory",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Impact of Attitude and Bounded Rationality on Collective Behavioral Transitions",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "TDD Governance for Multi-Agent Code Generation via Prompt Engineering",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "XVII. Nitrogen abundances in Galactic O-type stars: further hints for separating binary-interaction products from effectively single stars",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "MappingEvolve: LLM-Driven Code Evolution for Technology Mapping",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Preserving Disagreement: Architectural Heterogeneity and Coherence Validation in Multi-Agent Policy Simulation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "RepoDoc: A Knowledge Graph-Based Framework to Automatic Documentation Generation and Incremental Updates",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "AGEL-Comp: A Neuro-Symbolic Framework for Compositional Generalization in Interactive Agents",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Lyapunov-Guided Self-Alignment: Test-Time Adaptation for Offline Safe Reinforcement Learning",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "3D Generation for Embodied AI and Robotic Simulation: A Survey",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "The Buy-or-Build Decision, Revisited: How Agentic AI Changes the Economics of Enterprise Software",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "An Empirical Study of Speculative Decoding on Software Engineering Tasks",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "EmoTransCap: Dataset and Pipeline for Emotion Transition-Aware Speech Captioning in Discourses",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "SecMate: Multi-Agent Adaptive Cybersecurity Troubleshooting with Tri-Context Personalization",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Benchmarking Complex Multimodal Document Processing Pipelines: A Unified Evaluation Framework for Enterprise AI",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Split over $n$ resource sharing problem: Are fewer capable agents better than many simpler ones?",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "A Systematic Comparison of Prompting and Multi-Agent Methods for LLM-based Stance Detection",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Amplitude Encoding of Slater-Type Orbitals via Matrix Product States: Efficient State Preparation and Integral Evaluation on Quantum Hardware",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "DreamProver: Evolving Transferable Lemma Libraries via a Wake-Sleep Theorem-Proving Agent",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "SWE-Bench 5G: Benchmarking AI Coding Agents on Telecom Network Engineering Tasks",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Agentic AI in the Software Development Lifecycle: Architecture, Empirical Evidence, and the Reshaping of Software Engineering",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Enforcing Benign Trajectories: A Behavioral Firewall for Structured-Workflow AI Agents",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "TWICEBEE: A Two-stage Intra-patient Curve-free Bayesian Decision-Theoretic Dose Escalation Design",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "LATTICE: Evaluating Decision Support Utility of Crypto Agents",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "When Agents Shop for You: Role Coherence in AI-Mediated Markets",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Exploring the Feasibility and Acceptability of AI-Mediated Serious Illness Conversations in the Emergency Department",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Hierarchical Long-Term Semantic Memory for LinkedIn's Hiring Agent",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Lifting Embodied World Models for Planning and Control",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Evergreen: Efficient Claim Verification for Semantic Aggregates",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Entropy Centroids as Intrinsic Rewards for Test-Time Scaling",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Beyond Screenshots: Evaluating VLMs' Understanding of UI Animations",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Evaluating Strategic Reasoning in Forecasting Agents",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "AMMA: A Multi-Chiplet Memory-Centric Architecture for Low-Latency 1M Context Attention Serving",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "SWE-Edit: Rethinking Code Editing for Efficient SWE-Agent",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Distill-Belief: Closed-Loop Inverse Source Localization and Characterization in Physical Fields",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Operating-Layer Controls for Onchain Language-Model Agents Under Real Capital",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "FlowS: One-Step Motion Prediction via Local Transport Conditioning",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "I Would If I Could: Reasoning about Dynamics of Actions in Multi-Agent Systems",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Training Computer Use Agents to Assess the Usability of Graphical User Interfaces",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Recursive Multi-Agent Systems",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "DV-World: Benchmarking Data Visualization Agents in Real-World Scenarios",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Pythia: Toward Predictability-Driven Agent-Native LLM Serving",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "From Threads to Trajectories: A Multi-LLM Pipeline for Community Knowledge Extraction from GitHub Issue Discussions",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Slice Agent: Identifying and Isolating Slices in Shared Open Radio Unit",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "ADEMA: A Knowledge-State Orchestration Architecture for Long-Horizon Knowledge Synthesis with LLMAgents",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Semi-Markov Reinforcement Learning for City-Scale EV Ride-Hailing with Feasibility-Guaranteed Actions",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "From Soliloquy to Agora: Memory-Enhanced LLM Agents with Decentralized Debate for Optimization Modeling",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Towards Agentic Investigation of Security Alerts",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "TrialCalibre: A Fully Automated Causal Engine for RCT Benchmarking and Observational Trial Calibration",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "StratFormer: Adaptive Opponent Modeling and Exploitation in Imperfect-Information Games",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "KinDER: A Physical Reasoning Benchmark for Robot Learning and Planning",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Lightweight Quantum Agent for Edge Systems: Joint PQC and NOMA Resource Allocation",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "The Core in a Distributional Economy",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "SAFEdit: Does Multi-Agent Decomposition Resolve the Reliability Challenges of Instructed Code Editing?",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Toward Scalable Terminal Task Synthesis via Skill Graphs",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Scalable Inference Architectures for Compound AI Systems: A Production Deployment Study",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Think Before You Act -- A Neurocognitive Governance Model for Autonomous AI Agents",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "CORAL: Adaptive Retrieval Loop for Culturally-Aligned Multilingual RAG",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Modeling Human-Like Color Naming Behavior in Context",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "HotComment: A Benchmark for Evaluating Popularity of Online Comments",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Optimizing ground state preparation protocols with autoresearch",
+        "reason": "Outside crawl window for arXiv published/updated timestamps"
+      },
+      {
+        "title": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "ClawGym: A Scalable Framework for Building Effective Claw Agents",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Semi-supervised learning with max-margin graph cuts",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Accelerating RL Post-Training Rollouts via System-Integrated Speculative Decoding",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Unified 4D World Action Modeling from Video Priors with Asynchronous Denoising",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Evolutionary feature selection for spiking neural network pattern classifiers",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Large-scale semi-supervised learning with online spectral graph sparsification",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Theory-Grounded Evaluation Exposes the Authorship Gap in LLM Personalization",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Amplitude Encoding of Slater-Type Orbitals via Matrix Product States: Efficient State Preparation and Integral Evaluation on Quantum Hardware",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "FASH-iCNN: Making Editorial Fashion Identity Inspectable Through Multimodal CNN Probing",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Agentic Fusion of Large Atomic and Language Models to Accelerate Superconductors Discovery",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "COP-GEN: Latent Diffusion Transformer for Copernicus Earth Observation Data",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Operating-Layer Controls for Onchain Language-Model Agents Under Real Capital",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Recursive Multi-Agent Systems",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "DV-World: Benchmarking Data Visualization Agents in Real-World Scenarios",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Mutual Forcing: Dual-Mode Self-Evolution for Fast Autoregressive Audio-Video Character Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "MAIC-UI: Making Interactive Courseware with Generative UI",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Toward Scalable Terminal Task Synthesis via Skill Graphs",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Step-Audio-R1.5 Technical Report",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Cross-Lingual Jailbreak Detection via Semantic Codebooks",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Refinement via Regeneration: Enlarging Modification Space Boosts Image Refinement in Unified Multimodal Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "PSP: An Interpretable Per-Dimension Accent Benchmark for Indic Text-to-Speech",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Praxy Voice: Voice-Prompt Recovery + BUPS for Commercial-Class Indic TTS from a Frozen Non-Indic Base at Zero Commercial-Training-Data Cost",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "A Systematic Post-Train Framework for Video Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Wiki Dumps to Training Corpora: South Slavic Case",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Language corpora for the Dutch medical domain",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "The Structured Output Benchmark: A Multi-Source Benchmark for Evaluating Structured Output Quality in Large Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Cutscene Agent: An LLM Agent Framework for Automated 3D Cutscene Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "OmniVTG: A Large-Scale Dataset and Training Paradigm for Open-World Video Temporal Grounding",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Spectral bandits",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Online learning with Erdős-Rényi side-observation graphs",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Online combinatorial optimization with stochastic decision sets and adversarial losses",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "AutoResearchBench: Benchmarking AI Agents on Complex Scientific Literature Discovery",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "BARRED: Synthetic Training of Custom Policy Guardrails via Asymmetric Debate",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "FCMBench-Video: Benchmarking Document Video Intelligence",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "IAM: Identity-Aware Human Motion and Shape Joint Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Cooperate to Compete: Strategic Coordination in Multi-Agent Conquest",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "AIPsy-Affect: A Keyword-Free Clinical Stimulus Battery for Mechanistic Interpretability of Emotion in Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "How Much Heavy Lifting Can an Agent Harness Do?: Measuring the LLM's Residual Role in a Planning Agent",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "AIDOVECL: AI-generated Dataset of Outpainted Vehicles for Eye-level Classification and Localization",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Offline Evaluation Measures of Fairness in Recommender Systems",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Power Foam: Unifying Real-Time Differentiable Ray Tracing and Rasterization",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "A Survey on LLM-based Conversational User Simulation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "PolyKV: A Shared Asymmetrically-Compressed KV Cache Pool for Multi-Agent LLM Inference",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Nemotron 3 Nano Omni: Efficient and Open Multimodal Intelligence",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Large Language Models Explore by Latent Distilling",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Latent Agents: A Post-Training Procedure for Internalized Multi-Agent Debate",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Learning Illumination Control in Diffusion Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Co-Director: Agentic Generative Video Storytelling",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "A Comparative Evaluation of AI Agent Security Guardrails",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Programming with Data: Test-Driven Data Engineering for Self-Improving LLMs from Raw Corpora",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Nautile-370M: Spectral Memory Meets Attention in a Small Reasoning Model",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "World-R1: Reinforcing 3D Constraints for Text-to-Video Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Tuna-2: Pixel Embeddings Beat Vision Encoders for Multimodal Understanding and Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "OmniShotCut: Holistic Relational Shot Boundary Detection with Shot-Query Transformer",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Can Current Agents Close the Discovery-to-Application Gap? A Case Study in Minecraft",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "NeuroClaw Technical Report",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "K-MetBench: A Multi-Dimensional Benchmark for Fine-Grained Evaluation of Expert Reasoning, Locality, and Multimodality in Meteorology",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Meta-CoT: Enhancing Granularity and Generalization in Image Editing",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Quantum Kernel Advantage over Classical Collapse in Medical Foundation Model Embeddings",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Improving Vision-language Models with Perception-centric Process Reward Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Efficient learning by implicit exploration in bandit problems with side observations",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Extreme bandits",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Stochastic simultaneous optimistic optimization",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Zero-to-CAD: Agentic Synthesis of Interpretable CAD Programs at Million-Scale Without Real Data",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "AutoGUI-v2: A Comprehensive Multi-Modal GUI Functionality Understanding Benchmark",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "BMD-45: A Large-Scale CCTV Vehicle Detection Dataset for Urban Traffic in Developing Cities",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Few-Shot Cross-Device Transfer for Quantum Noise Modeling on Real Hardware",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Diffusion Templates: A Unified Plugin Framework for Controllable Diffusion",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "ReVSI: Rebuilding Visual Spatial Intelligence Evaluation for Accurate Assessment of VLM 3D Reasoning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Rewarding the Scientific Process: Process-Level Reward Modeling for Agentic Data Analysis",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Credal Concept Bottleneck Models for Epistemic-Aleatoric Uncertainty Decomposition",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "QEVA: A Reference-Free Evaluation Metric for Narrative Video Summarization with Multimodal Question Answering",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Improving Robustness of Tabular Retrieval via Representational Stability",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "From Skill Text to Skill Structure: The Scheduling-Structural-Logical Representation for Agent Skills",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "TCOD: Exploring Temporal Curriculum in On-Policy Distillation for Multi-turn Autonomous Agents",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Stabilizing Efficient Reasoning with Step-Level Advantage Selection",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "CT-FineBench: A Diagnostic Fidelity Benchmark for Fine-Grained Evaluation of CT Report Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Quantum Knowledge Graph: Modeling Context-Dependent Triplet Validity",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "GoClick: Lightweight Element Grounding Model for Autonomous GUI Interaction",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "A Co-Evolutionary Theory of Human-AI Coexistence: Mutualism, Governance, and Dynamics in Complex Societies",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Supervised Learning Has a Necessary Geometric Blind Spot: Theory, Consequences, and Minimal Repair",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "How Much Is One Recurrence Worth? Iso-Depth Scaling Laws for Looped Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "LiquidTAD: Efficient Temporal Action Detection via Parallel Liquid-Inspired Temporal Relaxation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Graph Memory Transformer (GMT)",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Query2Diagram: Answering Developer Queries with UML Diagrams",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "PageGuide: Browser extension to assist users in navigating a webpage and locating information",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "The Override Gap: A Magnitude Account of Knowledge Conflict Failure in Hypernetwork-Based Instant LLM Adaptation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Prism-Reranker: Beyond Relevance Scoring -- Jointly Producing Contributions and Evidence for Agentic Retrieval",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "HAC: Parameter-Efficient Hyperbolic Adaptation of CLIP for Zero-Shot VQA",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Geometry-Conditioned Diffusion for Occlusion-Robust In-Bed Pose Estimation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "RaV-IDP: A Reconstruction-as-Validation Framework for Faithful Intelligent Document Processing",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Hallo-Live: Real-Time Streaming Joint Audio-Video Avatar Generation with Asynchronous Dual-Stream and Human-Centric Preference Distillation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Learning to Identify Out-of-Distribution Objects for 3D LiDAR Anomaly Segmentation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "ProcFunc: Function-Oriented Abstractions for Procedural 3D Generation in Python",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Degree-dependent and distance-dependent contact rates interpolate between explosive, exponential and polynomial epidemic growth",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "ClawGym: A Scalable Framework for Building Effective Claw Agents",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Many-to-many stable matching in large economies",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Hot Fixing in the Wild",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Resolving growth-induced off-stoichiometry in AgCrSe$_2$ single crystals",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "A well-motivated model of pedestrian dynamics",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Large Language Models Explore by Latent Distilling",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Diffusion Templates: A Unified Plugin Framework for Controllable Diffusion",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Accelerating RL Post-Training Rollouts via System-Integrated Speculative Decoding",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Unified 4D World Action Modeling from Video Priors with Asynchronous Denoising",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "A Survey on LLM-based Conversational User Simulation",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "FASH-iCNN: Making Editorial Fashion Identity Inspectable Through Multimodal CNN Probing",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Praxy Voice: Voice-Prompt Recovery + BUPS for Commercial-Class Indic TTS from a Frozen Non-Indic Base at Zero Commercial-Training-Data Cost",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "PSP: An Interpretable Per-Dimension Accent Benchmark for Indic Text-to-Speech",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Probing Visual Planning in Image Editing Models",
+        "reason": "Classifier marked it as out of scope"
+      }
+    ],
+    "deduplication_log": [
+      "STARRY: Spatial-Temporal Action-Centric World Modeling for Robotic Manipulation @ arXiv / VLA == STARRY: Spatial-Temporal Action-Centric World Modeling for Robotic Manipulation @ arXiv / World Models → merged into 2604.26848",
+      "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning @ arXiv / World Models == World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning @ arXiv / Multimodal LLMs → merged into 2604.26934",
+      "Walk With Me: Long-Horizon Social Navigation for Human-Centric Outdoor Assistance @ arXiv / VLA == Walk With Me: Long-Horizon Social Navigation for Human-Centric Outdoor Assistance @ arXiv / Multimodal LLMs → merged into 2604.26839",
+      "Three-Step Nav: A Hierarchical Global-Local Planner for Zero-Shot Vision-and-Language Navigation @ arXiv / Multimodal LLMs == Three-Step Nav: A Hierarchical Global-Local Planner for Zero-Shot Vision-and-Language Navigation @ arXiv / Agents → merged into 2604.26946",
+      "ClawGym: A Scalable Framework for Building Effective Claw Agents @ arXiv / Agents == ClawGym: A Scalable Framework for Building Effective Claw Agents @ HuggingFace Papers / Daily Papers → merged into 2604.26904"
+    ],
+    "crawl_errors": [
+      "HuggingFace Papers / Daily Papers / 2026-05-01 — Client error '400 Bad Request' for url 'https://huggingface.co/api/daily_papers?date=2026-05-01&limit=60'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+    ],
+    "parsing_warnings": [],
+    "llm_warnings": [],
+    "todo_for_tomorrow": [
+      "回看 World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning 是否补出了 code / project link。",
+      "回看 STARRY: Spatial-Temporal Action-Centric World Modeling for Robotic Manipulation 是否补出了 code / project link。",
+      "检查被 classifier 或窗口规则过滤掉的边界样本，必要时扩充关键词。"
+    ]
+  }
+}
