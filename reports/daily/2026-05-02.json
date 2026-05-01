@@ -1,0 +1,1447 @@
+{
+  "report_type": "daily_paper_digest",
+  "report_date": "2026-05-02",
+  "timezone": "Asia/Shanghai",
+  "generated_at": "2026-05-02T00:41:45.611509+08:00",
+  "generator": {
+    "repo_name": "daily-ai-paper-digest",
+    "repo_commit": "fdb71a04223cedcd41f6cb4ef63be7750e344a90",
+    "pipeline_version": "v1.0.0"
+  },
+  "llm": {
+    "enabled": false,
+    "provider": "openai_responses",
+    "model": "",
+    "enhanced": false
+  },
+  "sources": [
+    {
+      "name": "arXiv",
+      "enabled": true,
+      "query_groups": [
+        "VLA",
+        "World Models",
+        "Multimodal LLMs",
+        "Agents"
+      ]
+    },
+    {
+      "name": "HuggingFace Papers",
+      "enabled": true,
+      "query_groups": [
+        "VLA",
+        "World Models",
+        "Multimodal LLMs",
+        "Agents"
+      ]
+    }
+  ],
+  "crawl_window": {
+    "start": "2026-05-01T00:00:00+08:00",
+    "end": "2026-05-02T23:59:59+08:00",
+    "note": "日报统计窗口；不一定等同于平台原始发布时间"
+  },
+  "statistics": {
+    "raw_candidates_total": 122,
+    "deduplicated_total": 22,
+    "selected_total": 4,
+    "highlights_total": 4
+  },
+  "topic_counts": {
+    "vla": 0,
+    "world_models": 0,
+    "multimodal_llm": 2,
+    "agents": 2,
+    "other_relevant": 0
+  },
+  "selection_policy": {
+    "included_if": [
+      "与 VLA / 世界模型 / 多模态大模型 / 智能体直接相关",
+      "或对这些方向的方法、训练、评测、系统化落地有明显参考价值"
+    ],
+    "excluded_if": [
+      "主题过远",
+      "纯行业新闻，无论文主体",
+      "重复条目",
+      "仅有转发，无原始论文页"
+    ]
+  },
+  "ranking_policy": {
+    "highlight_score_formula": "0.35*topic_relevance + 0.20*novelty + 0.20*evidence_strength + 0.15*resource_readiness + 0.10*discussion_value",
+    "score_range": "0-5"
+  },
+  "tags": [
+    "daily-digest",
+    "ai-research",
+    "arxiv",
+    "huggingface",
+    "vla",
+    "world-model",
+    "mllm",
+    "agents"
+  ],
+  "executive_summary": {
+    "conclusion_lines": [
+      "今天最值得关注的方向是：`Multimodal LLMs`",
+      "主要趋势是：`model-based control / multi-agent / planning`",
+      "真正建议精读的论文数量：`4` 篇"
+    ],
+    "top_highlights": [
+      {
+        "title": "Heterogeneous Scientific Foundation Model Collaboration",
+        "reason": "它直接落在 Agents 方向，并且已经能追踪到开源资源。"
+      },
+      {
+        "title": "InteractWeb-Bench: Can Multimodal Agent Escape Blind Execution in Interactive Website Generation?",
+        "reason": "它直接落在 Multimodal LLMs 方向，并且已经能追踪到开源资源。"
+      },
+      {
+        "title": "PhyCo: Learning Controllable Physical Priors for Generative Motion",
+        "reason": "它直接落在 Multimodal LLMs 方向。"
+      },
+      {
+        "title": "FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption",
+        "reason": "它直接落在 Agents 方向，并且已经能追踪到开源资源。"
+      }
+    ],
+    "research_observations": [
+      {
+        "label": "趋势 1",
+        "text": "今天出现频率最高的方法 motif 是：model-based control。"
+      },
+      {
+        "label": "趋势 2",
+        "text": "最集中爆发的主题是：Multimodal LLMs。"
+      },
+      {
+        "label": "趋势 3",
+        "text": "Read-now 信号论文共有 0 篇。"
+      },
+      {
+        "label": "空白点 / 机会点",
+        "text": "真实机器人验证仍然稀缺，尤其缺少能跨 embodiment 的证据。"
+      }
+    ]
+  },
+  "metadata_summary": {
+    "report_date": "2026-05-02",
+    "timezone": "Asia/Shanghai",
+    "generated_at": "2026-05-02T00:41:45.611509+08:00",
+    "raw_candidates_total": 122,
+    "deduplicated_total": 22,
+    "selected_total": 4
+  },
+  "query_groups": [
+    "VLA",
+    "World Models",
+    "Multimodal LLMs",
+    "Agents"
+  ],
+  "query_terms": {
+    "VLA": [
+      "vision-language-action",
+      "VLA",
+      "embodied policy",
+      "robot manipulation policy",
+      "robot foundation model",
+      "action tokenizer"
+    ],
+    "World Models": [
+      "world model",
+      "latent dynamics",
+      "predictive model",
+      "video prediction for control",
+      "model-based reinforcement learning",
+      "action-conditioned video generation"
+    ],
+    "Multimodal LLMs": [
+      "multimodal large language model",
+      "multimodal llm",
+      "mllm",
+      "vision-language model",
+      "vlm",
+      "multimodal reasoning",
+      "video-language model"
+    ],
+    "Agents": [
+      "agent",
+      "tool use",
+      "computer use",
+      "multi-agent",
+      "planning with llm",
+      "browser agent",
+      "code agent"
+    ]
+  },
+  "topic_overview": [
+    {
+      "name": "VLA",
+      "count": 0,
+      "judgement": "今天这个方向没有足够强的入选条目。",
+      "top_papers": [],
+      "commonalities": [
+        "暂无明显共性"
+      ],
+      "pitfalls": [
+        "暂无足够样本。"
+      ]
+    },
+    {
+      "name": "World Models",
+      "count": 0,
+      "judgement": "今天这个方向没有足够强的入选条目。",
+      "top_papers": [],
+      "commonalities": [
+        "暂无明显共性"
+      ],
+      "pitfalls": [
+        "暂无足够样本。"
+      ]
+    },
+    {
+      "name": "Multimodal LLMs",
+      "count": 2,
+      "judgement": "今天 Multimodal LLMs 方向更偏 verification, verifier，整体更适合做趋势跟踪而不是一次性下重注。",
+      "top_papers": [
+        "InteractWeb-Bench: Can Multimodal Agent Escape Blind Execution in Interactive Website Generation?",
+        "PhyCo: Learning Controllable Physical Priors for Generative Motion"
+      ],
+      "commonalities": [
+        "verification",
+        "verifier"
+      ],
+      "pitfalls": [
+        "需要结合正文继续确认实验边界。"
+      ]
+    },
+    {
+      "name": "Agents",
+      "count": 2,
+      "judgement": "今天 Agents 方向更偏 model-based control, multi-agent，整体更适合做趋势跟踪而不是一次性下重注。",
+      "top_papers": [
+        "Heterogeneous Scientific Foundation Model Collaboration",
+        "FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption"
+      ],
+      "commonalities": [
+        "model-based control",
+        "multi-agent"
+      ],
+      "pitfalls": [
+        "真实工具链和环境回放成本可能高于摘要给出的直觉。"
+      ]
+    },
+    {
+      "name": "Other Relevant",
+      "count": 0,
+      "judgement": "今天这个方向没有足够强的入选条目。",
+      "top_papers": [],
+      "commonalities": [
+        "暂无明显共性"
+      ],
+      "pitfalls": [
+        "暂无足够样本。"
+      ]
+    }
+  ],
+  "highlight_papers": [
+    {
+      "paper_id": "arxiv-2604.27351",
+      "title": "Heterogeneous Scientific Foundation Model Collaboration",
+      "authors": [
+        "Zihao Li",
+        "Jiaru Zou",
+        "Feihao Fang",
+        "Xuying Ning",
+        "Mengting Ai",
+        "Tianxin Wei",
+        "Sirui Chen",
+        "Xiyuan Yang",
+        "Jingrui He"
+      ],
+      "first_author": "Zihao Li",
+      "source_primary": "HuggingFace Papers",
+      "source_aliases": [
+        "HuggingFace Papers / Daily Papers"
+      ],
+      "arxiv_id": "2604.27351",
+      "version": null,
+      "hf_paper_url": "https://huggingface.co/papers/2604.27351",
+      "paper_url": "https://arxiv.org/abs/2604.27351",
+      "pdf_url": "https://arxiv.org/pdf/2604.27351.pdf",
+      "project_url": "https://www.zihao.website/eywa.github.io/",
+      "code_url": "https://github.com/Violet24K/Eywa",
+      "model_url": null,
+      "dataset_url": null,
+      "demo_url": null,
+      "published_at": "2026-04-30T00:00:00+00:00",
+      "updated_at": "2026-04-30T00:00:00+00:00",
+      "primary_category": null,
+      "categories": [],
+      "institution_hint": null,
+      "license_hint": null,
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "summary": "Agentic large language model systems have demonstrated strong capabilities. However, their reliance on language as the universal interface fundamentally limits their applicability to many real-world problems, especially in scientific domains where domain-specific foundation models have been developed to address specialized tasks beyond natural language. In this work, we introduce Eywa, a heterogeneous agentic framework designed to extend language-centric systems to a broader class of scientific foundation models. The key idea of Eywa is to augment domain-specific foundation models with a language-model-based reasoning interface, enabling language models to guide inference over non-linguistic data modalities. This design allows predictive foundation models, which are typically optimized for specialized data and tasks, to participate in higher-level reasoning and decision-making processes within agentic systems. Eywa can serve as a drop-in replacement for a single-agent pipeline (EywaAgent) or be integrated into existing multi-agent systems by replacing traditional agents with specialized agents (EywaMAS). We further investigate a planning-based orchestration framework in which a planner dynamically coordinates traditional agents and Eywa agents to solve complex tasks across heterogeneous data modalities (EywaOrchestra). We evaluate Eywa across a diverse set of scientific domains spanning physical, life, and social sciences. Experimental results demonstrate that Eywa improves performance on tasks involving structured and domain-specific data, while reducing reliance on language-based reasoning through effective collaboration with specialized foundation models.",
+      "topics": [
+        "Agents"
+      ],
+      "primary_topic": "Agents",
+      "query_groups": [],
+      "method_tags": [
+        "model-based control",
+        "multi-agent",
+        "planning"
+      ],
+      "application_tags": [],
+      "one_line_summary": "Eywa is a heterogeneous agentic framework that extends language-centric systems to scientific foundation models by integrating domain-specific models with language-based reasoning interfaces for improved performance acr…",
+      "why_read_today": "它直接落在 Agents 方向，并且已经能追踪到开源资源。",
+      "relevance_level": "medium",
+      "highlight_score": 3.54,
+      "recommended_action": "reproduce",
+      "topic_scores": {
+        "VLA": 0.0,
+        "World Models": 0.45,
+        "Multimodal LLMs": 0.0,
+        "Agents": 2.79
+      },
+      "structured_summary": {
+        "problem": "However, their reliance on language as the universal interface fundamentally limits their applicability to many real-world problems, especially in scientific domains where domain-specific foundation models have been developed to address specialized tasks beyond natural language.",
+        "motivation": "However, their reliance on language as the universal interface fundamentally limits their applicability to many real-world problems, especially in scientific domains where domain-specific foundation models have been developed to address specialized tasks beyond natural language.",
+        "core_idea": "In this work, we introduce Eywa, a heterogeneous agentic framework designed to extend language-centric systems to a broader class of scientific foundation models.",
+        "method": "In this work, we introduce Eywa, a heterogeneous agentic framework designed to extend language-centric systems to a broader class of scientific foundation models.",
+        "training": "摘要未明确说明训练细节。",
+        "inference": "The key idea of Eywa is to augment domain-specific foundation models with a language-model-based reasoning interface, enabling language models to guide inference over non-linguistic data modalities.",
+        "evaluation": "Experimental results demonstrate that Eywa improves performance on tasks involving structured and domain-specific data, while reducing reliance on language-based reasoning through effective collaboration with specialized foundation models.",
+        "main_results": "Agentic large language model systems have demonstrated strong capabilities.",
+        "claim": "Agentic large language model systems have demonstrated strong capabilities."
+      },
+      "novelty_points": [
+        "主线聚焦在 Agents，并给出了相对明确的方法叙述。",
+        "方法标签里最显眼的是：model-based control, multi-agent, planning。"
+      ],
+      "strengths": [
+        "标题和摘要都能清楚定位到研究问题。",
+        "摘要里明确给出了评测或实验设置。"
+      ],
+      "weaknesses": [
+        "摘要无法支撑太细的结论，需要正文补充。"
+      ],
+      "assumptions": [
+        "默认工具链、环境接口和反馈信号都是稳定可用的。"
+      ],
+      "risks": [
+        "真实任务链路上的鲁棒性和成本可能比摘要看起来更敏感。"
+      ],
+      "open_questions": [
+        "长任务中的 memory / verifier 成本是否可控？",
+        "工具调用失败时的恢复策略是什么？"
+      ],
+      "relation_to_prior_work": "从摘要看，它更接近以 model-based control 为核心的 Agents 路线。",
+      "domain_analysis": {
+        "vla": {
+          "embodiment": "unknown",
+          "action_space": "unknown",
+          "control_level": "unknown",
+          "memory_usage": "unknown",
+          "planner_usage": "yes",
+          "reasoner_usage": "yes",
+          "world_model_usage": "no",
+          "real_robot": "yes",
+          "simulator": "null",
+          "data_source": "unknown"
+        },
+        "world_models": {
+          "state_representation": "unknown",
+          "prediction_target": "unknown",
+          "horizon": "unknown",
+          "planning_interface": "unknown",
+          "control_coupling": "unclear"
+        },
+        "multimodal_llms": {
+          "modalities": [
+            "text"
+          ],
+          "reasoning_type": "none",
+          "long_context_usage": "no",
+          "grounding_method": "none"
+        },
+        "agents": {
+          "agent_type": "multi-agent",
+          "tooling": "unknown",
+          "memory_type": "none",
+          "planning_style": "unknown",
+          "verification_style": "no verifier"
+        }
+      },
+      "reproducibility": {
+        "code_available": true,
+        "weights_available": false,
+        "dataset_available": false,
+        "env_instructions_available": true,
+        "repro_effort_estimate": "medium"
+      },
+      "my_take": {
+        "should_i_read_it": "视方向而定",
+        "should_i_reproduce_it": "是",
+        "what_can_i_borrow": "model-based control, multi-agent, planning",
+        "what_do_i_not_buy": "重点核对实验设置和资源完整度。",
+        "best_use_case": "Agents"
+      },
+      "hf_upvotes": 172,
+      "hf_ai_summary": "Eywa is a heterogeneous agentic framework that extends language-centric systems to scientific foundation models by integrating domain-specific models with language-based reasoning interfaces for improved performance across diverse scientific domains.",
+      "hf_ai_keywords": [
+        "agentic framework",
+        "domain-specific foundation models",
+        "heterogeneous data modalities",
+        "language-model-based reasoning",
+        "multi-agent systems",
+        "non-linguistic data modalities",
+        "planning-based orchestration",
+        "predictive foundation models"
+      ],
+      "submitted_on_daily_at": "2026-05-01T00:30:02.362000+00:00"
+    },
+    {
+      "paper_id": "arxiv-2604.27419",
+      "title": "InteractWeb-Bench: Can Multimodal Agent Escape Blind Execution in Interactive Website Generation?",
+      "authors": [
+        "Qiyao Wang",
+        "Haoran Hu",
+        "Longze Chen",
+        "Hongbo Wang",
+        "Hamid Alinejad-Rokny",
+        "Yuan Lin",
+        "Min Yang"
+      ],
+      "first_author": "Qiyao Wang",
+      "source_primary": "HuggingFace Papers",
+      "source_aliases": [
+        "HuggingFace Papers / Daily Papers"
+      ],
+      "arxiv_id": "2604.27419",
+      "version": null,
+      "hf_paper_url": "https://huggingface.co/papers/2604.27419",
+      "paper_url": "https://arxiv.org/abs/2604.27419",
+      "pdf_url": "https://arxiv.org/pdf/2604.27419.pdf",
+      "project_url": "https://interactweb-bench.wangqiyao.me/",
+      "code_url": "https://github.com/AIforIP/InteractWeb-Bench",
+      "model_url": null,
+      "dataset_url": null,
+      "demo_url": null,
+      "published_at": "2026-04-30T00:00:00+00:00",
+      "updated_at": "2026-04-30T00:00:00+00:00",
+      "primary_category": null,
+      "categories": [],
+      "institution_hint": null,
+      "license_hint": null,
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "summary": "With the advancement of multimodal large language models (MLLMs) and coding agents, the website development has shifted from manual programming to agent-based project-level code synthesis. Existing benchmarks rely on idealized assumptions, especially for well-structured, information-rich inputs and static execution settings. In contrast, real-world development is constrained by a critical bottleneck: the semantic misalignment between ambiguous, low-quality instructions from non-expert users and model understanding, which results in a failure mode that we term blind execution. To address this gap, we introduce InteractWeb-Bench, the first multimodal interactive benchmark for website generation under non-expert low-code user conditions. InteractWeb-Bench introduces four types of user agents and persona-driven instruction perturbations to systematically simulate diverse user behaviors, including ambiguity, redundancy, and contradiction, grounded in requirement engineering defect taxonomies. We develop an interactive execution environment for agents, featuring a unified action space comprising Clarify, Implement, Verify, and Submit, enabling iterative intent refinement, code synthesis, and visual feedback-based validation. Extensive experiments and analysis reveal that frontier MLLM-based agents remain trapped in blind execution, exposing limitations in intent recognition and adaptive interaction.",
+      "topics": [
+        "Multimodal LLMs"
+      ],
+      "primary_topic": "Multimodal LLMs",
+      "query_groups": [],
+      "method_tags": [
+        "verification",
+        "verifier"
+      ],
+      "application_tags": [
+        "code agent",
+        "embodied reasoning",
+        "web agent"
+      ],
+      "one_line_summary": "InteractWeb-Bench presents the first multimodal interactive benchmark for website generation under non-expert low-code conditions, addressing semantic misalignment through diverse user agents and interactive execution e…",
+      "why_read_today": "它直接落在 Multimodal LLMs 方向，并且已经能追踪到开源资源。",
+      "relevance_level": "medium",
+      "highlight_score": 3.14,
+      "recommended_action": "track",
+      "topic_scores": {
+        "VLA": 0.0,
+        "World Models": 0.0,
+        "Multimodal LLMs": 2.34,
+        "Agents": 0.9
+      },
+      "structured_summary": {
+        "problem": "To address this gap, we introduce InteractWeb-Bench, the first multimodal interactive benchmark for website generation under non-expert low-code user conditions.",
+        "motivation": "In contrast, real-world development is constrained by a critical bottleneck: the semantic misalignment between ambiguous, low-quality instructions from non-expert users and model understanding, which results in a failure mode that we term blind execution.",
+        "core_idea": "To address this gap, we introduce InteractWeb-Bench, the first multimodal interactive benchmark for website generation under non-expert low-code user conditions.",
+        "method": "To address this gap, we introduce InteractWeb-Bench, the first multimodal interactive benchmark for website generation under non-expert low-code user conditions.",
+        "training": "In contrast, real-world development is constrained by a critical bottleneck: the semantic misalignment between ambiguous, low-quality instructions from non-expert users and model understanding, which results in a failure mode that we term blind execution.",
+        "inference": "摘要未明确描述推理阶段流程。",
+        "evaluation": "Existing benchmarks rely on idealized assumptions, especially for well-structured, information-rich inputs and static execution settings.",
+        "main_results": "Extensive experiments and analysis reveal that frontier MLLM-based agents remain trapped in blind execution, exposing limitations in intent recognition and adaptive interaction.",
+        "claim": "Extensive experiments and analysis reveal that frontier MLLM-based agents remain trapped in blind execution, exposing limitations in intent recognition and adaptive interaction."
+      },
+      "novelty_points": [
+        "主线聚焦在 Multimodal LLMs，并给出了相对明确的方法叙述。",
+        "方法标签里最显眼的是：verification, verifier。"
+      ],
+      "strengths": [
+        "标题和摘要都能清楚定位到研究问题。",
+        "摘要里明确给出了评测或实验设置。"
+      ],
+      "weaknesses": [
+        "摘要无法支撑太细的结论，需要正文补充。"
+      ],
+      "assumptions": [
+        "默认多模态对齐质量足以支撑推理或工具调用。"
+      ],
+      "risks": [
+        "真实 deployment 条件和 benchmark 表现之间可能存在落差。"
+      ],
+      "open_questions": [
+        "真实多模态长上下文场景里的收益是否稳定？",
+        "grounding 误差会不会拖累推理质量？"
+      ],
+      "relation_to_prior_work": "从摘要看，它更接近以 verification 为核心的 Multimodal LLMs 路线。",
+      "domain_analysis": {
+        "vla": {
+          "embodiment": "unknown",
+          "action_space": "unknown",
+          "control_level": "unknown",
+          "memory_usage": "unknown",
+          "planner_usage": "no",
+          "reasoner_usage": "yes",
+          "world_model_usage": "no",
+          "real_robot": "yes",
+          "simulator": "null",
+          "data_source": "unknown"
+        },
+        "world_models": {
+          "state_representation": "unknown",
+          "prediction_target": "actions",
+          "horizon": "unknown",
+          "planning_interface": "unknown",
+          "control_coupling": "unclear"
+        },
+        "multimodal_llms": {
+          "modalities": [
+            "text"
+          ],
+          "reasoning_type": "none",
+          "long_context_usage": "no",
+          "grounding_method": "none"
+        },
+        "agents": {
+          "agent_type": "single-agent",
+          "tooling": "code",
+          "memory_type": "none",
+          "planning_style": "unknown",
+          "verification_style": "critic"
+        }
+      },
+      "reproducibility": {
+        "code_available": true,
+        "weights_available": false,
+        "dataset_available": false,
+        "env_instructions_available": true,
+        "repro_effort_estimate": "medium"
+      },
+      "my_take": {
+        "should_i_read_it": "视方向而定",
+        "should_i_reproduce_it": "条件满足时再看",
+        "what_can_i_borrow": "verification, verifier",
+        "what_do_i_not_buy": "重点核对实验设置和资源完整度。",
+        "best_use_case": "code agent"
+      },
+      "hf_upvotes": 7,
+      "hf_ai_summary": "InteractWeb-Bench presents the first multimodal interactive benchmark for website generation under non-expert low-code conditions, addressing semantic misalignment through diverse user agents and interactive execution environments.",
+      "hf_ai_keywords": [
+        "adaptive interaction",
+        "blind execution",
+        "coding agents",
+        "intent recognition",
+        "interactive benchmark",
+        "interactive execution environment",
+        "multimodal large language models",
+        "persona-driven instruction perturbations",
+        "requirement engineering defect taxonomies",
+        "unified action space",
+        "user agents",
+        "website generation"
+      ],
+      "submitted_on_daily_at": "2026-05-01T01:31:26.350000+00:00"
+    },
+    {
+      "paper_id": "arxiv-2604.28169",
+      "title": "PhyCo: Learning Controllable Physical Priors for Generative Motion",
+      "authors": [
+        "Sriram Narayanan",
+        "Ziyu Jiang",
+        "Srinivasa Narasimhan",
+        "Manmohan Chandraker"
+      ],
+      "first_author": "Sriram Narayanan",
+      "source_primary": "HuggingFace Papers",
+      "source_aliases": [
+        "HuggingFace Papers / Daily Papers"
+      ],
+      "arxiv_id": "2604.28169",
+      "version": null,
+      "hf_paper_url": "https://huggingface.co/papers/2604.28169",
+      "paper_url": "https://arxiv.org/abs/2604.28169",
+      "pdf_url": "https://arxiv.org/pdf/2604.28169.pdf",
+      "project_url": "https://phyco-video.github.io/",
+      "code_url": null,
+      "model_url": null,
+      "dataset_url": null,
+      "demo_url": null,
+      "published_at": "2026-04-30T00:00:00+00:00",
+      "updated_at": "2026-04-30T00:00:00+00:00",
+      "primary_category": null,
+      "categories": [],
+      "institution_hint": null,
+      "license_hint": null,
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "summary": "Modern video diffusion models excel at appearance synthesis but still struggle with physical consistency: objects drift, collisions lack realistic rebound, and material responses seldom match their underlying properties. We present PhyCo, a framework that introduces continuous, interpretable, and physically grounded control into video generation. Our approach integrates three key components: (i) a large-scale dataset of over 100K photorealistic simulation videos where friction, restitution, deformation, and force are systematically varied across diverse scenarios; (ii) physics-supervised fine-tuning of a pretrained diffusion model using a ControlNet conditioned on pixel-aligned physical property maps; and (iii) VLM-guided reward optimization, where a fine-tuned vision-language model evaluates generated videos with targeted physics queries and provides differentiable feedback. This combination enables a generative model to produce physically consistent and controllable outputs through variations in physical attributes-without any simulator or geometry reconstruction at inference. On the Physics-IQ benchmark, PhyCo significantly improves physical realism over strong baselines, and human studies confirm clearer and more faithful control over physical attributes. Our results demonstrate a scalable path toward physically consistent, controllable generative video models that generalize beyond synthetic training environments.",
+      "topics": [
+        "Multimodal LLMs"
+      ],
+      "primary_topic": "Multimodal LLMs",
+      "query_groups": [],
+      "method_tags": [
+        "model-based control",
+        "reward modeling"
+      ],
+      "application_tags": [
+        "document understanding",
+        "simulation",
+        "video understanding"
+      ],
+      "one_line_summary": "PhyCo enhances video diffusion models with physics-based control through a large-scale dataset, physics-supervised fine-tuning, and vision-language model guidance for improved physical consistency.",
+      "why_read_today": "它直接落在 Multimodal LLMs 方向。",
+      "relevance_level": "medium",
+      "highlight_score": 3.12,
+      "recommended_action": "track",
+      "topic_scores": {
+        "VLA": 0.0,
+        "World Models": 0.45,
+        "Multimodal LLMs": 2.34,
+        "Agents": 0.0
+      },
+      "structured_summary": {
+        "problem": "Modern video diffusion models excel at appearance synthesis but still struggle with physical consistency: objects drift, collisions lack realistic rebound, and material responses seldom match their underlying properties.",
+        "motivation": "We present PhyCo, a framework that introduces continuous, interpretable, and physically grounded control into video generation.",
+        "core_idea": "We present PhyCo, a framework that introduces continuous, interpretable, and physically grounded control into video generation.",
+        "method": "We present PhyCo, a framework that introduces continuous, interpretable, and physically grounded control into video generation.",
+        "training": "Our approach integrates three key components: (i) a large-scale dataset of over 100K photorealistic simulation videos where friction, restitution, deformation, and force are systematically varied across diverse scenarios; (ii) physics-supervised fine-tuning of a pretrained diffu…",
+        "inference": "This combination enables a generative model to produce physically consistent and controllable outputs through variations in physical attributes-without any simulator or geometry reconstruction at inference.",
+        "evaluation": "This combination enables a generative model to produce physically consistent and controllable outputs through variations in physical attributes-without any simulator or geometry reconstruction at inference.",
+        "main_results": "On the Physics-IQ benchmark, PhyCo significantly improves physical realism over strong baselines, and human studies confirm clearer and more faithful control over physical attributes.",
+        "claim": "On the Physics-IQ benchmark, PhyCo significantly improves physical realism over strong baselines, and human studies confirm clearer and more faithful control over physical attributes."
+      },
+      "novelty_points": [
+        "主线聚焦在 Multimodal LLMs，并给出了相对明确的方法叙述。",
+        "方法标签里最显眼的是：model-based control, reward modeling。"
+      ],
+      "strengths": [
+        "标题和摘要都能清楚定位到研究问题。",
+        "摘要里明确给出了评测或实验设置。"
+      ],
+      "weaknesses": [
+        "当前还看不到足够完整的开源 artifact。"
+      ],
+      "assumptions": [
+        "默认多模态对齐质量足以支撑推理或工具调用。"
+      ],
+      "risks": [
+        "目前更多依赖 abstract claim，短期复现价值有限。",
+        "真实 deployment 条件和 benchmark 表现之间可能存在落差。"
+      ],
+      "open_questions": [
+        "真实多模态长上下文场景里的收益是否稳定？",
+        "grounding 误差会不会拖累推理质量？"
+      ],
+      "relation_to_prior_work": "从摘要看，它更接近以 model-based control 为核心的 Multimodal LLMs 路线。",
+      "domain_analysis": {
+        "vla": {
+          "embodiment": "unknown",
+          "action_space": "continuous",
+          "control_level": "unknown",
+          "memory_usage": "unknown",
+          "planner_usage": "no",
+          "reasoner_usage": "yes",
+          "world_model_usage": "no",
+          "real_robot": "no",
+          "simulator": "simulator",
+          "data_source": "simulator"
+        },
+        "world_models": {
+          "state_representation": "pixel",
+          "prediction_target": "rewards",
+          "horizon": "unknown",
+          "planning_interface": "unknown",
+          "control_coupling": "coupled with policy / control"
+        },
+        "multimodal_llms": {
+          "modalities": [
+            "video"
+          ],
+          "reasoning_type": "none",
+          "long_context_usage": "no",
+          "grounding_method": "none"
+        },
+        "agents": {
+          "agent_type": "unknown",
+          "tooling": "simulator",
+          "memory_type": "none",
+          "planning_style": "unknown",
+          "verification_style": "no verifier"
+        }
+      },
+      "reproducibility": {
+        "code_available": false,
+        "weights_available": false,
+        "dataset_available": false,
+        "env_instructions_available": true,
+        "repro_effort_estimate": "high"
+      },
+      "my_take": {
+        "should_i_read_it": "视方向而定",
+        "should_i_reproduce_it": "条件满足时再看",
+        "what_can_i_borrow": "model-based control, reward modeling",
+        "what_do_i_not_buy": "目前还需要正文确认 claim 的外推性。",
+        "best_use_case": "document understanding"
+      },
+      "hf_upvotes": 2,
+      "hf_ai_summary": "PhyCo enhances video diffusion models with physics-based control through a large-scale dataset, physics-supervised fine-tuning, and vision-language model guidance for improved physical consistency.",
+      "hf_ai_keywords": [
+        "ControlNet",
+        "generative video models",
+        "physics-IQ benchmark",
+        "physics-supervised fine-tuning",
+        "pixel-aligned physical property maps",
+        "reward optimization",
+        "video diffusion models",
+        "vision-language model"
+      ],
+      "submitted_on_daily_at": "2026-05-01T00:55:35.936000+00:00"
+    },
+    {
+      "paper_id": "arxiv-2604.28157",
+      "title": "FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption",
+      "authors": [
+        "Yanting Wang",
+        "Chenlong Yin",
+        "Ying Chen",
+        "Jinyuan Jia"
+      ],
+      "first_author": "Yanting Wang",
+      "source_primary": "HuggingFace Papers",
+      "source_aliases": [
+        "HuggingFace Papers / Daily Papers"
+      ],
+      "arxiv_id": "2604.28157",
+      "version": null,
+      "hf_paper_url": "https://huggingface.co/papers/2604.28157",
+      "paper_url": "https://arxiv.org/abs/2604.28157",
+      "pdf_url": "https://arxiv.org/pdf/2604.28157.pdf",
+      "project_url": null,
+      "code_url": "https://github.com/wang-yanting/FlashRT",
+      "model_url": null,
+      "dataset_url": null,
+      "demo_url": null,
+      "published_at": "2026-04-30T00:00:00+00:00",
+      "updated_at": "2026-04-30T00:00:00+00:00",
+      "primary_category": null,
+      "categories": [],
+      "institution_hint": null,
+      "license_hint": null,
+      "comment": null,
+      "journal_ref": null,
+      "doi": null,
+      "summary": "Long-context large language models (LLMs)-for example, Gemini-3.1-Pro and Qwen-3.5-are widely used to empower many real-world applications, such as retrieval-augmented generation, autonomous agents, and AI assistants. However, security remains a major concern for their widespread deployment, with threats such as prompt injection and knowledge corruption. To quantify the security risks faced by LLMs under these threats, the research community has developed heuristic-based and optimization-based red-teaming methods. Optimization-based methods generally produce stronger attacks than heuristic attacks and thus provide a more rigorous assessment of LLM security risks. However, they are often resource-intensive, requiring significant computation and GPU memory, especially for long context scenarios. The resource-intensive nature poses a major obstacle for the community (especially academic researchers) to systematically evaluate the security risks of long-context LLMs and assess the effectiveness of defense strategies at scale. In this work, we propose FlashRT, the first framework to improve the efficiency (in terms of both computation and memory) for optimization-based prompt injection and knowledge corruption attacks under long-context LLMs. Through extensive evaluations, we find that FlashRT consistently delivers a 2x-7x speedup (e.g., reducing runtime from one hour to less than ten minutes) and a 2x-4x reduction in GPU memory consumption (e.g., reducing from 264.1 GB to 65.7 GB GPU memory for a 32K token context) compared to state-of-the-art baseline nanoGCG. FlashRT can be broadly applied to black-box optimization methods, such as TAP and AutoDAN. We hope FlashRT can serve as a red-teaming tool to enable systematic evaluation of long-context LLM security. The code is available at: https://github.com/Wang-Yanting/FlashRT",
+      "topics": [
+        "Agents"
+      ],
+      "primary_topic": "Agents",
+      "query_groups": [],
+      "method_tags": [
+        "long context",
+        "memory",
+        "tool use"
+      ],
+      "application_tags": [
+        "code agent",
+        "embodied reasoning"
+      ],
+      "one_line_summary": "FlashRT is a framework that significantly improves the efficiency of optimization-based prompt injection and knowledge corruption attacks against long-context large language models, enabling faster and more scalable sec…",
+      "why_read_today": "它直接落在 Agents 方向，并且已经能追踪到开源资源。",
+      "relevance_level": "medium",
+      "highlight_score": 2.93,
+      "recommended_action": "track",
+      "topic_scores": {
+        "VLA": 0.0,
+        "World Models": 0.0,
+        "Multimodal LLMs": 0.72,
+        "Agents": 2.25
+      },
+      "structured_summary": {
+        "problem": "Long-context large language models (LLMs)-for example, Gemini-3.1-Pro and Qwen-3.5-are widely used to empower many real-world applications, such as retrieval-augmented generation, autonomous agents, and AI assistants.",
+        "motivation": "However, security remains a major concern for their widespread deployment, with threats such as prompt injection and knowledge corruption.",
+        "core_idea": "In this work, we propose FlashRT, the first framework to improve the efficiency (in terms of both computation and memory) for optimization-based prompt injection and knowledge corruption attacks under long-context LLMs.",
+        "method": "To quantify the security risks faced by LLMs under these threats, the research community has developed heuristic-based and optimization-based red-teaming methods.",
+        "training": "摘要未明确说明训练细节。",
+        "inference": "However, security remains a major concern for their widespread deployment, with threats such as prompt injection and knowledge corruption.",
+        "evaluation": "Through extensive evaluations, we find that FlashRT consistently delivers a 2x-7x speedup (e.g., reducing runtime from one hour to less than ten minutes) and a 2x-4x reduction in GPU memory consumption (e.g., reducing from 264.1 GB to 65.7 GB GPU memory for a 32K token context)…",
+        "main_results": "In this work, we propose FlashRT, the first framework to improve the efficiency (in terms of both computation and memory) for optimization-based prompt injection and knowledge corruption attacks under long-context LLMs.",
+        "claim": "In this work, we propose FlashRT, the first framework to improve the efficiency (in terms of both computation and memory) for optimization-based prompt injection and knowledge corruption attacks under long-context LLMs."
+      },
+      "novelty_points": [
+        "主线聚焦在 Agents，并给出了相对明确的方法叙述。",
+        "方法标签里最显眼的是：long context, memory, tool use。"
+      ],
+      "strengths": [
+        "标题和摘要都能清楚定位到研究问题。",
+        "摘要里明确给出了评测或实验设置。"
+      ],
+      "weaknesses": [
+        "摘要无法支撑太细的结论，需要正文补充。"
+      ],
+      "assumptions": [
+        "默认工具链、环境接口和反馈信号都是稳定可用的。"
+      ],
+      "risks": [
+        "真实任务链路上的鲁棒性和成本可能比摘要看起来更敏感。"
+      ],
+      "open_questions": [
+        "长任务中的 memory / verifier 成本是否可控？",
+        "工具调用失败时的恢复策略是什么？"
+      ],
+      "relation_to_prior_work": "从摘要看，它更接近以 long context 为核心的 Agents 路线。",
+      "domain_analysis": {
+        "vla": {
+          "embodiment": "unknown",
+          "action_space": "tokenized",
+          "control_level": "unknown",
+          "memory_usage": "memory",
+          "planner_usage": "no",
+          "reasoner_usage": "yes",
+          "world_model_usage": "no",
+          "real_robot": "yes",
+          "simulator": "null",
+          "data_source": "unknown"
+        },
+        "world_models": {
+          "state_representation": "token",
+          "prediction_target": "unknown",
+          "horizon": "unknown",
+          "planning_interface": "search",
+          "control_coupling": "unclear"
+        },
+        "multimodal_llms": {
+          "modalities": [
+            "text"
+          ],
+          "reasoning_type": "tool-use",
+          "long_context_usage": "yes",
+          "grounding_method": "none"
+        },
+        "agents": {
+          "agent_type": "single-agent",
+          "tooling": "code, retrieval",
+          "memory_type": "short-term",
+          "planning_style": "unknown",
+          "verification_style": "no verifier"
+        }
+      },
+      "reproducibility": {
+        "code_available": true,
+        "weights_available": false,
+        "dataset_available": false,
+        "env_instructions_available": false,
+        "repro_effort_estimate": "medium"
+      },
+      "my_take": {
+        "should_i_read_it": "否",
+        "should_i_reproduce_it": "条件满足时再看",
+        "what_can_i_borrow": "long context, memory, tool use",
+        "what_do_i_not_buy": "重点核对实验设置和资源完整度。",
+        "best_use_case": "code agent"
+      },
+      "hf_upvotes": 0,
+      "hf_ai_summary": "FlashRT is a framework that significantly improves the efficiency of optimization-based prompt injection and knowledge corruption attacks against long-context large language models, enabling faster and more scalable security evaluations.",
+      "hf_ai_keywords": [
+        "AutoDAN",
+        "GPU memory consumption",
+        "TAP",
+        "computational efficiency",
+        "knowledge corruption",
+        "long-context large language models",
+        "nanoGCG",
+        "optimization-based attacks",
+        "prompt injection",
+        "red-teaming"
+      ],
+      "submitted_on_daily_at": "2026-05-01T13:09:45.892000+00:00"
+    }
+  ],
+  "paper_list_by_topic": {
+    "Agents": [],
+    "Multimodal LLMs": []
+  },
+  "cross_paper_insights": {
+    "trends": [
+      "model-based control 在今天的入选论文里重复出现 2 次。",
+      "multi-agent 在今天的入选论文里重复出现 1 次。",
+      "planning 在今天的入选论文里重复出现 1 次。"
+    ],
+    "motifs": {
+      "memory": "今天出现 1 次，主要集中在 Agents。",
+      "planning": "今天出现 1 次，主要集中在 Agents。",
+      "retrieval": "今天出现 0 次，主要集中在 暂无明显集中方向。",
+      "verification": "今天出现 1 次，主要集中在 Multimodal LLMs。",
+      "world model": "今天出现 0 次，主要集中在 暂无明显集中方向。"
+    },
+    "gaps": [
+      "真实机器人验证仍然稀缺，尤其缺少能跨 embodiment 的证据。",
+      "agent 方向里 verifier / judge 设计还没有形成明显主线。"
+    ],
+    "inspiration": [
+      "可以优先整理 model-based control 相关论文，做成一页 related work matrix。",
+      "可以优先整理 multi-agent 相关论文，做成一页 related work matrix。",
+      "可以优先整理 planning 相关论文，做成一页 related work matrix。"
+    ]
+  },
+  "action_queue": {
+    "read_now": [],
+    "track": [
+      {
+        "title": "InteractWeb-Bench: Can Multimodal Agent Escape Blind Execution in Interactive Website Generation?",
+        "reason": "它直接落在 Multimodal LLMs 方向，并且已经能追踪到开源资源。"
+      },
+      {
+        "title": "PhyCo: Learning Controllable Physical Priors for Generative Motion",
+        "reason": "它直接落在 Multimodal LLMs 方向。"
+      },
+      {
+        "title": "FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption",
+        "reason": "它直接落在 Agents 方向，并且已经能追踪到开源资源。"
+      }
+    ],
+    "reproduce": [
+      {
+        "title": "Heterogeneous Scientific Foundation Model Collaboration",
+        "reason": "它直接落在 Agents 方向，并且已经能追踪到开源资源。"
+      }
+    ],
+    "ignore": []
+  },
+  "appendix": {
+    "raw_candidates": [
+      {
+        "title": "Heterogeneous Scientific Foundation Model Collaboration",
+        "source": "HuggingFace Papers",
+        "topic": "Agents"
+      },
+      {
+        "title": "InteractWeb-Bench: Can Multimodal Agent Escape Blind Execution in Interactive Website Generation?",
+        "source": "HuggingFace Papers",
+        "topic": "Multimodal LLMs"
+      },
+      {
+        "title": "PhyCo: Learning Controllable Physical Priors for Generative Motion",
+        "source": "HuggingFace Papers",
+        "topic": "Multimodal LLMs"
+      },
+      {
+        "title": "FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption",
+        "source": "HuggingFace Papers",
+        "topic": "Agents"
+      }
+    ],
+    "filtered_out": [
+      {
+        "title": "LaST-R1: Reinforcing Action via Adaptive Physical Latent Reasoning for VLA Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Representation Fréchet Loss for Visual Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Visual Generation in the New Era: An Evolution from Atomic Mapping to Agentic World Modeling",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Synthetic Computers at Scale for Long-Horizon Productivity Simulation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "PhyCo: Learning Controllable Physical Priors for Generative Motion",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Intern-Atlas: A Methodological Evolution Graph as Research Infrastructure for AI Scientists",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "FlashRT: Towards Computationally and Memory Efficient Red-Teaming for Prompt Injection and Knowledge Corruption",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "MoCapAnything V2: End-to-End Motion Capture for Arbitrary Skeletons",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Auto-FlexSwitch: Efficient Dynamic Model Merging via Learnable Task Vector Compression",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Reliable Answers for Recurring Questions: Boosting Text-to-SQL Accuracy with Template Constrained Decoding",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "TripVVT: A Large-Scale Triplet Dataset and a Coarse-Mask Baseline for In-the-Wild Video Virtual Try-On",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Dynamic Cluster Data Sampling for Efficient and Long-Tail-Aware Vision-Language Pre-training",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "KellyBench: A Benchmark for Long-Horizon Sequential Decision Making",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "MCPHunt: An Evaluation Framework for Cross-Boundary Data Propagation in Multi-Server MCP Agents",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Instruction-Guided Poetry Generation in Arabic and Its Dialects",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "ExoActor: Exocentric Video Generation as Generalizable Interactive Humanoid Control",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "When Agents Evolve, Institutions Follow",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "JaiTTS: A Thai Voice Cloning Model",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "World2Minecraft: Occupancy-Driven Simulated Scenes Construction",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Learning from a single labeled face and a stream of unlabeled data",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Bayesian policy gradient and actor-critic algorithms",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Online semi-supervised perception: Real-time learning without explicit feedback",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "AppTek Call-Center Dialogues: A Multi-Accent Long-Form Benchmark for English ASR",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Leveraging Verifier-Based Reinforcement Learning in Image Editing",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "PRTS: A Primitive Reasoning and Tasking System via Contrastive Representations",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "InteractWeb-Bench: Can Multimodal Agent Escape Blind Execution in Interactive Website Generation?",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "MiniCPM-o 4.5: Towards Real-Time Full-Duplex Omni-Modal Interaction",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Heterogeneous Scientific Foundation Model Collaboration",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Compliance versus Sensibility: On the Reasoning Controllability in Large Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Efficient Training on Multiple Consumer GPUs with RoundPipe",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Co-Evolving Policy Distillation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Length Value Model: Scalable Value Pretraining for Token-Level Length Modeling",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "LUCid: Redefining Relevance For Lifelong Personalization",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Turning the TIDE: Cross-Architecture Distillation for Diffusion Large Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "World2VLM: Distilling World Model Imagination into VLMs for Dynamic Spatial Reasoning",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "ClawGym: A Scalable Framework for Building Effective Claw Agents",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Population Dynamics in ARIEL Robotics Systems Featuring Embodied Evolution via Spatial Mating Mechanisms",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Semi-supervised learning with max-margin graph cuts",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Accelerating RL Post-Training Rollouts via System-Integrated Speculative Decoding",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Unified 4D World Action Modeling from Video Priors with Asynchronous Denoising",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Evolutionary feature selection for spiking neural network pattern classifiers",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Large-scale semi-supervised learning with online spectral graph sparsification",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Theory-Grounded Evaluation Exposes the Authorship Gap in LLM Personalization",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Amplitude Encoding of Slater-Type Orbitals via Matrix Product States: Efficient State Preparation and Integral Evaluation on Quantum Hardware",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "OpenSOC-AI: Democratizing Security Operations with Parameter Efficient LLM Log Analysis",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "FASH-iCNN: Making Editorial Fashion Identity Inspectable Through Multimodal CNN Probing",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "ViPO: Visual Preference Optimization at Scale",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "The Last Human-Written Paper: Agent-Native Research Artifacts",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Agentic Fusion of Large Atomic and Language Models to Accelerate Superconductors Discovery",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "COP-GEN: Latent Diffusion Transformer for Copernicus Earth Observation Data",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Sample Selection Using Multi-Task Autoencoders in Federated Learning with Non-IID Data",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Operating-Layer Controls for Onchain Language-Model Agents Under Real Capital",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Recursive Multi-Agent Systems",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "DV-World: Benchmarking Data Visualization Agents in Real-World Scenarios",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Mutual Forcing: Dual-Mode Self-Evolution for Fast Autoregressive Audio-Video Character Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "MAIC-UI: Making Interactive Courseware with Generative UI",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Toward Scalable Terminal Task Synthesis via Skill Graphs",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Step-Audio-R1.5 Technical Report",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Cross-Lingual Jailbreak Detection via Semantic Codebooks",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Refinement via Regeneration: Enlarging Modification Space Boosts Image Refinement in Unified Multimodal Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "PSP: An Interpretable Per-Dimension Accent Benchmark for Indic Text-to-Speech",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Praxy Voice: Voice-Prompt Recovery + BUPS for Commercial-Class Indic TTS from a Frozen Non-Indic Base at Zero Commercial-Training-Data Cost",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "A Systematic Post-Train Framework for Video Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Wiki Dumps to Training Corpora: South Slavic Case",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Language corpora for the Dutch medical domain",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "The Structured Output Benchmark: A Multi-Source Benchmark for Evaluating Structured Output Quality in Large Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Cutscene Agent: An LLM Agent Framework for Automated 3D Cutscene Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "OmniVTG: A Large-Scale Dataset and Training Paradigm for Open-World Video Temporal Grounding",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Spectral bandits",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Online learning with Erdős-Rényi side-observation graphs",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Online combinatorial optimization with stochastic decision sets and adversarial losses",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "AutoResearchBench: Benchmarking AI Agents on Complex Scientific Literature Discovery",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "BARRED: Synthetic Training of Custom Policy Guardrails via Asymmetric Debate",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "FCMBench-Video: Benchmarking Document Video Intelligence",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "IAM: Identity-Aware Human Motion and Shape Joint Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "FAMA: Failure-Aware Meta-Agentic Framework for Open-Source LLMs in Interactive Tool Use Environments",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Cooperate to Compete: Strategic Coordination in Multi-Agent Conquest",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "AIPsy-Affect: A Keyword-Free Clinical Stimulus Battery for Mechanistic Interpretability of Emotion in Language Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Long-Horizon Streaming Video Generation via Hybrid Attention with Decoupled Distillation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "How Much Heavy Lifting Can an Agent Harness Do?: Measuring the LLM's Residual Role in a Planning Agent",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "AIDOVECL: AI-generated Dataset of Outpainted Vehicles for Eye-level Classification and Localization",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Offline Evaluation Measures of Fairness in Recommender Systems",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Power Foam: Unifying Real-Time Differentiable Ray Tracing and Rasterization",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "A Survey on LLM-based Conversational User Simulation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "PolyKV: A Shared Asymmetrically-Compressed KV Cache Pool for Multi-Agent LLM Inference",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Nemotron 3 Nano Omni: Efficient and Open Multimodal Intelligence",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Learning from Noisy Preferences: A Semi-Supervised Learning Approach to Direct Preference Optimization",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Large Language Models Explore by Latent Distilling",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Safety Drift After Fine-Tuning: Evidence from High-Stakes Domains",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Latent Agents: A Post-Training Procedure for Internalized Multi-Agent Debate",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Learning Illumination Control in Diffusion Models",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Co-Director: Agentic Generative Video Storytelling",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "A Comparative Evaluation of AI Agent Security Guardrails",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Programming with Data: Test-Driven Data Engineering for Self-Improving LLMs from Raw Corpora",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Nautile-370M: Spectral Memory Meets Attention in a Small Reasoning Model",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "World-R1: Reinforcing 3D Constraints for Text-to-Video Generation",
+        "reason": "Outside crawl window for HuggingFace recent paper list"
+      },
+      {
+        "title": "Visual Generation in the New Era: An Evolution from Atomic Mapping to Agentic World Modeling",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Co-Evolving Policy Distillation",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "ExoActor: Exocentric Video Generation as Generalizable Interactive Humanoid Control",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Efficient Training on Multiple Consumer GPUs with RoundPipe",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Leveraging Verifier-Based Reinforcement Learning in Image Editing",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Length Value Model: Scalable Value Pretraining for Token-Level Length Modeling",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Intern-Atlas: A Methodological Evolution Graph as Research Infrastructure for AI Scientists",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Representation Fréchet Loss for Visual Generation",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Synthetic Computers at Scale for Long-Horizon Productivity Simulation",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Compliance versus Sensibility: On the Reasoning Controllability in Large Language Models",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "The Last Human-Written Paper: Agent-Native Research Artifacts",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "MoCapAnything V2: End-to-End Motion Capture for Arbitrary Skeletons",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "World2Minecraft: Occupancy-Driven Simulated Scenes Construction",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Instruction-Guided Poetry Generation in Arabic and Its Dialects",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "ViPO: Visual Preference Optimization at Scale",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Learning from Noisy Preferences: A Semi-Supervised Learning Approach to Direct Preference Optimization",
+        "reason": "Classifier marked it as out of scope"
+      },
+      {
+        "title": "Safety Drift After Fine-Tuning: Evidence from High-Stakes Domains",
+        "reason": "Classifier marked it as out of scope"
+      }
+    ],
+    "deduplication_log": [],
+    "crawl_errors": [
+      "arXiv / VLA — Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=all%3A%22vision-language-action%22+OR+all%3AVLA+OR+all%3A%22embodied+policy%22+OR+all%3A%22robot+manipulation+policy%22+OR+all%3A%22robot+foundation+model%22+OR+all%3A%22action+tokenizer%22&start=0&max_results=80&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "arXiv / World Models — Client error '429 Too Many Requests' for url 'https://export.arxiv.org/api/query?search_query=all%3A%22world+model%22+OR+all%3A%22latent+dynamics%22+OR+all%3A%22predictive+model%22+OR+all%3A%22video+prediction+for+control%22+OR+all%3A%22model-based+reinforcement+learning%22+OR+all%3A%22action-conditioned+video+generation%22&start=0&max_results=80&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "arXiv / Multimodal LLMs — Client error '429 Unknown Error' for url 'https://export.arxiv.org/api/query?search_query=all%3A%22multimodal+large+language+model%22+OR+all%3A%22multimodal+llm%22+OR+all%3Amllm+OR+all%3A%22vision-language+model%22+OR+all%3Avlm+OR+all%3A%22multimodal+reasoning%22+OR+all%3A%22video-language+model%22&start=0&max_results=80&sortBy=submittedDate&sortOrder=descending'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429",
+      "arXiv / Agents — The read operation timed out",
+      "HuggingFace Papers / Daily Papers / 2026-05-02 — Client error '400 Bad Request' for url 'https://huggingface.co/api/daily_papers?date=2026-05-02&limit=60'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+    ],
+    "parsing_warnings": [],
+    "llm_warnings": [],
+    "todo_for_tomorrow": [
+      "回看 PhyCo: Learning Controllable Physical Priors for Generative Motion 是否补出了 code / project link。",
+      "检查被 classifier 或窗口规则过滤掉的边界样本，必要时扩充关键词。"
+    ]
+  }
+}
