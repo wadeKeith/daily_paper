@@ -1,0 +1,461 @@
+{
+  "report_type": "weekly_paper_digest",
+  "period_type": "weekly",
+  "period_label": "2026-W18",
+  "date_range": {
+    "start": "2026-04-27",
+    "end": "2026-05-03"
+  },
+  "generated_at": "2026-05-04T00:33:14.876286+08:00",
+  "generator": {
+    "repo_name": "daily-ai-paper-digest",
+    "repo_commit": "f41a127c0802b892fad8eda6795b6537d140b1e4",
+    "pipeline_version": "v1.0.0"
+  },
+  "llm": {
+    "enabled": false,
+    "provider": "openai_responses",
+    "model": "",
+    "enhanced": false
+  },
+  "statistics": {
+    "reports_included": 7,
+    "papers_mentioned_total": 41,
+    "unique_papers_total": 41,
+    "highlight_mentions_total": 22,
+    "unique_highlights_total": 22
+  },
+  "topic_counts": {
+    "VLA": 6,
+    "World Models": 2,
+    "Multimodal LLMs": 14,
+    "Agents": 19,
+    "Other Relevant": 0
+  },
+  "top_papers": [
+    {
+      "paper_id": "arxiv-2604.22748",
+      "title": "Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond",
+      "primary_topic": "World Models",
+      "method_tags": [
+        "model-based control",
+        "multi-agent"
+      ],
+      "application_tags": [
+        "simulation",
+        "web agent"
+      ],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 1,
+      "reproduce_count": 0,
+      "best_score": 4.04,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.22748",
+      "code_url": "https://github.com/matrix-agent/awesome-agentic-world-modeling",
+      "first_seen_report_date": "2026-04-28",
+      "last_seen_report_date": "2026-04-28",
+      "avg_score": 4.04
+    },
+    {
+      "paper_id": "arxiv-2604.22446",
+      "title": "From Skills to Talent: Organising Heterogeneous Agents as a Real-World Company",
+      "primary_topic": "Agents",
+      "method_tags": [
+        "multi-agent",
+        "planning",
+        "tool use"
+      ],
+      "application_tags": [],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 0,
+      "reproduce_count": 1,
+      "best_score": 3.69,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.22446",
+      "code_url": "https://github.com/1mancompany/OneManCompany",
+      "first_seen_report_date": "2026-04-29",
+      "last_seen_report_date": "2026-04-29",
+      "avg_score": 3.69
+    },
+    {
+      "paper_id": "arxiv-2604.25917",
+      "title": "Recursive Multi-Agent Systems",
+      "primary_topic": "Agents",
+      "method_tags": [
+        "latent dynamics",
+        "multi-agent"
+      ],
+      "application_tags": [
+        "code agent"
+      ],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 0,
+      "reproduce_count": 1,
+      "best_score": 3.64,
+      "source_primary": "arXiv",
+      "paper_url": "https://arxiv.org/abs/2604.25917v1",
+      "code_url": "https://github.com/RecursiveMAS/RecursiveMAS",
+      "first_seen_report_date": "2026-04-30",
+      "last_seen_report_date": "2026-04-30",
+      "avg_score": 3.64
+    },
+    {
+      "paper_id": "arxiv-2604.27351",
+      "title": "Heterogeneous Scientific Foundation Model Collaboration",
+      "primary_topic": "Agents",
+      "method_tags": [
+        "model-based control",
+        "multi-agent",
+        "planning"
+      ],
+      "application_tags": [],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 0,
+      "reproduce_count": 1,
+      "best_score": 3.54,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.27351",
+      "code_url": "https://github.com/Violet24K/Eywa",
+      "first_seen_report_date": "2026-05-02",
+      "last_seen_report_date": "2026-05-02",
+      "avg_score": 3.54
+    },
+    {
+      "paper_id": "arxiv-2604.19548",
+      "title": "Taming Actor-Observer Asymmetry in Agents via Dialectical Alignment",
+      "primary_topic": "Agents",
+      "method_tags": [
+        "multi-agent",
+        "planning",
+        "tool use"
+      ],
+      "application_tags": [
+        "workflow automation"
+      ],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 0,
+      "reproduce_count": 1,
+      "best_score": 3.46,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.19548",
+      "code_url": "https://github.com/unikcc/ReTAS",
+      "first_seen_report_date": "2026-04-29",
+      "last_seen_report_date": "2026-04-29",
+      "avg_score": 3.46
+    },
+    {
+      "paper_id": "arxiv-2604.24300",
+      "title": "ReVSI: Rebuilding Visual Spatial Intelligence Evaluation for Accurate Assessment of VLM 3D Reasoning",
+      "primary_topic": "Multimodal LLMs",
+      "method_tags": [
+        "model-based control",
+        "reasoning",
+        "tool use"
+      ],
+      "application_tags": [
+        "video understanding"
+      ],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 0,
+      "reproduce_count": 1,
+      "best_score": 3.43,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.24300",
+      "code_url": "https://github.com/3dlg-hcvc/revsi",
+      "first_seen_report_date": "2026-04-29",
+      "last_seen_report_date": "2026-04-29",
+      "avg_score": 3.43
+    },
+    {
+      "paper_id": "arxiv-2604.21718",
+      "title": "Building a Precise Video Language with Human-AI Oversight",
+      "primary_topic": "Multimodal LLMs",
+      "method_tags": [
+        "model-based control",
+        "reward modeling"
+      ],
+      "application_tags": [
+        "video understanding"
+      ],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 0,
+      "reproduce_count": 0,
+      "best_score": 3.37,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.21718",
+      "code_url": "https://github.com/chancharikmitra/CHAI",
+      "first_seen_report_date": "2026-04-28",
+      "last_seen_report_date": "2026-04-28",
+      "avg_score": 3.37
+    },
+    {
+      "paper_id": "arxiv-2604.23775",
+      "title": "Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms",
+      "primary_topic": "VLA",
+      "method_tags": [
+        "hierarchical control"
+      ],
+      "application_tags": [
+        "embodied planning"
+      ],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 0,
+      "reproduce_count": 0,
+      "best_score": 3.2,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.23775",
+      "code_url": "https://github.com/LiQiiiii/Awesome-VLA-Safety",
+      "first_seen_report_date": "2026-04-29",
+      "last_seen_report_date": "2026-04-29",
+      "avg_score": 3.2
+    },
+    {
+      "paper_id": "arxiv-2604.26752",
+      "title": "GLM-5V-Turbo: Toward a Native Foundation Model for Multimodal Agents",
+      "primary_topic": "Agents",
+      "method_tags": [
+        "planning",
+        "tool use"
+      ],
+      "application_tags": [
+        "web agent"
+      ],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 0,
+      "reproduce_count": 0,
+      "best_score": 3.2,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.26752",
+      "code_url": "https://github.com/zai-org/GLM-V",
+      "first_seen_report_date": "2026-05-01",
+      "last_seen_report_date": "2026-05-01",
+      "avg_score": 3.2
+    },
+    {
+      "paper_id": "arxiv-2604.20012",
+      "title": "EmbodiedMidtrain: Bridging the Gap between Vision-Language Models and Vision-Language-Action Models via Mid-training",
+      "primary_topic": "VLA",
+      "method_tags": [
+        "reasoning"
+      ],
+      "application_tags": [
+        "embodied planning",
+        "embodied reasoning",
+        "robot manipulation"
+      ],
+      "mention_count": 1,
+      "highlight_count": 1,
+      "read_now_count": 0,
+      "reproduce_count": 0,
+      "best_score": 3.17,
+      "source_primary": "HuggingFace Papers",
+      "paper_url": "https://arxiv.org/abs/2604.20012",
+      "code_url": null,
+      "first_seen_report_date": "2026-04-28",
+      "last_seen_report_date": "2026-04-28",
+      "avg_score": 3.17
+    }
+  ],
+  "top_days": [
+    {
+      "report_date": "2026-04-29",
+      "selected_total": 15,
+      "highlights_total": 5,
+      "top_topic": "Agents"
+    },
+    {
+      "report_date": "2026-04-30",
+      "selected_total": 13,
+      "highlights_total": 5,
+      "top_topic": "Agents"
+    },
+    {
+      "report_date": "2026-05-01",
+      "selected_total": 6,
+      "highlights_total": 5,
+      "top_topic": "VLA"
+    },
+    {
+      "report_date": "2026-05-02",
+      "selected_total": 4,
+      "highlights_total": 4,
+      "top_topic": "Multimodal LLMs"
+    },
+    {
+      "report_date": "2026-04-28",
+      "selected_total": 3,
+      "highlights_total": 3,
+      "top_topic": "VLA"
+    },
+    {
+      "report_date": "2026-04-27",
+      "selected_total": 0,
+      "highlights_total": 0,
+      "top_topic": "VLA"
+    },
+    {
+      "report_date": "2026-05-03",
+      "selected_total": 0,
+      "highlights_total": 0,
+      "top_topic": "VLA"
+    }
+  ],
+  "method_tag_counts": [
+    [
+      "multi-agent",
+      15
+    ],
+    [
+      "tool use",
+      12
+    ],
+    [
+      "model-based control",
+      11
+    ],
+    [
+      "grounding",
+      9
+    ],
+    [
+      "reasoning",
+      8
+    ],
+    [
+      "planning",
+      8
+    ],
+    [
+      "verification",
+      5
+    ],
+    [
+      "reward modeling",
+      4
+    ]
+  ],
+  "application_tag_counts": [
+    [
+      "embodied reasoning",
+      12
+    ],
+    [
+      "code agent",
+      11
+    ],
+    [
+      "document understanding",
+      6
+    ],
+    [
+      "web agent",
+      4
+    ],
+    [
+      "workflow automation",
+      4
+    ],
+    [
+      "robot control",
+      4
+    ],
+    [
+      "autonomous driving",
+      4
+    ],
+    [
+      "simulation",
+      3
+    ]
+  ],
+  "daily_reports": [
+    {
+      "report_date": "2026-04-27",
+      "selected_total": 0,
+      "highlights_total": 0,
+      "top_topic": "VLA"
+    },
+    {
+      "report_date": "2026-04-28",
+      "selected_total": 3,
+      "highlights_total": 3,
+      "top_topic": "VLA"
+    },
+    {
+      "report_date": "2026-04-29",
+      "selected_total": 15,
+      "highlights_total": 5,
+      "top_topic": "Agents"
+    },
+    {
+      "report_date": "2026-04-30",
+      "selected_total": 13,
+      "highlights_total": 5,
+      "top_topic": "Agents"
+    },
+    {
+      "report_date": "2026-05-01",
+      "selected_total": 6,
+      "highlights_total": 5,
+      "top_topic": "VLA"
+    },
+    {
+      "report_date": "2026-05-02",
+      "selected_total": 4,
+      "highlights_total": 4,
+      "top_topic": "Multimodal LLMs"
+    },
+    {
+      "report_date": "2026-05-03",
+      "selected_total": 0,
+      "highlights_total": 0,
+      "top_topic": "VLA"
+    }
+  ],
+  "executive_summary": {
+    "headline": "2026-W18 期间最活跃的主题是 Agents，共覆盖 41 篇独立论文。",
+    "summary_points": [
+      "周期内共纳入 7 份日报，累计提及 41 篇论文记录。",
+      "高亮论文累计出现 22 次，其中独立高亮论文 22 篇。",
+      "本周期最值得回看的一组论文包括：Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond, From Skills to Talent: Organising Heterogeneous Agents as a Real-World Company, Recursive Multi-Agent Systems。"
+    ]
+  },
+  "trend_analysis": {
+    "trends": [
+      "重复出现最多的方法标签是：multi-agent, tool use, model-based control。",
+      "主要落地方向集中在：embodied reasoning, code agent, document understanding。",
+      "主导主题是：Agents。"
+    ],
+    "gaps": [
+      "仍需继续观察哪些高频论文真正有可复现资源。",
+      "跨主题的方法迁移价值还需要更长时间窗才能看清。",
+      "高亮论文之外的长尾样本仍值得人工抽查，避免错过边界创新。"
+    ],
+    "next_actions": [
+      "优先精读 Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond。",
+      "优先精读 From Skills to Talent: Organising Heterogeneous Agents as a Real-World Company。",
+      "优先精读 Recursive Multi-Agent Systems。"
+    ]
+  },
+  "appendix": {
+    "source_reports": [
+      "2026-04-27",
+      "2026-04-28",
+      "2026-04-29",
+      "2026-04-30",
+      "2026-05-01",
+      "2026-05-02",
+      "2026-05-03"
+    ],
+    "llm_warnings": []
+  }
+}
